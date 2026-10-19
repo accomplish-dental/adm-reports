@@ -1,0 +1,736 @@
+{
+ "scope": {
+  "type": "group",
+  "name": "All practices"
+ },
+ "practices": [
+  {
+   "slug": "hallcross",
+   "name": "Hallcross Dental Practice",
+   "plan": [
+    {
+     "id": "VFsJ8RN6Pm9BSv69Y9fY",
+     "treatment": "Implants",
+     "label": "Dental implants",
+     "openDay": "1\u20132 Oct 2026",
+     "start": "2026-09-14",
+     "end": "2026-10-02",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Finished",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "DNZGn5LoCifQMQ9rKOKH",
+     "treatment": "Composite bonding",
+     "label": "Composite bonding",
+     "openDay": "Jan 2027 \u00b7 date TBC",
+     "start": "",
+     "end": "",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Planned",
+     "month": "2027-01",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "rHkyZ9EU4pygjM8dZKVT",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "Apr 2027 \u00b7 date TBC",
+     "start": "",
+     "end": "",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Planned",
+     "month": "2027-04",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "Tkeg7zvKEL4xHdMsOa26",
+     "treatment": "Implants",
+     "label": "Dental implants",
+     "openDay": "Jul 2027 \u00b7 date TBC",
+     "start": "",
+     "end": "",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Planned",
+     "month": "2027-07",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    }
+   ],
+   "adSpend": {
+    "byDay": [
+     {
+      "date": "2026-09-01",
+      "channel": "Meta",
+      "spend": 23.72,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-02",
+      "channel": "Meta",
+      "spend": 18.51,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-03",
+      "channel": "Meta",
+      "spend": 19.41,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-04",
+      "channel": "Meta",
+      "spend": 18.64,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-05",
+      "channel": "Meta",
+      "spend": 16.42,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-06",
+      "channel": "Meta",
+      "spend": 24.09,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-07",
+      "channel": "Meta",
+      "spend": 22.53,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-08",
+      "channel": "Meta",
+      "spend": 20.47,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-09",
+      "channel": "Meta",
+      "spend": 16.51,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-10",
+      "channel": "Meta",
+      "spend": 22.04,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-11",
+      "channel": "Meta",
+      "spend": 18.66,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-12",
+      "channel": "Meta",
+      "spend": 15.59,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-13",
+      "channel": "Meta",
+      "spend": 23.55,
+      "campaign": ""
+     },
+     {
+      "date": "2026-09-14",
+      "channel": "Meta",
+      "spend": 37.23,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-15",
+      "channel": "Meta",
+      "spend": 31.67,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-16",
+      "channel": "Meta",
+      "spend": 38.46,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-17",
+      "channel": "Meta",
+      "spend": 65.93,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-18",
+      "channel": "Meta",
+      "spend": 50.32,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-19",
+      "channel": "Meta",
+      "spend": 55.32,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-20",
+      "channel": "Meta",
+      "spend": 58.32,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-21",
+      "channel": "Meta",
+      "spend": 32.43,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-22",
+      "channel": "Meta",
+      "spend": 54.79,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-23",
+      "channel": "Meta",
+      "spend": 42.04,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-24",
+      "channel": "Meta",
+      "spend": 28.55,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-09-30",
+      "channel": "Meta",
+      "spend": 70.35,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-10-01",
+      "channel": "Meta",
+      "spend": 17.22,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-10-02",
+      "channel": "Meta",
+      "spend": 32.56,
+      "campaign": "VFsJ8RN6Pm9BSv69Y9fY"
+     },
+     {
+      "date": "2026-10-03",
+      "channel": "Meta",
+      "spend": 34.19,
+      "campaign": ""
+     },
+     {
+      "date": "2026-10-04",
+      "channel": "Meta",
+      "spend": 24.05,
+      "campaign": ""
+     },
+     {
+      "date": "2026-10-05",
+      "channel": "Meta",
+      "spend": 3.5,
+      "campaign": ""
+     },
+     {
+      "date": "2026-10-15",
+      "channel": "Meta",
+      "spend": 23.84,
+      "campaign": ""
+     },
+     {
+      "date": "2026-10-16",
+      "channel": "Meta",
+      "spend": 34.97,
+      "campaign": ""
+     },
+     {
+      "date": "2026-10-17",
+      "channel": "Meta",
+      "spend": 34.37,
+      "campaign": ""
+     },
+     {
+      "date": "2026-10-18",
+      "channel": "Meta",
+      "spend": 25.89,
+      "campaign": ""
+     },
+     {
+      "date": "2026-10-19",
+      "channel": "Meta",
+      "spend": 9.9,
+      "campaign": ""
+     }
+    ]
+   },
+   "appointments": [
+    {
+     "start": "2026-10-01T09:00",
+     "status": "cancelled",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "xKZVGwXWWvj8gwuBMSUJ",
+     "treatment": "Implants",
+     "booked": "2026-09-17",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-01T10:30",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "VdHokiSCtaRhMllF6aok",
+     "treatment": "Implants",
+     "booked": "2026-09-19",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-01T11:15",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "2jFP8AqKLYHAnmKdrEdG",
+     "treatment": "Implants",
+     "booked": "2026-09-17",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-01T14:00",
+     "status": "invalid",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "a5UwcJJ85fFLc51E8Q2R",
+     "treatment": "Implants",
+     "booked": "2026-09-23",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-01T14:00",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "i9IPRQEDNkaaxc4W3X2p",
+     "treatment": "Implants",
+     "booked": "2026-09-14",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-01T14:45",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "wIekkiCI9tYGS7qlcbNg",
+     "treatment": "Implants",
+     "booked": "2026-09-15",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-01T17:00",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "w7sz2qJsoxqhNZTKGGrY",
+     "treatment": "Implants",
+     "booked": "2026-09-17",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-02T09:00",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "jC5cm82HTTyJ3t3ZYdhl",
+     "treatment": "Implants",
+     "booked": "2026-09-14",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-02T10:10",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "EfLU0lXw7iY9GMGvycY5",
+     "treatment": "Implants",
+     "booked": "2026-09-23",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-02T10:30",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "gBuxhuwujnBiNdYuTQOa",
+     "treatment": "Implants",
+     "booked": "2026-09-15",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-02T11:15",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "3YJpAUqcclJGDMyRii77",
+     "treatment": "Implants",
+     "booked": "2026-09-20",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-02T12:00",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "xODpDRRgnHQearuMzYng",
+     "treatment": "Implants",
+     "booked": "2026-09-15",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-02T14:50",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "vd71J0ueGaPqXodxMDl2",
+     "treatment": "Implants",
+     "booked": "2026-09-30",
+     "source": "Meta"
+    },
+    {
+     "start": "2026-10-02T16:15",
+     "status": "confirmed",
+     "dentistId": "ruUu7GE8e7YqKPuXObZm",
+     "contactId": "D3nhyW3EOofrK8omB4JA",
+     "treatment": "Implants",
+     "booked": "2026-09-14",
+     "source": "Meta"
+    }
+   ],
+   "leads": [
+    {
+     "id": "vRalGEA92ZuGokrXGS7Z",
+     "created": "2026-09-30",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "vd71J0ueGaPqXodxMDl2",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "2WL5QFtcl7I8K289kv7r",
+     "created": "2026-09-23",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "EfLU0lXw7iY9GMGvycY5",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "vQ3TYllzQy9wGs5YQVON",
+     "created": "2026-09-21",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "i9IPRQEDNkaaxc4W3X2p",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "lz6SJz1kPRCVb43pWFFV",
+     "created": "2026-09-20",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "3YJpAUqcclJGDMyRii77",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "yU37gQME2lpxsRzV0wNR",
+     "created": "2026-09-19",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "VdHokiSCtaRhMllF6aok",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "d2t4mG7yQ2LLRpATFGsZ",
+     "created": "2026-09-17",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "w7sz2qJsoxqhNZTKGGrY",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "xsaM6NLbUjQyTqdagAid",
+     "created": "2026-09-17",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "xKZVGwXWWvj8gwuBMSUJ",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "iXhNQCPm0BEPzf2L1zMZ",
+     "created": "2026-09-17",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "2jFP8AqKLYHAnmKdrEdG",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "7DXfGs9hYYINAYvhOi0g",
+     "created": "2026-09-15",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "gBuxhuwujnBiNdYuTQOa",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "86HnzroyWJOxXL1g9AF7",
+     "created": "2026-09-15",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "xODpDRRgnHQearuMzYng",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "kZR4jAg2viqT0iQnvwqJ",
+     "created": "2026-09-15",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "wIekkiCI9tYGS7qlcbNg",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "WePC4iUqyrsHI0g3tTZg",
+     "created": "2026-09-14",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "D3nhyW3EOofrK8omB4JA",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "5K1w6zPyELr5HQJxPebR",
+     "created": "2026-09-14",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "jC5cm82HTTyJ3t3ZYdhl",
+     "wonDate": "",
+     "source": "Meta"
+    }
+   ],
+   "dentists": {},
+   "periodStart": "2026-09-14"
+  },
+  {
+   "slug": "aylesbury",
+   "name": "Aylesbury Dental Health Centre",
+   "plan": [
+    {
+     "id": "ZtfCB6EJmTxAaMUqdRJH",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "21 Nov 2026",
+     "start": "2026-10-24",
+     "end": "2026-11-21",
+     "clinician": "JP",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "klEQugixi77MQEUqYOM3",
+     "treatment": "Composite bonding",
+     "label": "Composite bonding",
+     "openDay": "19 Jan 2027",
+     "start": "2026-12-29",
+     "end": "2027-01-19",
+     "clinician": "Niralee (NS)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "MRI394m7fYL0G4SK5o37",
+     "treatment": "Facial aesthetics",
+     "label": "Facial aesthetics",
+     "openDay": "19 Jan 2027",
+     "start": "2026-12-29",
+     "end": "2027-01-19",
+     "clinician": "Anika (AP)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "BbYGnx8njQ5qdhgSfOI8",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "24 Feb 2027",
+     "start": "2027-01-27",
+     "end": "2027-02-24",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    }
+   ],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-10-24"
+  },
+  {
+   "slug": "prestwood",
+   "name": "Prestwood Dental Health Centre",
+   "plan": [
+    {
+     "id": "VGybzR4asvs9H6ndAQ9H",
+     "treatment": "Composite bonding",
+     "label": "Composite bonding",
+     "openDay": "14 Nov 2026",
+     "start": "2026-10-24",
+     "end": "2026-11-14",
+     "clinician": "Raj (RB)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "asM8nSUFAeb5n18v1ZPn",
+     "treatment": "Facial aesthetics",
+     "label": "Facial aesthetics",
+     "openDay": "23 Nov 2026",
+     "start": "2026-10-26",
+     "end": "2026-11-23",
+     "clinician": "Anika (AP)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "oJYCePiay6MBpswrFlVU",
+     "treatment": "Implants",
+     "label": "Dental implants",
+     "openDay": "23 Jan 2027",
+     "start": "2027-01-02",
+     "end": "2027-01-23",
+     "clinician": "Dillan (DT)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "wq2P8YV9CL4LSFdZnjpa",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "13 Mar 2027",
+     "start": "2027-02-13",
+     "end": "2027-03-13",
+     "clinician": "Raj (RB)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    }
+   ],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-10-24"
+  },
+  {
+   "slug": "brocklehurst",
+   "name": "Brocklehurst Dental Practice",
+   "plan": [],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-09-01"
+  },
+  {
+   "slug": "kimbolton",
+   "name": "Kimbolton Dental Practice",
+   "plan": [],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-09-01"
+  },
+  {
+   "slug": "hollis",
+   "name": "Hollis Dental",
+   "plan": [],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-09-01"
+  }
+ ],
+ "updatedAt": "2026-10-19T20:30:00Z"
+}

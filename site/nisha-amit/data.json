@@ -1,0 +1,191 @@
+{
+ "scope": {
+  "type": "group",
+  "name": "Nisha & Amit's practices"
+ },
+ "practices": [
+  {
+   "slug": "aylesbury",
+   "name": "Aylesbury Dental Health Centre",
+   "plan": [
+    {
+     "id": "ZtfCB6EJmTxAaMUqdRJH",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "21 Nov 2026",
+     "start": "2026-10-24",
+     "end": "2026-11-21",
+     "clinician": "JP",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "klEQugixi77MQEUqYOM3",
+     "treatment": "Composite bonding",
+     "label": "Composite bonding",
+     "openDay": "19 Jan 2027",
+     "start": "2026-12-29",
+     "end": "2027-01-19",
+     "clinician": "Niralee (NS)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "MRI394m7fYL0G4SK5o37",
+     "treatment": "Facial aesthetics",
+     "label": "Facial aesthetics",
+     "openDay": "19 Jan 2027",
+     "start": "2026-12-29",
+     "end": "2027-01-19",
+     "clinician": "Anika (AP)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "BbYGnx8njQ5qdhgSfOI8",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "24 Feb 2027",
+     "start": "2027-01-27",
+     "end": "2027-02-24",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    }
+   ],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-10-24"
+  },
+  {
+   "slug": "prestwood",
+   "name": "Prestwood Dental Health Centre",
+   "plan": [
+    {
+     "id": "VGybzR4asvs9H6ndAQ9H",
+     "treatment": "Composite bonding",
+     "label": "Composite bonding",
+     "openDay": "14 Nov 2026",
+     "start": "2026-10-24",
+     "end": "2026-11-14",
+     "clinician": "Raj (RB)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "asM8nSUFAeb5n18v1ZPn",
+     "treatment": "Facial aesthetics",
+     "label": "Facial aesthetics",
+     "openDay": "23 Nov 2026",
+     "start": "2026-10-26",
+     "end": "2026-11-23",
+     "clinician": "Anika (AP)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "oJYCePiay6MBpswrFlVU",
+     "treatment": "Implants",
+     "label": "Dental implants",
+     "openDay": "23 Jan 2027",
+     "start": "2027-01-02",
+     "end": "2027-01-23",
+     "clinician": "Dillan (DT)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "wq2P8YV9CL4LSFdZnjpa",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "13 Mar 2027",
+     "start": "2027-02-13",
+     "end": "2027-03-13",
+     "clinician": "Raj (RB)",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    }
+   ],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-10-24"
+  },
+  {
+   "slug": "brocklehurst",
+   "name": "Brocklehurst Dental Practice",
+   "plan": [],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-09-01"
+  },
+  {
+   "slug": "kimbolton",
+   "name": "Kimbolton Dental Practice",
+   "plan": [],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-09-01"
+  },
+  {
+   "slug": "hollis",
+   "name": "Hollis Dental",
+   "plan": [],
+   "adSpend": {
+    "byDay": []
+   },
+   "appointments": [],
+   "leads": [],
+   "dentists": {},
+   "periodStart": "2026-09-01"
+  }
+ ],
+ "updatedAt": "2026-10-19T20:30:00Z"
+}
