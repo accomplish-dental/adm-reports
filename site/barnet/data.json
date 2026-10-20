@@ -22,139 +22,10 @@
      "channels": [
       "Meta"
      ]
-    },
-    {
-     "id": "120249093546340442",
-     "treatment": "Implants",
-     "label": "Dental implants",
-     "openDay": "10–28 Sep 2026",
-     "start": "2026-09-10",
-     "end": "2026-09-28",
-     "clinician": "",
-     "budget": 1000,
-     "status": "Finished",
-     "type": "campaign",
-     "channels": [
-      "Meta"
-     ]
     }
    ],
    "adSpend": {
     "byDay": [
-     {
-      "date": "2026-09-10",
-      "channel": "Meta",
-      "spend": 15.49,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-11",
-      "channel": "Meta",
-      "spend": 15.12,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-12",
-      "channel": "Meta",
-      "spend": 12.6,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-13",
-      "channel": "Meta",
-      "spend": 25.68,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-14",
-      "channel": "Meta",
-      "spend": 19.36,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-15",
-      "channel": "Meta",
-      "spend": 12.15,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-16",
-      "channel": "Meta",
-      "spend": 16.03,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-17",
-      "channel": "Meta",
-      "spend": 14.68,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-18",
-      "channel": "Meta",
-      "spend": 12.68,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-19",
-      "channel": "Meta",
-      "spend": 11.18,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-20",
-      "channel": "Meta",
-      "spend": 20.4,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-21",
-      "channel": "Meta",
-      "spend": 17.83,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-22",
-      "channel": "Meta",
-      "spend": 21.61,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-23",
-      "channel": "Meta",
-      "spend": 18.57,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-24",
-      "channel": "Meta",
-      "spend": 15.55,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-25",
-      "channel": "Meta",
-      "spend": 11.76,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-26",
-      "channel": "Meta",
-      "spend": 6.26,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-27",
-      "channel": "Meta",
-      "spend": 20.59,
-      "campaign": "120249093546340442"
-     },
-     {
-      "date": "2026-09-28",
-      "channel": "Meta",
-      "spend": 5.35,
-      "campaign": "120249093546340442"
-     },
      {
       "date": "2026-09-28",
       "channel": "Meta",
@@ -255,7 +126,7 @@
      "contactId": "8RNE4c4nHB8IzhxBCzA5",
      "treatment": "Invisalign",
      "booked": "2026-09-30",
-     "source": "Other",
+     "source": "Meta",
      "campaign": "120249815075820442"
     },
     {
@@ -438,7 +309,7 @@
      "value": 3500,
      "contactId": "8RNE4c4nHB8IzhxBCzA5",
      "wonDate": "2026-10-20",
-     "source": "Other"
+     "source": "Meta"
     },
     {
      "id": "s64FYhye4r6fiiS3Xw0H",
@@ -469,132 +340,12 @@
      "contactId": "iBmVvLRZW4CnYTl0v02z",
      "wonDate": "2026-10-20",
      "source": "Meta"
-    },
-    {
-     "id": "owmG40VFQrPhhlf3vWXr",
-     "created": "2026-09-27",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "tqrloDyld0xj4ddu38vJ",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "Z3HN2v9wSlAdPkOxh7ic",
-     "created": "2026-09-25",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "3o1M5hyaAFcRXgDCF5Mw",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "UXCxFPqmIiK0jQfg68VB",
-     "created": "2026-09-20",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "KSvPYe0UurAmGellCXnB",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "kxpgIKtL5N9jg46yGHDm",
-     "created": "2026-09-18",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "MB5hAG09lZeFMoX0YE0y",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "tKjN4bVQzPKwvaajMNsZ",
-     "created": "2026-09-17",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "2sXKFj3iCtL7ZGizzoQC",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "yOKLxTLKshPyWiwfUvXj",
-     "created": "2026-09-15",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "vs5roZiTsLWMS5MWbvrn",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "qzidnQ3fBVcP7HTE5qVD",
-     "created": "2026-09-14",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "9u4Yt6OxyFXgFOIbXYqY",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "1tODfy0L7TZRePbprC5O",
-     "created": "2026-09-13",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "Fn6uJ6PueajmPxEt6txh",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "wH5UMJhgGcFKu4N18W9v",
-     "created": "2026-09-13",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "IuboXxIJbAHSPAqIErqq",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "GH6BqbUcJ0rgA5KeWadU",
-     "created": "2026-09-11",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "W868O1ijlVgKKhrrHqWU",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "RSBwI0wXad1f4gZcqsfM",
-     "created": "2026-09-11",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "fUrDFqX4YlTjnt6PIYUk",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "rpnskzcJL19IwjAwVoYe",
-     "created": "2026-09-10",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "Q9bRRNJNXprUykCp4aPd",
-     "wonDate": "",
-     "source": "Meta"
     }
    ],
    "dentists": {
     "fCueZ3BB2XMQKOC03Wal": "Dr George Bryan"
    },
-   "periodStart": "2026-09-10"
+   "periodStart": "2026-09-28"
   }
  ],
  "updatedAt": "2026-10-20T14:30:00Z"
