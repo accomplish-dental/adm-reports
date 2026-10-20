@@ -10,7 +10,7 @@
   color-scheme:light;
   --bg:#f7f8f7; --surface:#ffffff; --ink:#111413; --muted:#55605c; --line:#e1e6e3;
   --brand:#0b2b26; --accent:#13866f; --accent-soft:#e6f2ee; --wait:#8a5a00; --wait-soft:#fdf3df;
-  --s1:#13866f; --s2:#4f63c9; --s3:#c2622b;
+  --s1:#13866f; --s2:#4f63c9; --s3:#c2622b; --down:#b3261e;
   --display:"Jost","Futura","Century Gothic",system-ui,sans-serif;
   --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
 }
@@ -30,7 +30,7 @@ h2{font:600 1.2rem/1.3 var(--display);margin:0;text-wrap:balance}
 h3{font:600 1.02rem/1.3 var(--display);margin:0}
 .sub{color:var(--muted);margin:-6px 0 0;font-size:.95rem;max-width:70ch}
 .eyebrow{font:500 .7rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.view[hidden]{display:none}
+[hidden]{display:none!important}
 .view{display:grid;gap:32px}
 /* summary strip */
 .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
@@ -114,6 +114,23 @@ td.empty{color:var(--muted);white-space:normal;text-align:left}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
 .two>section{min-width:0}
 footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:16px}
+/* team practice switcher */
+.switch{display:flex;justify-content:flex-end;margin-top:8px}
+.switch label{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--muted)}
+.switch select{font-size:.9rem;padding:6px 8px}
+/* targets and trends */
+.kpi .tg{font-size:.8rem;color:var(--muted)}
+.kpi .tg b{color:var(--ink);font-weight:600}
+.meter{height:5px;background:var(--line);border-radius:3px;overflow:hidden;margin-top:2px}
+.meter span{display:block;height:100%;background:var(--accent);border-radius:3px}
+.trend{font-size:.8rem;font-weight:600;white-space:nowrap}
+.trend.up{color:var(--accent)} .trend.down{color:var(--down)} .trend.flat{color:var(--muted);font-weight:400}
+.camp .tgt{font-size:.85rem;color:var(--muted)}
+.goal{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:10px}
+.goal .row{display:grid;grid-template-columns:minmax(120px,170px) 1fr auto;gap:12px;align-items:center;font-size:.92rem}
+.goal .row .fbar{height:14px}
+.goal .row .num{font-variant-numeric:tabular-nums;color:var(--muted);text-align:right}
+@media (max-width:560px){.goal .row{grid-template-columns:1fr auto}.goal .row .fbar{grid-column:1/-1;order:3}.switch{justify-content:flex-start}}
 @media (max-width:560px){.who{text-align:left}.step{grid-template-columns:1fr auto}.step .fbar{grid-column:1/-1;order:3}.two{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -121,7 +138,8 @@ footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padd
 <div class="wrap">
   <header>
     {{LOGO}}
-    <div class="who"><h1 id="scope">Practice report</h1><p id="updated">Loading latest figures…</p></div>
+    <div class="who"><h1 id="scope">Practice report</h1><p id="updated">Loading latest figures…</p>
+      <div class="switch" id="switchwrap" hidden><label>Viewing<select id="switch" aria-label="Switch practice view"></select></label></div></div>
   </header>
   <nav class="tabs" aria-label="Sections">
     <a href="#planner" id="tab-planner">Campaign planner</a>
@@ -157,7 +175,7 @@ footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padd
       <section><h3>From booking to treatment</h3><div class="funnel" id="cfunnel"></div></section>
       <section><h3>Where bookings came from</h3><div class="tbl"><table><thead><tr><th>Source</th><th>Consults booked</th><th>Ad spend</th><th>Cost per booked consult</th></tr></thead><tbody id="csrc"></tbody></table></div></section>
     </div>
-    <section><h3>Consult conversion by dentist</h3><div class="tbl"><table><thead><tr><th>Dentist</th><th>Attended</th><th>Went ahead</th><th>Conversion</th><th>Treatment value</th></tr></thead><tbody id="cdent"></tbody></table></div></section>
+    <section><h3>Consult conversion by dentist</h3><div class="tbl"><table><thead><tr><th>Dentist</th><th>Attended</th><th>Went ahead</th><th>Conversion</th><th>Treatment value</th><th>Vs last campaign</th></tr></thead><tbody id="cdent"></tbody></table></div></section>
   </div>
 
   <!-- PERFORMANCE -->
@@ -175,6 +193,7 @@ footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padd
       <div class="kpis" id="pkpis"></div>
       <p class="note" id="pwait" hidden></p>
     </section>
+    <section id="sec-goal" hidden><h3>12-month target</h3><div class="goal" id="goal"></div></section>
     <div class="chart">
       <span class="eyebrow">Running total</span>
       <div class="clegend" id="clegend"></div>
@@ -186,6 +205,7 @@ footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padd
       <section id="sec-prac"><h3>By practice</h3><div class="tbl"><table><thead><tr><th>Practice</th><th>Consults booked</th><th>Cost per booked consult</th><th>Conversion</th></tr></thead><tbody id="pprac"></tbody></table></div></section>
     </div>
     <section><h3>Consult conversion by dentist</h3><div class="tbl"><table><thead><tr><th>Dentist</th><th>Attended</th><th>Went ahead</th><th>Conversion</th><th>Treatment value</th></tr></thead><tbody id="pdent"></tbody></table></div></section>
+    <section><h3>Dentist conversion, campaign by campaign</h3><p class="sub">Each dentist's consult conversion in every campaign they saw patients for, oldest first, so you can see if it's rising or falling.</p><div class="tbl"><table><thead id="trendhead"></thead><tbody id="trendbody"></tbody></table></div></section>
   </div>
 
   <footer>Prepared by Accomplish Dental Marketing. Figures refresh automatically through the day.</footer>
@@ -270,22 +290,52 @@ function stats(o){
   const outcomesIn=attended+noshow>0;
   return {booked,attended,noshow,past,won,revenue,spend,bySrc,dent,outcomesIn,ready:outcomesIn||won>0};
 }
+// ---------- targets and trends ----------
+// trend vs the previous campaign. higherBetter decides the colour; show() formats the difference.
+function trend(cur,prev,higherBetter,show){
+  if(cur==null||prev==null||!isFinite(cur)||!isFinite(prev))return "";
+  const d=cur-prev; if(Math.abs(d)<1e-9)return `<span class="trend flat">No change vs last campaign</span>`;
+  const good=(d>0)===higherBetter;
+  return `<span class="trend ${good?"up":"down"}">${d>0?"▲":"▼"} ${show(Math.abs(d))} vs last campaign</span>`;
+}
+const conv=x=>x&&x.outcomesIn&&x.attended?x.won/x.attended*100:null;
+const cpc=x=>x&&x.booked&&x.spend?x.spend/x.booked:null;
+const pts=n=>Math.round(n)+" pts";
+// the practice's most recent earlier campaign that has results
+function prevCampaign(c){
+  return c.practice.plan.filter(o=>o!==c&&o.start&&c.start&&o.start<c.start&&o.start<=TODAY)
+    .sort((a,b)=>b.start.localeCompare(a.start)).find(o=>stats({practices:[o.practice],campaign:o.id}).booked>0)||null;
+}
+function targetLine(actual,target,ready){
+  if(!target)return "";
+  const p=Math.min(100,actual/target*100);
+  return `<span class="tg">Target <b>${target}</b>${ready?` · ${Math.round(actual/target*100)}%`:""}</span>${ready?`<div class="meter" role="img" aria-label="${actual} of ${target}"><span style="width:${p}%"></span></div>`:""}`;
+}
 function kpis(s,opts={}){
-  const t=[
-    ["Consults booked",s.booked,opts.bookedNote||"",""],
-    ["Cost per booked consult",s.booked?gbp(s.spend/s.booked):"–","Ad spend ÷ consults booked","key"],
-    ["Ad spend",gbp(s.spend),"",""],
-    ["Consults attended",s.outcomesIn?s.attended:null,s.outcomesIn?pct(s.attended,s.attended+s.noshow)+" turned up":"",""],
-    ["New patients",s.ready?s.won:null,s.ready&&s.won?gbp(s.spend/s.won)+" per patient":"",""],
-    ["Consult conversion",s.outcomesIn?pct(s.won,s.attended):null,"Attended consults who went ahead","key"],
-    ["Treatment value",s.ready?gbp(s.revenue):null,s.ready&&s.revenue&&s.spend?(s.revenue/s.spend).toFixed(1)+"× ad spend":"",""],
+  const t=opts.target||{}, pv=opts.prev;
+  const rows=[
+    ["Consults booked",s.booked,opts.bookedNote||"","",targetLine(s.booked,t.consults,true)+(pv?trend(s.booked,pv.booked,true,n=>n):"")],
+    ["Cost per booked consult",s.booked?gbp(s.spend/s.booked):"–","Ad spend ÷ consults booked","key",pv?trend(cpc(s),cpc(pv),false,gbp):""],
+    ["Ad spend",gbp(s.spend),"","",""],
+    ["Consults attended",s.outcomesIn?s.attended:null,s.outcomesIn?pct(s.attended,s.attended+s.noshow)+" turned up":"","",""],
+    ["New patients",s.ready?s.won:null,s.ready&&s.won?gbp(s.spend/s.won)+" per patient":"","",targetLine(s.won,t.ahead,s.ready)+(pv&&s.ready&&pv.ready?trend(s.won,pv.won,true,n=>n):"")],
+    ["Consult conversion",s.outcomesIn?pct(s.won,s.attended):null,"Attended consults who went ahead","key",pv?trend(conv(s),conv(pv),true,pts):""],
+    ["Treatment value",s.ready?gbp(s.revenue):null,s.ready&&s.revenue&&s.spend?(s.revenue/s.spend).toFixed(1)+"× ad spend":"","",""],
   ];
-  return t.map(([l,v,n,c])=>v===null?`<div class="kpi wait"><span class="eyebrow">${l}</span><span class="v">Awaiting update</span></div>`
-    :`<div class="kpi ${c}"><span class="eyebrow">${l}</span><span class="v">${v}</span><span class="n">${n}</span></div>`).join("");
+  return rows.map(([l,v,n,c,x])=>v===null?`<div class="kpi wait"><span class="eyebrow">${l}</span><span class="v">Awaiting update</span>${x}</div>`
+    :`<div class="kpi ${c}"><span class="eyebrow">${l}</span><span class="v">${v}</span><span class="n">${n}</span>${x}</div>`).join("");
 }
 const srcRows=s=>SOURCES.filter(k=>s.bySrc[k].booked||s.bySrc[k].spend).map(k=>{const r=s.bySrc[k];return `<tr><td><span class="dot" style="background:${SRC_COL[k]}"></span>${k==="Meta"?"Meta (Facebook & Instagram)":k==="Google"?"Google Ads":"Other"}</td><td>${r.booked}</td><td>${gbp(r.spend)}</td><td>${r.booked?gbp(r.spend/r.booked):"–"}</td></tr>`}).join("")||`<tr><td colspan="4" class="empty">No bookings in this period yet.</td></tr>`;
-const dentRows=s=>{const r=Object.entries(s.dent).sort((a,b)=>b[1].seen-a[1].seen);return r.length?r.map(([n,x])=>`<tr><td>${esc(n)}</td><td>${x.seen}</td><td>${x.won}</td><td>${pct(x.won,x.seen)}</td><td>${gbp(x.val)}</td></tr>`).join("")
-  :`<tr><td colspan="5" class="empty">This fills in once attended consults are recorded against each dentist.</td></tr>`};
+// prevDent(name) returns that dentist's {seen,won} from their previous campaign, for the "Vs last campaign" column
+const dentRows=(s,prevDent)=>{const cols=prevDent?6:5;const r=Object.entries(s.dent).sort((a,b)=>b[1].seen-a[1].seen);return r.length?r.map(([n,x])=>{
+    let tc="";if(prevDent){const p=prevDent(n);tc=`<td>${p&&p.seen&&x.seen?trend(x.won/x.seen*100,p.won/p.seen*100,true,pts).replace(" vs last campaign","")||"–":"First campaign"}</td>`}
+    return `<tr><td>${esc(n)}</td><td>${x.seen}</td><td>${x.won}</td><td>${pct(x.won,x.seen)}</td><td>${gbp(x.val)}</td>${tc}</tr>`}).join("")
+  :`<tr><td colspan="${cols}" class="empty">This fills in once attended consults are recorded against each dentist.</td></tr>`};
+// a dentist's results in the most recent earlier campaign they saw patients for
+function dentPrev(c){
+  const earlier=c.practice.plan.filter(o=>o!==c&&o.start&&c.start&&o.start<c.start&&o.start<=TODAY).sort((a,b)=>b.start.localeCompare(a.start));
+  return n=>{for(const o of earlier){const d=stats({practices:[o.practice],campaign:o.id}).dent[n];if(d&&d.seen)return d}return null};
+}
 function funnel(s){
   const max=Math.max(s.booked,1);
   const steps=[["Consults booked",s.booked,true],["Attended",s.attended,s.outcomesIn],["Went ahead",s.won,s.ready]];
@@ -330,10 +380,17 @@ function renderPlanner(){
   $("tl").style.gridTemplateColumns=`minmax(150px,190px) repeat(${months.length},minmax(74px,1fr))`;
   $("tl").innerHTML=html;
   const sorted=[...CAMPS].sort((a,b)=>{const r={live:0,planned:1,done:2};return r[status(a)]-r[status(b)]||((a.end||a.month||"9")).localeCompare(b.end||b.month||"9")});
-  $("list").innerHTML=sorted.map(c=>{const s=status(c);return `<button class="camp" type="button" data-c="${c.id}"><span class="chip ${s==="done"?"done":s==="live"?"live":""}">${statusLabel(c)}</span>${multi?`<span class="pr">${esc(c.practice.name)}</span>`:""}<h3>${esc(c.label)}</h3><span class="when">${c.ongoing?"Since "+fmt(c.start):esc(c.openDay)}</span></button>`}).join("")||`<p class="sub">No campaigns planned yet.</p>`;
+  $("list").innerHTML=sorted.map(c=>{const s=status(c);return `<button class="camp" type="button" data-c="${c.id}"><span class="chip ${s==="done"?"done":s==="live"?"live":""}">${statusLabel(c)}</span>${multi?`<span class="pr">${esc(c.practice.name)}</span>`:""}<h3>${esc(c.label)}</h3><span class="when">${c.ongoing?"Since "+fmt(c.start):esc(c.openDay)}</span>${listTarget(c,s)}</button>`}).join("")||`<p class="sub">No campaigns planned yet.</p>`;
   document.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{location.hash="c-"+b.dataset.c});
 }
 const short=n=>n.replace(/ (Dental|Practice|Health Centre).*$/,"");
+const tgtText=c=>{const t=c.target||{};return [t.consults?t.consults+" consults booked":"",t.ahead?t.ahead+" going ahead":""].filter(Boolean).join(" · ")};
+function listTarget(c,s){
+  const t=c.target||{}; if(!t.consults&&!t.ahead)return "";
+  if(s==="planned")return `<span class="tgt">Target: ${esc(tgtText(c))}</span>`;
+  const x=stats({practices:[c.practice],campaign:c.id});
+  return `<span class="tgt">${[t.consults?`${x.booked} of ${t.consults} consults booked`:"",t.ahead&&x.ready?`${x.won} of ${t.ahead} going ahead`:""].filter(Boolean).join(" · ")}</span>`;
+}
 
 // ---------- campaign view ----------
 function renderCampaign(id){
@@ -342,7 +399,7 @@ function renderCampaign(id){
   $("chead").innerHTML=`<span class="chip ${s0==="done"?"done":s0==="live"?"live":""}">${statusLabel(c)}</span>
     <h2>${esc(c.label)}${multi?" · "+esc(c.practice.name):""}</h2>
     <div class="meta">${c.openDay&&!c.ongoing?`<span>Event date <b>${esc(c.openDay)}</b></span>`:""}${c.start?`<span>Ads ${s0==="planned"?"launch":"from"} <b>${fmt(c.start)}</b></span>`:""}${c.ongoing?`<span>No fixed end date</span>`:""}
-    <span>Ad budget <b>${gbp(c.budget)}${c.ongoing?" a month":""}</b></span><span>Clinician <b>${esc(c.clinician||"To confirm")}</b></span><span>Channels <b>${(c.channels||["Meta"]).join(", ")}</b></span></div>`;
+    <span>Ad budget <b>${gbp(c.budget)}${c.ongoing?" a month":""}</b></span><span>Clinician <b>${esc(c.clinician||"To confirm")}</b></span><span>Channels <b>${(c.channels||["Meta"]).join(", ")}</b></span>${tgtText(c)?`<span>Targets <b>${tgtText(c)}</b></span>`:""}</div>`;
   $("cctl").hidden=!c.ongoing;
   const started=c.start&&c.start<=TODAY;
   const info=$("cinfo");
@@ -353,12 +410,14 @@ function renderCampaign(id){
     if(v==="30"){from=addDays(TODAY,-29);to=TODAY;note="Last 30 days"} else if(v==="month"){from=monthStart();to=TODAY;note="This month"} else if(v==="lastmonth"){from=monthStart(-1);to=monthEnd(-1);note="Last month"}}
   // open-day campaigns: everything tied to the campaign, whenever it happened
   const s=c.ongoing?stats({practices:[c.practice],campaign:c.id,from,to}):stats({practices:[c.practice],campaign:c.id});
-  $("ckpis").innerHTML=started?kpis(s):"";
+  // trends compare against the practice's previous campaign (whole campaign, not the period filter)
+  const pc=c.ongoing?null:prevCampaign(c), ps0=pc?stats({practices:[c.practice],campaign:pc.id}):null;
+  $("ckpis").innerHTML=started?kpis(s,{target:c.ongoing?{}:(c.target||{}),prev:ps0}):"";
   $("ckpis").hidden=!started;
   const w=$("cwait"); w.hidden=!(started&&s.past&&!s.outcomesIn); if(!w.hidden)w.textContent=waitText(s.past);
   $("cfunnel").innerHTML=started?funnel(s):`<p class="sub" style="margin:0">Shows once the campaign is live.</p>`;
   $("csrc").innerHTML=started?srcRows(s):`<tr><td colspan="4" class="empty">Shows once the campaign is live.</td></tr>`;
-  $("cdent").innerHTML=dentRows(s);
+  $("cdent").innerHTML=dentRows(s,dentPrev(c));
   window.scrollTo({top:0});
 }
 
@@ -382,7 +441,34 @@ function renderPerformance(){
   $("sec-prac").hidden=D.practices.length<2;
   $("pprac").innerHTML=D.practices.map(p=>{const x=stats({practices:[p],from,to,source:src});return `<tr><td>${esc(p.name)}</td><td>${x.booked}</td><td>${x.booked?gbp(x.spend/x.booked):"–"}</td><td>${x.outcomesIn?pct(x.won,x.attended):"–"}</td></tr>`}).join("");
   $("pdent").innerHTML=dentRows(s);
+  renderGoal(ps); renderTrend(ps);
   drawChart(ps,from,to,src);
+}
+// 12-month target from onboarding (single practice only)
+function renderGoal(ps){
+  const p=ps.length===1?ps[0]:null, t=p&&p.annualTarget;
+  const sec=$("sec-goal"); sec.hidden=!(t&&(t.revenue||t.newPatients)&&t.start); if(sec.hidden)return;
+  const end=addDays(new Date(new Date(t.start).setFullYear(new Date(t.start).getFullYear()+1)).toISOString().slice(0,10),-1);
+  const x=stats({practices:[p],from:t.start,to:end});
+  const gone=Math.min(1,Math.max(0,(new Date(TODAY)-new Date(t.start))/(new Date(end)-new Date(t.start))));
+  const row=(l,v,tg,f)=>tg?`<div class="row"><span>${l}</span><div class="fbar"><span style="width:${Math.min(100,v/tg*100)}%"></span></div><span class="num">${f(v)} of ${f(tg)} · ${Math.round(v/tg*100)}%</span></div>`:"";
+  $("goal").innerHTML=row("New patients",x.won,t.newPatients,n=>n)+row("Treatment value",x.revenue,t.revenue,gbp)+
+    `<p class="sub" style="margin:0">${fmt(t.start)} to ${fmt(end)} · ${Math.round(gone*100)}% of the year gone. From campaigns we run.</p>`;
+}
+// each dentist's conversion across the campaigns they saw patients for
+function renderTrend(ps){
+  const multi=ps.length>1;
+  const camps=CAMPS.filter(c=>ps.includes(c.practice)&&!c.ongoing&&c.start&&c.start<=TODAY)
+    .map(c=>({c,s:stats({practices:[c.practice],campaign:c.id})})).filter(x=>Object.keys(x.s.dent).length)
+    .sort((a,b)=>a.c.start.localeCompare(b.c.start)).slice(-6);
+  const names=[...new Set(camps.flatMap(x=>Object.keys(x.s.dent)))].sort();
+  $("trendhead").innerHTML=`<tr><th>Dentist</th>${camps.map(x=>`<th>${esc(x.c.label)}<br><small>${multi?esc(short(x.c.practice.name))+" · ":""}${fmtS(x.c.end||x.c.start)}</small></th>`).join("")}<th>Trend</th></tr>`;
+  $("trendbody").innerHTML=names.length?names.map(n=>{
+    const vals=camps.map(x=>{const d=x.s.dent[n];return d&&d.seen?d.won/d.seen*100:null});
+    const got=vals.filter(v=>v!=null);
+    const tr=got.length<2?`<span class="trend flat">${got.length?"Needs a second campaign":"–"}</span>`:trend(got[got.length-1],got[got.length-2],true,pts).replace(" vs last campaign"," on previous");
+    return `<tr><td>${esc(n)}</td>${camps.map((x,i)=>{const d=x.s.dent[n];return `<td>${d&&d.seen?`${Math.round(vals[i])}%<br><small>${d.won} of ${d.seen}</small>`:"–"}</td>`}).join("")}<td>${tr}</td></tr>`}).join("")
+    :`<tr><td colspan="2" class="empty">This fills in once attended consults are recorded against each dentist.</td></tr>`;
 }
 function drawChart(ps,from,to,src){
   const days=Math.max(1,(new Date(to)-new Date(from))/864e5), stepD=days>120?14:7;
@@ -426,9 +512,38 @@ function route(){
   $(view==="performance"?"tab-performance":"tab-planner").setAttribute("aria-current","page");
   if(view==="campaign")renderCampaign(h.slice(2)); else if(view==="performance")renderPerformance(); else renderPlanner();
 }
-function init(d){
-  D=d;prepare();
+// ---------- team switcher ----------
+// /scopes.json sits behind the team-only login. Team members on a client page fall back to a cached copy.
+const TEAM=["tom@accomplish.media","adam@accomplish.media"];
+async function loadScopes(){
+  try{const r=await fetch("/scopes.json",{cache:"no-store",redirect:"error"});
+    if(r.ok){const j=await r.json();try{localStorage.setItem("adm-scopes",JSON.stringify(j))}catch(e){}return j}}catch(e){}
+  try{const r=await fetch("/cdn-cgi/access/get-identity",{cache:"no-store",redirect:"error"});
+    if(r.ok){const id=await r.json();if(TEAM.includes((id.email||"").toLowerCase())){const c=localStorage.getItem("adm-scopes");if(c)return JSON.parse(c)}}}catch(e){}
+  return null;
+}
+function setupSwitch(sc){
+  if(!sc||!sc.views)return;
+  const here=location.pathname.replace(/index\.html$/,"")+location.search;
+  const opts=sc.views.map(v=>`<option value="${esc(v.url)}"${v.url===here?" selected":""}>${esc(v.label)}</option>`).join("");
+  $("switch").innerHTML=(sc.views.some(v=>v.url===here)?"":`<option value="" selected>${esc($("scope").textContent)}</option>`)+opts;
+  $("switch").onchange=e=>{if(e.target.value)location.href=e.target.value+(location.hash.startsWith("#performance")?"#performance":"")};
+  $("switchwrap").hidden=false;
+}
+// team views: /adm/?p=<practice> or /adm/?g=<group>
+function narrow(d,sc){
+  const q=new URLSearchParams(location.search), p=q.get("p"), g=q.get("g");
+  let keep=null,name="";
+  if(p){keep=[p];const x=d.practices.find(x=>x.slug===p);name=x?x.name:""}
+  else if(g&&sc&&sc.groups&&sc.groups[g]){keep=sc.groups[g].practices;name=sc.groups[g].name}
+  if(!keep)return d;
+  const ps=d.practices.filter(x=>keep.includes(x.slug)); if(!ps.length)return d;
+  return {...d,practices:ps,scope:{type:ps.length>1?"group":"practice",name}};
+}
+function init(d,sc){
+  D=narrow(d,sc);d=D;prepare();
   $("scope").textContent=d.scope.name;
+  setupSwitch(sc);
   $("updated").textContent="Updated "+new Date(d.updatedAt).toLocaleString("en-GB",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
   if(d.practices.length>1){$("lprac").hidden=false;$("prac").innerHTML=`<option value="">All practices</option>`+d.practices.map(p=>`<option value="${p.slug}">${esc(p.name)}</option>`).join("")}
   try{const r=localStorage.getItem("adm-range");if(r)$("range").value=r}catch(e){}
@@ -439,6 +554,6 @@ function init(d){
   let rz;addEventListener("resize",()=>{clearTimeout(rz);rz=setTimeout(()=>{if(!$("v-performance").hidden)renderPerformance()},150)});
   route();
 }
-fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(init)
+Promise.all([fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}),loadScopes()]).then(([d,sc])=>init(d,sc))
   .catch(()=>{$("updated").textContent="Figures couldn't load. Refresh the page to try again."});
 </script>
