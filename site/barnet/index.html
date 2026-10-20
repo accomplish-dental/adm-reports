@@ -1,0 +1,444 @@
+<title>Practice Reports</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/brand/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: planner first (practices × months timeline), tap a campaign for its results; a Performance tab holds running totals with date range, source and practice filters. Single light look by choice: black text on soft white, ADM green for brand marks. */
+:root{
+  color-scheme:light;
+  --bg:#f7f8f7; --surface:#ffffff; --ink:#111413; --muted:#55605c; --line:#e1e6e3;
+  --brand:#0b2b26; --accent:#13866f; --accent-soft:#e6f2ee; --wait:#8a5a00; --wait-soft:#fdf3df;
+  --s1:#13866f; --s2:#4f63c9; --s3:#c2622b;
+  --display:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--body)}
+.wrap{max-width:1080px;margin:0 auto;padding-block:24px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:28px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.logo{height:58px;width:auto;color:var(--brand)}
+.who{text-align:right;min-width:0}
+.who h1{font:600 1.45rem/1.2 var(--display);margin:0;text-wrap:balance}
+.who p{margin:2px 0 0;color:var(--muted);font-size:.88rem}
+nav.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line)}
+nav.tabs a{font:500 .98rem/1 var(--display);color:var(--muted);text-decoration:none;padding:12px 14px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-color:var(--accent)}
+nav.tabs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section{display:grid;gap:14px;min-width:0}
+h2{font:600 1.2rem/1.3 var(--display);margin:0;text-wrap:balance}
+h3{font:600 1.02rem/1.3 var(--display);margin:0}
+.sub{color:var(--muted);margin:-6px 0 0;font-size:.95rem;max-width:70ch}
+.eyebrow{font:500 .7rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.view[hidden]{display:none}
+.view{display:grid;gap:32px}
+/* summary strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:4px;min-width:0}
+.card .v{font:500 1.15rem/1.3 var(--display)}
+.card .n{font-size:.85rem;color:var(--muted)}
+/* timeline */
+.tl-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.tl{display:grid;min-width:1050px;font-size:.85rem}
+.tl .mh{font:500 .7rem/1 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:12px 6px 10px;border-bottom:1px solid var(--line);border-left:1px solid var(--line)}
+.tl .mh.now{color:var(--accent)}
+.tl .ph{padding:10px 12px;font-weight:600;border-top:1px solid var(--line);position:sticky;left:0;background:var(--surface);z-index:1;line-height:1.25}
+.tl .cell{border-left:1px solid var(--line);border-top:1px solid var(--line)}
+.tl .cell.now{background:var(--accent-soft)}
+.bar{margin:6px 3px;border-radius:6px;padding:5px 8px;font-weight:600;font-size:.8rem;line-height:1.2;cursor:pointer;border:1px solid var(--accent);background:var(--surface);color:var(--ink);text-align:left;font-family:inherit;white-space:normal;overflow-wrap:anywhere;z-index:2;position:relative}
+.bar small{display:block;font-weight:400;color:var(--muted);font-size:.74rem}
+.bar.live{background:var(--accent);color:#fff;border-color:var(--accent)} .bar.live small{color:#e6f2ee}
+.bar.done{border-color:var(--line);background:#f1f3f2}
+.bar.ongoing{border-right:0;border-radius:6px 0 0 6px;background:linear-gradient(90deg,var(--accent-soft) 80%,transparent)}
+.bar:hover{box-shadow:0 0 0 2px var(--accent-soft)}
+.bar:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.tl .none{grid-column:2/-1;color:var(--muted);padding:12px;border-top:1px solid var(--line);font-style:italic}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.84rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:16px;height:10px;border-radius:3px;display:inline-block;border:1px solid var(--accent)}
+/* campaign list */
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.camp{all:unset;box-sizing:border-box;cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:4px;align-content:start}
+.camp:hover{border-color:var(--accent)} .camp:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.camp .pr{font-size:.82rem;color:var(--muted)}
+.camp .when{font-weight:600}
+.chip{justify-self:start;font:500 .68rem/1 var(--display);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.chip.done{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.chip.live{background:var(--accent);color:#fff}
+/* kpis */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.kpi{background:var(--surface);padding:14px 16px;display:grid;gap:4px;align-content:start;min-width:0}
+.kpi .v{font:500 1.55rem/1.1 var(--display);font-variant-numeric:tabular-nums}
+.kpi .n{font-size:.8rem;color:var(--muted)}
+.kpi.key{background:var(--accent-soft)} .kpi.key .v{color:var(--accent)}
+.kpi.wait .v{color:var(--wait);font-size:1rem;padding-top:6px}
+.note{background:var(--wait-soft);border-left:3px solid var(--wait);padding:12px 14px;border-radius:6px;font-size:.92rem;max-width:74ch;margin:0}
+.info{background:var(--accent-soft);border-left:3px solid var(--accent);padding:12px 14px;border-radius:6px;font-size:.92rem;max-width:74ch;margin:0}
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.controls label{display:grid;gap:4px;font-size:.78rem;color:var(--muted)}
+select,input[type=date]{font:inherit;font-size:.95rem;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);min-width:0}
+select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.back{all:unset;cursor:pointer;color:var(--accent);font-weight:600;font-size:.92rem;justify-self:start}
+.back:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chead{display:grid;gap:6px}
+.chead .meta{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:.92rem}
+.chead .meta b{color:var(--ink);font-weight:600}
+/* funnel */
+.funnel{display:grid;gap:8px}
+.step{display:grid;grid-template-columns:minmax(120px,160px) 1fr auto;align-items:center;gap:12px}
+.fbar{height:22px;background:var(--accent-soft);border-radius:5px;overflow:hidden}
+.fbar span{display:block;height:100%;background:var(--accent);border-radius:5px;min-width:2px}
+.step .lab{font-weight:600;font-size:.92rem} .step .num{font-variant-numeric:tabular-nums;color:var(--muted);text-align:right;min-width:96px;font-size:.92rem}
+.step.pending .fbar{background:repeating-linear-gradient(135deg,var(--wait-soft) 0 8px,transparent 8px 16px);border:1px dashed var(--wait)}
+.step.pending .num{color:var(--wait)}
+/* chart */
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:10px;min-width:0}
+.clegend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem}
+.clegend span{display:inline-flex;align-items:center;gap:6px}
+.clegend i{width:14px;height:3px;border-radius:2px;display:inline-block}
+.plot{position:relative;min-width:0}
+.plot svg{width:100%;height:auto;display:block;overflow:visible}
+.plot text{font:12px var(--body);fill:var(--muted)}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;border-radius:6px;padding:8px 10px;font-size:.82rem;line-height:1.4;white-space:nowrap;transform:translate(-50%,-100%);top:0}
+details{font-size:.88rem;color:var(--muted)} details summary{cursor:pointer;width:max-content}
+/* tables */
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.94rem}
+th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font:500 .68rem/1 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td.empty{color:var(--muted);white-space:normal;text-align:left}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:baseline}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.two>section{min-width:0}
+footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:560px){.who{text-align:left}.step{grid-template-columns:1fr auto}.step .fbar{grid-column:1/-1;order:3}.two{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <svg class="logo" role="img" aria-label="Accomplish Dental Marketing" xmlns="http://www.w3.org/2000/svg" viewBox="229.4 0 981.1 705.9"><g fill="currentColor"><path d="M81.8,588.6H43.5l-6.1,13.4H16.6L62.3,503.8h.6l45.8,98.1H87.8Zm-7.5-16.4-11.6-25.6L51,572.2Z" transform="translate(252.9,0)"/><path d="M115,554.1c0-27,22.8-49.9,49.7-49.9,12.5.17,23.5,5.1,33.6,14.8l-11.1,15.2c-6.5-6.4-14.4-10.3-22.6-10.3-15.4,0-30.1,13.7-30.1,30.4,0,17,15.2,30.2,30,30.2,8.8,0,16.4-4.7,22.8-10.9l11.1,15.6c-8.4,8.4-18.7,14.7-33.2,14.7C137.4,603.8,115,581,115,554.1Z" transform="translate(252.9,0)"/><path d="M210.6,554.1c0-27,22.8-49.9,49.7-49.9,12.5.17,23.5,5.1,33.6,14.8l-11.1,15.2c-6.5-6.4-14.4-10.3-22.6-10.3-15.4,0-30.1,13.7-30.1,30.4,0,17,15.2,30.2,30,30.2,8.8,0,16.4-4.7,22.7-10.9l11.1,15.6c-8.4,8.4-18.7,14.7-33.2,14.7C233,603.8,210.6,581,210.6,554.1Z" transform="translate(252.9,0)"/><path d="M306.2,554.2a49.8,49.8,0,1,1,99.6,0c0,27.3-22.4,49.6-49.9,49.6A49.8,49.8,0,0,1,306.2,554.2Zm80.1-.12A30.4,30.4,0,1,0,355.9,584.3,30.5,30.5,0,0,0,386.3,554.1Z" transform="translate(252.9,0)"/><path d="M521.8,503.8v98.1H502.6V560.2L475,600.3h-.12L447.3,560.2v41.7H428.1V503.8h1.1L475,567.1l45.8-63.3Z" transform="translate(252.9,0)"/><path d="M548.3,506.2h33.6c18.5,0,33.7,14.6,33.7,32.4s-15.1,32.2-33.7,32.2H567.5v31.1H548.3Zm48,32.2c0-7.2-6.5-13.1-14.4-13.1H567.5v26.5l14.4.06C589.8,551.9,596.3,545.8,596.3,538.4Z" transform="translate(252.9,0)"/><path d="M693.9,582.8v19.1H636.1V506.2H655.4v76.6Z" transform="translate(252.9,0)"/><path d="M714.5,506.2h19.2v95.7H714.5Z" transform="translate(252.9,0)"/><path d="M755.1,585.4l15.4-10.8c4.2,6.8,10.3,9.9,18.6,9.9,9,0,15.1-3.7,15.1-8.8,0-7-11.5-12.5-21.5-17.5-10.8-5.3-22.6-11.2-22.6-26.5,0-16.6,14-27.5,31.6-27.5,13.1,0,23.9,5.4,28.2,17l-14.2,9.9c-2.9-5.7-8.4-8-13.7-8-7.2,0-12.5,4.2-12.5,9.1,0,5.7,7.2,7.7,18.2,12.8,15.8,7.5,25.8,15.6,25.8,30.3,0,17.5-14.3,28.6-34.8,28.6C773.1,603.8,761.5,597.3,755.1,585.4Z" transform="translate(252.9,0)"/><path d="M917.7,506.2v95.7H898.5V563.6H864.1v38.4H845V506.2h19.2v38.3h34.4V506.2Z" transform="translate(252.9,0)"/><path d="M312.2 662.1Q312.2 668.7 309.3 673.6Q306.5 678.5 301.2 681.2Q296 683.9 289.1 683.9H273.8V640.1H289.1Q296 640.1 301.2 642.8Q306.5 645.5 309.3 650.5Q312.2 655.5 312.2 662.1ZM303.2 662.1Q303.2 655.3 299.4 651.4Q295.7 647.5 288.8 647.5H282.5V676.5H288.8Q295.7 676.5 299.4 672.7Q303.2 668.9 303.2 662.1Z"/><path d="M346.7 647.2V658.2H361.4V665.2H346.7V676.8H363.3V683.9H337.9V640.1H363.3V647.2Z"/><path d="M427.9 683.9H419.1L399.2 653.9V683.9H390.4V640.1H399.2L419.1 670.2V640.1H427.9Z"/><path d="M485.5 640.1V647.2H473.8V683.9H465.1V647.2H453.4V640.1Z"/><path d="M537.9 675.6H520.5L517.6 683.9H508.4L524.1 640.1H534.4L550.1 683.9H540.8ZM535.5 668.6 529.2 650.2 522.9 668.6Z"/><path d="M583.9 677H598.4V683.9H575.1V640.1H583.9Z"/><path d="M704.9 640.1V683.9H696.2V655.4L684.4 683.9H677.8L666 655.4V683.9H657.2V640.1H667.2L681.1 672.7L695 640.1Z"/><path d="M759.6 675.6H742.2L739.3 683.9H730L745.8 640.1H756L771.8 683.9H762.5ZM757.2 668.6 750.9 650.2 744.5 668.6Z"/><path d="M819.4 683.9 809.7 666.9H805.6V683.9H796.8V640.1H813.3Q818.3 640.1 821.9 641.9Q825.5 643.7 827.3 646.8Q829.1 649.8 829.1 653.6Q829.1 657.9 826.6 661.4Q824.1 664.9 819.1 666.2L829.6 683.9ZM805.6 660.3H813Q816.5 660.3 818.3 658.6Q820 656.8 820 653.7Q820 650.7 818.3 649.1Q816.5 647.4 813 647.4H805.6Z"/><path d="M880.9 683.9 865 664.4V683.9H856.2V640.1H865V659.8L880.9 640.1H891.5L873.5 661.8L892 683.9Z"/><path d="M925.7 647.2V658.2H940.5V665.2H925.7V676.8H942.4V683.9H916.9V640.1H942.4V647.2Z"/><path d="M999.3 640.1V647.2H987.6V683.9H978.8V647.2H967.2V640.1Z"/><path d="M1033.6 640.1V683.9H1024.8V640.1Z"/><path d="M1098.9 683.9H1090.1L1070.2 653.9V683.9H1061.4V640.1H1070.2L1090.1 670.2V640.1H1098.9Z"/><path d="M1157.2 653.3Q1155.7 650.5 1153.1 649.1Q1150.4 647.7 1146.9 647.7Q1143 647.7 1140 649.4Q1137 651.2 1135.3 654.4Q1133.6 657.7 1133.6 662Q1133.6 666.4 1135.3 669.6Q1137.1 672.9 1140.1 674.7Q1143.2 676.4 1147.3 676.4Q1152.3 676.4 1155.5 673.7Q1158.7 671.1 1159.7 666.3H1144.6V659.6H1168.4V667.2Q1167.5 671.8 1164.6 675.7Q1161.7 679.6 1157.2 682Q1152.6 684.3 1147 684.3Q1140.6 684.3 1135.5 681.5Q1130.4 678.6 1127.5 673.5Q1124.6 668.4 1124.6 662Q1124.6 655.5 1127.5 650.4Q1130.4 645.3 1135.5 642.4Q1140.6 639.6 1146.9 639.6Q1154.3 639.6 1159.8 643.2Q1165.2 646.8 1167.3 653.3Z"/><polygon points="968.1 394.1 911.1 394.1 720 104.2 528.9 394.1 471.9 394.1 720 17.9 968.1 394.1"/><polygon points="865.5 394.1 808.6 394.1 776.6 343.2 720.5 453.4 664.2 343.2 631.4 394.1 574.5 394.1 669.5 249 720.4 348.8 771.4 248.9 865.5 394.1"/></g></svg>
+    <div class="who"><h1 id="scope">Practice report</h1><p id="updated">Loading latest figures…</p></div>
+  </header>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#planner" id="tab-planner">Campaign planner</a>
+    <a href="#performance" id="tab-performance">Performance</a>
+  </nav>
+
+  <!-- PLANNER -->
+  <div class="view" id="v-planner">
+    <div class="strip" id="strip"></div>
+    <section aria-labelledby="h-tl">
+      <h2 id="h-tl">Campaign planner</h2>
+      <p class="sub">Every campaign planned for the next year. Tap a campaign to see how it's performing.</p>
+      <div class="legend"><span><i style="background:var(--accent)"></i>Live now</span><span><i></i>Planned</span><span><i style="background:#f1f3f2;border-color:var(--line)"></i>Finished</span><span><i style="background:linear-gradient(90deg,var(--accent-soft),transparent)"></i>Ongoing, no end date</span></div>
+      <div class="tl-wrap"><div class="tl" id="tl"></div></div>
+    </section>
+    <section aria-labelledby="h-list">
+      <h2 id="h-list">All campaigns</h2>
+      <div class="list" id="list"></div>
+    </section>
+  </div>
+
+  <!-- CAMPAIGN -->
+  <div class="view" id="v-campaign" hidden>
+    <button class="back" type="button" id="back">← Back to the planner</button>
+    <div class="chead" id="chead"></div>
+    <div class="controls" id="cctl" hidden>
+      <label>Showing<select id="cperiod"><option value="launch">Since launch</option><option value="30">Last 30 days</option><option value="month">This month</option><option value="lastmonth">Last month</option></select></label>
+    </div>
+    <p class="info" id="cinfo" hidden></p>
+    <div class="kpis" id="ckpis"></div>
+    <p class="note" id="cwait" hidden></p>
+    <div class="two">
+      <section><h3>From booking to treatment</h3><div class="funnel" id="cfunnel"></div></section>
+      <section><h3>Where bookings came from</h3><div class="tbl"><table><thead><tr><th>Source</th><th>Consults booked</th><th>Ad spend</th><th>Cost per booked consult</th></tr></thead><tbody id="csrc"></tbody></table></div></section>
+    </div>
+    <section><h3>Consult conversion by dentist</h3><div class="tbl"><table><thead><tr><th>Dentist</th><th>Attended</th><th>Went ahead</th><th>Conversion</th><th>Treatment value</th></tr></thead><tbody id="cdent"></tbody></table></div></section>
+  </div>
+
+  <!-- PERFORMANCE -->
+  <div class="view" id="v-performance" hidden>
+    <section aria-labelledby="h-perf">
+      <h2 id="h-perf">Overall performance</h2>
+      <p class="sub">All campaigns together. Change the dates to compare periods.</p>
+      <div class="controls">
+        <label>Date range<select id="range"><option value="all">Since our first campaign</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option><option value="month">This month</option><option value="lastmonth">Last month</option><option value="year">This year</option><option value="custom">Custom dates…</option></select></label>
+        <label id="lfrom" hidden>From<input type="date" id="from"></label>
+        <label id="lto" hidden>To<input type="date" id="to"></label>
+        <label id="lprac" hidden>Practice<select id="prac"></select></label>
+        <label>Source<select id="srcf"><option value="">All sources</option><option>Meta</option><option>Google</option><option>Other</option></select></label>
+      </div>
+      <div class="kpis" id="pkpis"></div>
+      <p class="note" id="pwait" hidden></p>
+    </section>
+    <div class="chart">
+      <span class="eyebrow">Running total</span>
+      <div class="clegend" id="clegend"></div>
+      <div class="plot" id="plot"></div>
+      <details><summary>Show as a table</summary><div class="tbl" style="margin-top:8px"><table><thead><tr><th>Week ending</th><th>Consults booked</th><th>New patients</th><th>Ad spend</th></tr></thead><tbody id="growthtbl"></tbody></table></div></details>
+    </div>
+    <div class="two">
+      <section><h3>By source</h3><div class="tbl"><table><thead><tr><th>Source</th><th>Consults booked</th><th>Ad spend</th><th>Cost per booked consult</th></tr></thead><tbody id="psrc"></tbody></table></div></section>
+      <section id="sec-prac"><h3>By practice</h3><div class="tbl"><table><thead><tr><th>Practice</th><th>Consults booked</th><th>Cost per booked consult</th><th>Conversion</th></tr></thead><tbody id="pprac"></tbody></table></div></section>
+    </div>
+    <section><h3>Consult conversion by dentist</h3><div class="tbl"><table><thead><tr><th>Dentist</th><th>Attended</th><th>Went ahead</th><th>Conversion</th><th>Treatment value</th></tr></thead><tbody id="pdent"></tbody></table></div></section>
+  </div>
+
+  <footer>Prepared by Accomplish Dental Marketing. Figures refresh automatically through the day.</footer>
+</div>
+
+<script>
+// ---------- helpers ----------
+const $=id=>document.getElementById(id);
+const gbp=n=>{n=Number(n||0);return "£"+n.toLocaleString("en-GB",{minimumFractionDigits:Math.round(n)!==n&&n<1000?2:0,maximumFractionDigits:Math.round(n)!==n&&n<1000?2:0})};
+const pct=(a,b)=>b?Math.round(a/b*100)+"%":"–";
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const iso=d=>{const z=new Date(d.getTime()-d.getTimezoneOffset()*6e4);return z.toISOString().slice(0,10)};
+const TODAY=iso(new Date());
+const addDays=(s,n)=>{const d=new Date(s+"T12:00:00");d.setDate(d.getDate()+n);return iso(d)};
+const fmt=s=>s?new Date(s.slice(0,10)+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}):"";
+const fmtS=s=>new Date(s+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short"});
+const key=t=>String(t||"").toLowerCase().replace(/^dental\s+/,"").trim();
+const SOURCES=["Meta","Google","Other"], SRC_COL={Meta:"var(--s2)",Google:"var(--s3)",Other:"var(--muted)"};
+const srcOf=x=>SOURCES.includes(x)?x:"Other";
+const monthStart=(off=0)=>{const d=new Date();d.setDate(1);d.setMonth(d.getMonth()+off);return iso(d)};
+const monthEnd=(off=0)=>addDays(monthStart(off+1),-1);
+let D, CAMPS=[]; // all campaigns with practice ref
+
+// ---------- campaign model ----------
+function prepare(){
+  CAMPS=[];
+  D.practices.forEach(p=>{
+    p.plan.forEach(c=>{c.practice=p;c.ongoing=c.type==="ongoing"||(!!c.start&&!c.end&&c.status!=="Planned");CAMPS.push(c)});
+    const win=c=>c.start?[c.start,c.end||TODAY]:null;
+    // assign each appointment to the most specific matching campaign
+    p.appointments.forEach(a=>{
+      if(a.campaign) return;
+      const b=(a.booked||a.start).slice(0,10);
+      let best=null,len=Infinity;
+      p.plan.forEach(c=>{const w=win(c);if(!w||key(c.treatment)!==key(a.treatment))return;if(b>=w[0]&&b<=w[1]){const l=(new Date(w[1])-new Date(w[0]));if(l<len){len=l;best=c}}});
+      a.campaign=best?best.id:"";
+    });
+    const byContact={};p.appointments.forEach(a=>{if(a.campaign)byContact[a.contactId]=a.campaign});
+    p.leads.forEach(l=>{if(!l.campaign)l.campaign=byContact[l.contactId]||""});
+  });
+}
+function status(c){
+  if(c.status==="Finished")return "done";
+  if(c.status==="Live"||(c.start&&c.start<=TODAY&&(!c.end||c.end>=TODAY)&&c.status!=="Paused"))return "live";
+  return "planned";
+}
+const statusLabel=c=>({done:"Finished",live:c.ongoing?"Live · ongoing":"Live now",planned:c.status==="Being built"?"Being built":"Planned"})[status(c)];
+
+// ---------- maths ----------
+// opts: {from,to,practices,campaign,source}
+function stats(o){
+  const ps=o.practices||D.practices, from=o.from||"0000", to=o.to||"9999", src=o.source||"";
+  let booked=0,attended=0,noshow=0,past=0,won=0,revenue=0,spend=0;
+  const bySrc={};SOURCES.forEach(s=>bySrc[s]={booked:0,spend:0});
+  const dent={};
+  const now=new Date().toISOString().slice(0,16);
+  ps.forEach(p=>{
+    const inCamp=x=>!o.campaign||x.campaign===o.campaign;
+    p.appointments.forEach(a=>{
+      if(!inCamp(a))return; if(src&&srcOf(a.source)!==src)return;
+      const b=(a.booked||a.start).slice(0,10), s=a.start.slice(0,10);
+      const live=!["cancelled","invalid"].includes(a.status);
+      if(live&&b>=from&&b<=to){booked++;bySrc[srcOf(a.source)].booked++}
+      if(live&&s>=from&&s<=to){
+        if(a.start<now)past++;
+        if(a.status==="showed"){attended++;const n=p.dentists[a.dentistId]||"Not assigned to a dentist";(dent[n]??={seen:0,won:0,val:0}).seen++;a._d=n}
+        if(a.status==="noshow")noshow++;
+      }
+    });
+    const showedBy={};p.appointments.forEach(a=>{if(a.status==="showed")showedBy[a.contactId]=p.dentists[a.dentistId]||"Not assigned to a dentist"});
+    const srcBy={};p.appointments.forEach(a=>srcBy[a.contactId]=srcOf(a.source));
+    p.leads.forEach(l=>{
+      if(!inCamp(l)||l.status!=="won")return; if(src&&srcBy[l.contactId]!==src)return;
+      const w=(l.wonDate||"").slice(0,10); if(!w||w<from||w>to)return;
+      won++;revenue+=+l.value||0;const n=showedBy[l.contactId];if(n){(dent[n]??={seen:0,won:0,val:0}).won++;dent[n].val+=+l.value||0}
+    });
+    p.adSpend.byDay.forEach(r=>{
+      if(o.campaign&&r.campaign!==o.campaign)return; const ch=srcOf(r.channel); if(src&&ch!==src)return;
+      if(r.date>=from&&r.date<=to){spend+=+r.spend;bySrc[ch].spend+=+r.spend}
+    });
+  });
+  const outcomesIn=attended+noshow>0;
+  return {booked,attended,noshow,past,won,revenue,spend,bySrc,dent,outcomesIn,ready:outcomesIn||won>0};
+}
+function kpis(s,opts={}){
+  const t=[
+    ["Consults booked",s.booked,opts.bookedNote||"",""],
+    ["Cost per booked consult",s.booked?gbp(s.spend/s.booked):"–","Ad spend ÷ consults booked","key"],
+    ["Ad spend",gbp(s.spend),"",""],
+    ["Consults attended",s.outcomesIn?s.attended:null,s.outcomesIn?pct(s.attended,s.attended+s.noshow)+" turned up":"",""],
+    ["New patients",s.ready?s.won:null,s.ready&&s.won?gbp(s.spend/s.won)+" per patient":"",""],
+    ["Consult conversion",s.outcomesIn?pct(s.won,s.attended):null,"Attended consults who went ahead","key"],
+    ["Treatment value",s.ready?gbp(s.revenue):null,s.ready&&s.revenue&&s.spend?(s.revenue/s.spend).toFixed(1)+"× ad spend":"",""],
+  ];
+  return t.map(([l,v,n,c])=>v===null?`<div class="kpi wait"><span class="eyebrow">${l}</span><span class="v">Awaiting update</span></div>`
+    :`<div class="kpi ${c}"><span class="eyebrow">${l}</span><span class="v">${v}</span><span class="n">${n}</span></div>`).join("");
+}
+const srcRows=s=>SOURCES.filter(k=>s.bySrc[k].booked||s.bySrc[k].spend).map(k=>{const r=s.bySrc[k];return `<tr><td><span class="dot" style="background:${SRC_COL[k]}"></span>${k==="Meta"?"Meta (Facebook & Instagram)":k==="Google"?"Google Ads":"Other"}</td><td>${r.booked}</td><td>${gbp(r.spend)}</td><td>${r.booked?gbp(r.spend/r.booked):"–"}</td></tr>`}).join("")||`<tr><td colspan="4" class="empty">No bookings in this period yet.</td></tr>`;
+const dentRows=s=>{const r=Object.entries(s.dent).sort((a,b)=>b[1].seen-a[1].seen);return r.length?r.map(([n,x])=>`<tr><td>${esc(n)}</td><td>${x.seen}</td><td>${x.won}</td><td>${pct(x.won,x.seen)}</td><td>${gbp(x.val)}</td></tr>`).join("")
+  :`<tr><td colspan="5" class="empty">This fills in once attended consults are recorded against each dentist.</td></tr>`};
+function funnel(s){
+  const max=Math.max(s.booked,1);
+  const steps=[["Consults booked",s.booked,true],["Attended",s.attended,s.outcomesIn],["Went ahead",s.won,s.ready]];
+  return steps.map(([l,v,ok],j)=>{const prev=j?steps[j-1][1]:null;
+    return ok?`<div class="step"><span class="lab">${l}</span><div class="fbar"><span style="width:${v/max*100}%"></span></div><span class="num">${v}${j?" · "+pct(v,prev):""}</span></div>`
+    :`<div class="step pending"><span class="lab">${l}</span><div class="fbar"></div><span class="num">Awaiting update</span></div>`}).join("");
+}
+const waitText=n=>`We're waiting for attendance and treatment outcomes from ${n} consult${n===1?"":"s"}. Once they're confirmed, these figures fill in automatically.`;
+
+// ---------- planner ----------
+function renderPlanner(){
+  const months=[];for(let i=-2;i<10;i++)months.push(monthStart(i).slice(0,7));
+  const nowM=TODAY.slice(0,7);
+  const live=CAMPS.filter(c=>status(c)==="live");
+  const next=CAMPS.filter(c=>c.end&&c.end>=TODAY&&!c.ongoing).sort((a,b)=>a.end.localeCompare(b.end))[0];
+  const ahead=CAMPS.filter(c=>status(c)!=="done");
+  const multi=D.practices.length>1;
+  $("strip").innerHTML=
+    `<div class="card"><span class="eyebrow">Live now</span><span class="v">${live.length?live.map(c=>esc(c.label)+(multi?" · "+esc(short(c.practice.name)):"")).join("<br>"):"No campaigns live"}</span></div>`+
+    `<div class="card"><span class="eyebrow">Next event</span><span class="v">${next?esc(next.label)+" · "+fmtS(next.end):"To be confirmed"}</span><span class="n">${next?(multi?esc(next.practice.name)+" · ":"")+(next.start&&next.start>TODAY?"Ads launch "+fmtS(next.start):"Ads running"):""}</span></div>`+
+    `<div class="card"><span class="eyebrow">Coming up</span><span class="v">${ahead.length} campaign${ahead.length===1?"":"s"}</span><span class="n">${multi?"Across "+D.practices.length+" practices":"Planned or live"}</span></div>`;
+  const col=m=>months.indexOf(m);
+  let html=`<div class="mh" style="border-left:0;grid-column:1"></div>`+months.map(m=>`<div class="mh${m===nowM?" now":""}">${new Date(m+"-15").toLocaleDateString("en-GB",{month:"short"})}${m.endsWith("-01")||m===months[0]?" "+m.slice(2,4):""}</div>`).join("");
+  let row=2;
+  D.practices.forEach(p=>{
+    const items=p.plan.map(c=>{
+      const em=(c.end||c.month||"").slice(0,7), sm=(c.start||em).slice(0,7);
+      let a=col(sm<months[0]?months[0]:sm), b=c.ongoing?months.length-1:col(em>months[11]?months[11]:em);
+      if((em&&em<months[0]))return null; if(sm>months[11])return null;
+      if(a<0)a=0; if(b<0)b=a;
+      return {c,a,b};
+    }).filter(Boolean);
+    const lanes=[];items.forEach(it=>{let l=lanes.findIndex(e=>e<it.a);if(l<0){l=lanes.length;lanes.push(-1)}lanes[l]=it.b;it.l=l});
+    const n=Math.max(lanes.length,1);
+    html+=`<div class="ph" style="grid-row:${row}/span ${n};grid-column:1">${esc(p.name)}</div>`;
+    for(let l=0;l<n;l++)months.forEach((m,i)=>html+=`<div class="cell${m===nowM?" now":""}" style="grid-row:${row+l};grid-column:${i+2}"></div>`);
+    if(!items.length)html+=`<div style="grid-row:${row};grid-column:2/-1;align-self:center;padding:0 12px;color:var(--muted);font-style:italic;z-index:2">No campaigns planned yet</div>`;
+    items.forEach(it=>{const s=status(it.c);
+      html+=`<button class="bar ${s==="done"?"done":s==="live"?"live":""}${it.c.ongoing?" ongoing":""}" type="button" data-c="${it.c.id}" style="grid-row:${row+it.l};grid-column:${it.a+2}/${it.b+3}" title="${esc(it.c.label)} · ${esc(it.c.openDay||"")}">${esc(it.c.label)}<small>${it.c.ongoing?"Ongoing":esc((it.c.openDay||"").replace(" · date TBC"," · TBC"))}</small></button>`});
+    row+=n;
+  });
+  $("tl").style.gridTemplateColumns=`minmax(150px,190px) repeat(${months.length},minmax(74px,1fr))`;
+  $("tl").innerHTML=html;
+  const sorted=[...CAMPS].sort((a,b)=>{const r={live:0,planned:1,done:2};return r[status(a)]-r[status(b)]||((a.end||a.month||"9")).localeCompare(b.end||b.month||"9")});
+  $("list").innerHTML=sorted.map(c=>{const s=status(c);return `<button class="camp" type="button" data-c="${c.id}"><span class="chip ${s==="done"?"done":s==="live"?"live":""}">${statusLabel(c)}</span>${multi?`<span class="pr">${esc(c.practice.name)}</span>`:""}<h3>${esc(c.label)}</h3><span class="when">${c.ongoing?"Since "+fmt(c.start):esc(c.openDay)}</span></button>`}).join("")||`<p class="sub">No campaigns planned yet.</p>`;
+  document.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{location.hash="c-"+b.dataset.c});
+}
+const short=n=>n.replace(/ (Dental|Practice|Health Centre).*$/,"");
+
+// ---------- campaign view ----------
+function renderCampaign(id){
+  const c=CAMPS.find(x=>x.id===id); if(!c){location.hash="planner";return}
+  const s0=status(c), multi=D.practices.length>1;
+  $("chead").innerHTML=`<span class="chip ${s0==="done"?"done":s0==="live"?"live":""}">${statusLabel(c)}</span>
+    <h2>${esc(c.label)}${multi?" · "+esc(c.practice.name):""}</h2>
+    <div class="meta">${c.openDay&&!c.ongoing?`<span>Event date <b>${esc(c.openDay)}</b></span>`:""}${c.start?`<span>Ads ${s0==="planned"?"launch":"from"} <b>${fmt(c.start)}</b></span>`:""}${c.ongoing?`<span>No fixed end date</span>`:""}
+    <span>Ad budget <b>${gbp(c.budget)}${c.ongoing?" a month":""}</b></span><span>Clinician <b>${esc(c.clinician||"To confirm")}</b></span><span>Channels <b>${(c.channels||["Meta"]).join(", ")}</b></span></div>`;
+  $("cctl").hidden=!c.ongoing;
+  const started=c.start&&c.start<=TODAY;
+  const info=$("cinfo");
+  if(!started){info.hidden=false;info.textContent=c.start?`Ads go live on ${fmt(c.start)}. Results will show here from then, updated through the day.`:"Dates for this campaign are still to be confirmed. Results will show here once the ads go live.";}
+  else info.hidden=true;
+  let from=c.start||"0000",to=c.end?addDays(c.end,30):TODAY, note="";
+  if(c.ongoing){const v=$("cperiod").value;
+    if(v==="30"){from=addDays(TODAY,-29);to=TODAY;note="Last 30 days"} else if(v==="month"){from=monthStart();to=TODAY;note="This month"} else if(v==="lastmonth"){from=monthStart(-1);to=monthEnd(-1);note="Last month"}}
+  // open-day campaigns: everything tied to the campaign, whenever it happened
+  const s=c.ongoing?stats({practices:[c.practice],campaign:c.id,from,to}):stats({practices:[c.practice],campaign:c.id});
+  $("ckpis").innerHTML=started?kpis(s):"";
+  $("ckpis").hidden=!started;
+  const w=$("cwait"); w.hidden=!(started&&s.past&&!s.outcomesIn); if(!w.hidden)w.textContent=waitText(s.past);
+  $("cfunnel").innerHTML=started?funnel(s):`<p class="sub" style="margin:0">Shows once the campaign is live.</p>`;
+  $("csrc").innerHTML=started?srcRows(s):`<tr><td colspan="4" class="empty">Shows once the campaign is live.</td></tr>`;
+  $("cdent").innerHTML=dentRows(s);
+  window.scrollTo({top:0});
+}
+
+// ---------- performance view ----------
+function rangeDates(){
+  const v=$("range").value;$("lfrom").hidden=$("lto").hidden=v!=="custom";
+  const first=D.practices.map(p=>p.periodStart).filter(Boolean).sort()[0]||"2026-01-01";
+  if(v==="30")return [addDays(TODAY,-29),TODAY]; if(v==="90")return [addDays(TODAY,-89),TODAY];
+  if(v==="month")return [monthStart(),TODAY]; if(v==="lastmonth")return [monthStart(-1),monthEnd(-1)];
+  if(v==="year")return [TODAY.slice(0,4)+"-01-01",TODAY];
+  if(v==="custom"){if(!$("from").value)$("from").value=first;if(!$("to").value)$("to").value=TODAY;return [$("from").value,$("to").value]}
+  return [first,TODAY];
+}
+function renderPerformance(){
+  const [from,to]=rangeDates(); const pv=$("prac").value; const src=$("srcf").value;
+  const ps=pv?D.practices.filter(p=>p.slug===pv):D.practices;
+  const s=stats({practices:ps,from,to,source:src});
+  $("pkpis").innerHTML=kpis(s,{bookedNote:`${fmtS(from)} – ${fmtS(to)}`});
+  const w=$("pwait");w.hidden=!(s.past&&!s.outcomesIn);if(!w.hidden)w.textContent=waitText(s.past);
+  $("psrc").innerHTML=srcRows(stats({practices:ps,from,to}));
+  $("sec-prac").hidden=D.practices.length<2;
+  $("pprac").innerHTML=D.practices.map(p=>{const x=stats({practices:[p],from,to,source:src});return `<tr><td>${esc(p.name)}</td><td>${x.booked}</td><td>${x.booked?gbp(x.spend/x.booked):"–"}</td><td>${x.outcomesIn?pct(x.won,x.attended):"–"}</td></tr>`}).join("");
+  $("pdent").innerHTML=dentRows(s);
+  drawChart(ps,from,to,src);
+}
+function drawChart(ps,from,to,src){
+  const days=Math.max(1,(new Date(to)-new Date(from))/864e5), stepD=days>120?14:7;
+  const pts=[];for(let d=addDays(from,stepD-1);;d=addDays(d,stepD)){pts.push(d>to?to:d);if(d>=to)break}
+  const rows=pts.map(w=>{const x=stats({practices:ps,from,to:w,source:src});return {w,booked:x.booked,won:x.won,spend:x.spend}});
+  const series=[["booked","Consults booked","--s1"],["won","New patients","--s3"]];
+  const cs=getComputedStyle(document.documentElement);
+  $("clegend").innerHTML=series.map(([,n,c])=>`<span><i style="background:var(${c})"></i>${n}</span>`).join("");
+  $("growthtbl").innerHTML=rows.map(r=>`<tr><td>${fmtS(r.w)}</td><td>${r.booked}</td><td>${r.won}</td><td>${gbp(Math.round(r.spend))}</td></tr>`).join("");
+  const plot=$("plot"), W=Math.max(plot.clientWidth,300),H=230, r={l:34,r:W<480?16:130,t:12,b:28};
+  const ymax=Math.max(4,...rows.map(x=>Math.max(x.booked,x.won)));
+  const step=ymax<=10?2:ymax<=25?5:ymax<=60?10:ymax<=150?25:50, top=Math.ceil(ymax/step)*step;
+  const X=i=>r.l+(rows.length<2?(W-r.l-r.r)/2:i*(W-r.l-r.r)/(rows.length-1)), Y=v=>r.t+(H-r.t-r.b)*(1-v/top);
+  let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Running totals of consults booked and new patients">`;
+  for(let v=0;v<=top;v+=step)svg+=`<line x1="${r.l}" x2="${W-r.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="${cs.getPropertyValue("--line")}"/><text x="${r.l-8}" y="${Y(v)+4}" text-anchor="end">${v}</text>`;
+  const every=Math.ceil(rows.length/(W<480?3:6));
+  rows.forEach((x,i)=>{if(i%every===0||i===rows.length-1)svg+=`<text x="${X(i)}" y="${H-8}" text-anchor="middle">${fmtS(x.w)}</text>`});
+  const ends=[];
+  series.forEach(([k,n,c])=>{const col=cs.getPropertyValue(c).trim();
+    svg+=`<polyline fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="${rows.map((x,i)=>X(i)+","+Y(x[k])).join(" ")}"/>`;
+    const L=rows[rows.length-1];svg+=`<circle cx="${X(rows.length-1)}" cy="${Y(L[k])}" r="4" fill="${col}" stroke="#fff" stroke-width="2"/>`;ends.push({y:Y(L[k]),t:`${n} ${L[k]}`})});
+  if(W>=480){ends.sort((a,b)=>a.y-b.y);for(let i=1;i<ends.length;i++)if(ends[i].y-ends[i-1].y<15)ends[i].y=ends[i-1].y+15;ends.forEach(e=>svg+=`<text x="${W-r.r+10}" y="${e.y+4}" style="fill:${cs.getPropertyValue("--ink")};font-weight:600">${e.t}</text>`)}
+  svg+=`<line id="xh" x1="0" x2="0" y1="${r.t}" y2="${H-r.b}" stroke="${cs.getPropertyValue("--muted")}" stroke-dasharray="3 3" visibility="hidden"/><rect x="${r.l}" y="${r.t}" width="${W-r.l-r.r}" height="${H-r.t-r.b}" fill="transparent" id="hit"/></svg><div class="tip" id="tip" hidden></div>`;
+  plot.innerHTML=svg;
+  const hit=plot.querySelector("#hit"),xh=plot.querySelector("#xh"),tip=plot.querySelector("#tip");
+  const move=e=>{const b=plot.querySelector("svg").getBoundingClientRect(),px=(e.clientX-b.left)*W/b.width;
+    let i=Math.round((px-r.l)/((W-r.l-r.r)/Math.max(rows.length-1,1)));i=Math.max(0,Math.min(rows.length-1,i));const x=rows[i];
+    xh.setAttribute("x1",X(i));xh.setAttribute("x2",X(i));xh.setAttribute("visibility","visible");
+    tip.hidden=false;tip.style.left=Math.min(Math.max(X(i)*b.width/W,90),b.width-90)+"px";
+    tip.innerHTML=`<b>To ${fmtS(x.w)}</b><br>Consults booked ${x.booked} · New patients ${x.won}<br>Ad spend ${gbp(Math.round(x.spend))}${x.booked?" · "+gbp(x.spend/x.booked)+" per booking":""}`};
+  hit.addEventListener("pointermove",move);hit.addEventListener("pointerdown",move);
+  hit.addEventListener("pointerleave",()=>{tip.hidden=true;xh.setAttribute("visibility","hidden")});
+}
+
+// ---------- routing ----------
+function route(){
+  const h=location.hash.slice(1)||"planner";
+  const view=h.startsWith("c-")?"campaign":h==="performance"?"performance":"planner";
+  ["planner","campaign","performance"].forEach(v=>$("v-"+v).hidden=v!==view);
+  $("tab-planner").removeAttribute("aria-current");$("tab-performance").removeAttribute("aria-current");
+  $(view==="performance"?"tab-performance":"tab-planner").setAttribute("aria-current","page");
+  if(view==="campaign")renderCampaign(h.slice(2)); else if(view==="performance")renderPerformance(); else renderPlanner();
+}
+function init(d){
+  D=d;prepare();
+  $("scope").textContent=d.scope.name;
+  $("updated").textContent="Updated "+new Date(d.updatedAt).toLocaleString("en-GB",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+  if(d.practices.length>1){$("lprac").hidden=false;$("prac").innerHTML=`<option value="">All practices</option>`+d.practices.map(p=>`<option value="${p.slug}">${esc(p.name)}</option>`).join("")}
+  try{const r=localStorage.getItem("adm-range");if(r)$("range").value=r}catch(e){}
+  ["range","from","to","prac","srcf"].forEach(id=>$(id).addEventListener("change",()=>{if(id==="range")try{localStorage.setItem("adm-range",$("range").value)}catch(e){}renderPerformance()}));
+  $("cperiod").addEventListener("change",()=>renderCampaign(location.hash.slice(3)));
+  $("back").onclick=()=>{location.hash="planner"};
+  addEventListener("hashchange",route);
+  let rz;addEventListener("resize",()=>{clearTimeout(rz);rz=setTimeout(()=>{if(!$("v-performance").hidden)renderPerformance()},150)});
+  route();
+}
+fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(init)
+  .catch(()=>{$("updated").textContent="Figures couldn't load. Refresh the page to try again."});
+</script>
