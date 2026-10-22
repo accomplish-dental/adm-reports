@@ -1436,22 +1436,6 @@
      ]
     },
     {
-     "id": "120251110515780551",
-     "treatment": "Invisalign",
-     "label": "Invisalign summer offer",
-     "openDay": "18 Aug – 5 Oct 2026",
-     "start": "2026-08-18",
-     "end": "2026-10-05",
-     "clinician": "Dr Amit Devlukia",
-     "budget": 780,
-     "status": "Finished",
-     "type": "campaign",
-     "channels": [
-      "Meta"
-     ],
-     "note": "Consultations from this campaign were booked directly by the practice, so only patients confirmed on the practice's Invisalign tracker are shown here."
-    },
-    {
      "id": "120251670857500551",
      "treatment": "Implants",
      "label": "Dental implants",
@@ -1566,172 +1550,10 @@
       "campaign": "120250594601420551"
      },
      {
-      "date": "2026-08-18",
-      "channel": "Meta",
-      "spend": 10.96,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-19",
-      "channel": "Meta",
-      "spend": 17.21,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-20",
-      "channel": "Meta",
-      "spend": 15.09,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-21",
-      "channel": "Meta",
-      "spend": 15.48,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-22",
-      "channel": "Meta",
-      "spend": 20.05,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-23",
-      "channel": "Meta",
-      "spend": 19.9,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-24",
-      "channel": "Meta",
-      "spend": 16.88,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-25",
-      "channel": "Meta",
-      "spend": 15.37,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-26",
-      "channel": "Meta",
-      "spend": 17.75,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-27",
-      "channel": "Meta",
-      "spend": 15.34,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-28",
-      "channel": "Meta",
-      "spend": 20.1,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-29",
-      "channel": "Meta",
-      "spend": 20.63,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-30",
-      "channel": "Meta",
-      "spend": 19.53,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-08-31",
-      "channel": "Meta",
-      "spend": 17.98,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-01",
-      "channel": "Meta",
-      "spend": 7.81,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-08",
-      "channel": "Meta",
-      "spend": 20.57,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-09",
-      "channel": "Meta",
-      "spend": 29.98,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-10",
-      "channel": "Meta",
-      "spend": 23.43,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-11",
-      "channel": "Meta",
-      "spend": 26.49,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-12",
-      "channel": "Meta",
-      "spend": 25.53,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-13",
-      "channel": "Meta",
-      "spend": 11.94,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-14",
-      "channel": "Meta",
-      "spend": 15.61,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-15",
-      "channel": "Meta",
-      "spend": 19.17,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-16",
-      "channel": "Meta",
-      "spend": 18.9,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-17",
-      "channel": "Meta",
-      "spend": 26.44,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-18",
-      "channel": "Meta",
-      "spend": 15.75,
-      "campaign": "120251110515780551"
-     },
-     {
       "date": "2026-09-18",
       "channel": "Meta",
       "spend": 9.91,
       "campaign": "120251670857500551"
-     },
-     {
-      "date": "2026-09-19",
-      "channel": "Meta",
-      "spend": 18.1,
-      "campaign": "120251110515780551"
      },
      {
       "date": "2026-09-19",
@@ -1742,20 +1564,8 @@
      {
       "date": "2026-09-20",
       "channel": "Meta",
-      "spend": 15.74,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-20",
-      "channel": "Meta",
       "spend": 9.54,
       "campaign": "120251670857500551"
-     },
-     {
-      "date": "2026-09-21",
-      "channel": "Meta",
-      "spend": 30.53,
-      "campaign": "120251110515780551"
      },
      {
       "date": "2026-09-21",
@@ -1766,20 +1576,8 @@
      {
       "date": "2026-09-22",
       "channel": "Meta",
-      "spend": 21.34,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-22",
-      "channel": "Meta",
       "spend": 37.3,
       "campaign": "120251670857500551"
-     },
-     {
-      "date": "2026-09-23",
-      "channel": "Meta",
-      "spend": 19.09,
-      "campaign": "120251110515780551"
      },
      {
       "date": "2026-09-23",
@@ -1790,20 +1588,8 @@
      {
       "date": "2026-09-24",
       "channel": "Meta",
-      "spend": 15.93,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-24",
-      "channel": "Meta",
       "spend": 23.9,
       "campaign": "120251670857500551"
-     },
-     {
-      "date": "2026-09-25",
-      "channel": "Meta",
-      "spend": 10.17,
-      "campaign": "120251110515780551"
      },
      {
       "date": "2026-09-25",
@@ -1814,20 +1600,8 @@
      {
       "date": "2026-09-26",
       "channel": "Meta",
-      "spend": 13.16,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-26",
-      "channel": "Meta",
       "spend": 25.46,
       "campaign": "120251670857500551"
-     },
-     {
-      "date": "2026-09-27",
-      "channel": "Meta",
-      "spend": 20.8,
-      "campaign": "120251110515780551"
      },
      {
       "date": "2026-09-27",
@@ -1838,20 +1612,8 @@
      {
       "date": "2026-09-28",
       "channel": "Meta",
-      "spend": 19.51,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-28",
-      "channel": "Meta",
       "spend": 21.32,
       "campaign": "120251670857500551"
-     },
-     {
-      "date": "2026-09-29",
-      "channel": "Meta",
-      "spend": 15.77,
-      "campaign": "120251110515780551"
      },
      {
       "date": "2026-09-29",
@@ -1862,20 +1624,8 @@
      {
       "date": "2026-09-30",
       "channel": "Meta",
-      "spend": 20.79,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-09-30",
-      "channel": "Meta",
       "spend": 30.81,
       "campaign": "120251670857500551"
-     },
-     {
-      "date": "2026-10-01",
-      "channel": "Meta",
-      "spend": 16.51,
-      "campaign": "120251110515780551"
      },
      {
       "date": "2026-10-01",
@@ -1886,20 +1636,8 @@
      {
       "date": "2026-10-02",
       "channel": "Meta",
-      "spend": 16.01,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-10-02",
-      "channel": "Meta",
       "spend": 25.94,
       "campaign": "120251670857500551"
-     },
-     {
-      "date": "2026-10-03",
-      "channel": "Meta",
-      "spend": 16.59,
-      "campaign": "120251110515780551"
      },
      {
       "date": "2026-10-03",
@@ -1910,20 +1648,8 @@
      {
       "date": "2026-10-04",
       "channel": "Meta",
-      "spend": 17.42,
-      "campaign": "120251110515780551"
-     },
-     {
-      "date": "2026-10-04",
-      "channel": "Meta",
       "spend": 22.51,
       "campaign": "120251670857500551"
-     },
-     {
-      "date": "2026-10-05",
-      "channel": "Meta",
-      "spend": 7.5,
-      "campaign": "120251110515780551"
      },
      {
       "date": "2026-10-05",
@@ -2224,7 +1950,7 @@
      "treatment": "Invisalign",
      "booked": "2026-08-20",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "start": "2026-10-24T08:30",
@@ -2417,7 +2143,7 @@
      "contactId": "uFzRc4YMU06pWlCV9pi4",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "yAeRCf8wmPwFTZoGPxcw",
@@ -2428,7 +2154,7 @@
      "contactId": "fsWTBlHBhzHCGWrFZGta",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "GzeFApeHZtxmSPUxjYPd",
@@ -2439,7 +2165,7 @@
      "contactId": "oaPauOVqvAwyGKxo7G1e",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "NJzcp2U05Z1CWEy2sQqt",
@@ -2450,7 +2176,7 @@
      "contactId": "UP4SJHAGENQF5gSXqMbb",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "HSI5US6Nsf0GpHm1YREs",
@@ -2461,7 +2187,7 @@
      "contactId": "piv3TQCBdqo2ln1RIOt7",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "NUAufpDVKPOT2T1ZM4Fx",
@@ -2472,7 +2198,7 @@
      "contactId": "FxPh9alQwO8OzOZx1dlt",
      "wonDate": "",
      "source": "Other",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "8MGkZXqxMCqoSps0yeEY",
@@ -2483,7 +2209,7 @@
      "contactId": "QKmo1MJ4AXOeMvd66UGs",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "cuLQrmetlwSphpC6v3SQ",
@@ -2494,7 +2220,7 @@
      "contactId": "5IKFs136iH3ncPFB2E7n",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "kdXNEWQ8egTorNHEyAiL",
@@ -2505,7 +2231,7 @@
      "contactId": "IPiHSU8hxzaM5BvFL5c1",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "qLQY2e5OQuLQFsoRsZ09",
@@ -2516,7 +2242,7 @@
      "contactId": "VnlgAVyxcowjugIaxzp7",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "MIPxJlK82lzoOcEc0o3W",
@@ -2527,7 +2253,7 @@
      "contactId": "rh4vSShp51JadsAZ31NA",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "uYO9UlX7KKKzlHufbVR5",
@@ -2538,7 +2264,7 @@
      "contactId": "aWG5KHYbOHdnZDCCDQcz",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "U9Srb9GP9eYr9Fl2vdPl",
@@ -2549,7 +2275,7 @@
      "contactId": "kJe6PQm0OE2hl549H0tP",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "zEYgSDBmUAZWpbreQ03e",
@@ -2560,7 +2286,7 @@
      "contactId": "ggA112qREDApSTeEhxRg",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "S67IZk7jw6LulMXkiVZj",
@@ -2571,7 +2297,7 @@
      "contactId": "v8OvM0tWpxlFYzoEkZY7",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "27ISd1cWkmiWxcUmK3VD",
@@ -2582,7 +2308,7 @@
      "contactId": "BK7JQPMQkzXb3ucsSAM3",
      "wonDate": "2026-08-27",
      "source": "Other",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "9FWHEOnBJTWhUg5BwJpg",
@@ -2593,7 +2319,7 @@
      "contactId": "hLK9i0FVALWYoZRVIDQE",
      "wonDate": "",
      "source": "Meta",
-     "campaign": "120251110515780551"
+     "campaign": "120250594601420551"
     },
     {
      "id": "ooETKzl2Fn52OmEP6s07",
