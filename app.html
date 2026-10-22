@@ -403,12 +403,13 @@ function renderCampaign(id){
   const s0=status(c), multi=D.practices.length>1;
   $("chead").innerHTML=`<span class="chip ${s0==="done"?"done":s0==="live"?"live":""}">${statusLabel(c)}</span>
     <h2>${esc(c.label)}${multi?" · "+esc(c.practice.name):""}</h2>
-    <div class="meta">${c.openDay&&!c.ongoing?`<span>Event date <b>${esc(c.openDay)}</b></span>`:""}${c.start?`<span>Ads ${s0==="planned"?"launch":"from"} <b>${fmt(c.start)}</b></span>`:""}${c.ongoing?`<span>No fixed end date</span>`:""}
+    <div class="meta">${c.openDay&&!c.ongoing?`<span>${c.type==="open-day"?"Event date":"Ran"} <b>${esc(c.openDay)}</b></span>`:""}${c.start?`<span>Ads ${s0==="planned"?"launch":"from"} <b>${fmt(c.start)}</b></span>`:""}${c.ongoing?`<span>No fixed end date</span>`:""}
     <span>Ad budget <b>${gbp(c.budget)}${c.ongoing?" a month":""}</b></span><span>Clinician <b>${esc(c.clinician||"To confirm")}</b></span><span>Channels <b>${(c.channels||["Meta"]).join(", ")}</b></span>${tgtText(c)?`<span>Targets <b>${tgtText(c)}</b></span>`:""}</div>`;
   $("cctl").hidden=!c.ongoing;
   const started=c.start&&c.start<=TODAY;
   const info=$("cinfo");
   if(!started){info.hidden=false;info.textContent=c.start?`Ads go live on ${fmt(c.start)}. Results will show here from then, updated through the day.`:"Dates for this campaign are still to be confirmed. Results will show here once the ads go live.";}
+  else if(c.note){info.hidden=false;info.textContent=c.note}
   else info.hidden=true;
   let from=c.start||"0000",to=c.end?addDays(c.end,30):TODAY, note="";
   if(c.ongoing){const v=$("cperiod").value;
@@ -416,13 +417,13 @@ function renderCampaign(id){
   // open-day campaigns: everything tied to the campaign, whenever it happened
   const s=c.ongoing?stats({practices:[c.practice],campaign:c.id,from,to}):stats({practices:[c.practice],campaign:c.id});
   // trends compare against the practice's previous campaign (whole campaign, not the period filter)
-  const pc=c.ongoing?null:prevCampaign(c), ps0=pc?stats({practices:[c.practice],campaign:pc.id}):null;
+  const pc=(c.ongoing||c.note)?null:prevCampaign(c), ps0=pc?stats({practices:[c.practice],campaign:pc.id}):null;
   $("ckpis").innerHTML=started?kpis(s,{target:c.ongoing?{}:(c.target||{}),prev:ps0}):"";
   $("ckpis").hidden=!started;
   const w=$("cwait"); w.hidden=!(started&&s.past&&!s.outcomesIn); if(!w.hidden)w.textContent=waitText(s.past);
   $("cfunnel").innerHTML=started?funnel(s):`<p class="sub" style="margin:0">Shows once the campaign is live.</p>`;
   $("csrc").innerHTML=started?srcRows(s):`<tr><td colspan="4" class="empty">Shows once the campaign is live.</td></tr>`;
-  $("cdent").innerHTML=dentRows(s,dentPrev(c));
+  $("cdent").innerHTML=dentRows(s,c.note?null:dentPrev(c));
   window.scrollTo({top:0});
 }
 
