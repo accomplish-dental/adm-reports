@@ -325,7 +325,7 @@ function kpis(s,opts={}){
     ["Consults attended",s.outcomesIn?s.attended:null,s.outcomesIn?pct(s.attended,s.attended+s.noshow)+" turned up":"","",""],
     ["New patients",s.ready?s.won:null,s.ready&&s.won?gbp(s.spend/s.won)+" per patient":"","",targetLine(s.won,t.ahead,s.ready)+(pv&&s.ready&&pv.ready?trend(s.won,pv.won,true,n=>n):"")],
     ["Consult conversion",s.outcomesIn?pct(s.won,s.attended):null,"Attended consults who went ahead","key",pv?trend(conv(s),conv(pv),true,pts):""],
-    ["Treatment value",s.ready?gbp(s.revenue):null,s.ready&&s.revenue&&s.spend?(s.revenue/s.spend).toFixed(1)+"× ad spend":"","",""],
+    ["Treatment value",s.ready?(s.revenue?gbp(s.revenue):"Not recorded"):null,s.ready&&s.revenue&&s.spend?(s.revenue/s.spend).toFixed(1)+"× ad spend":"","",""],
   ];
   return rows.map(([l,v,n,c,x])=>v===null?`<div class="kpi wait"><span class="eyebrow">${l}</span><span class="v">Awaiting update</span>${x}</div>`
     :`<div class="kpi ${c}"><span class="eyebrow">${l}</span><span class="v">${v}</span><span class="n">${n}</span>${x}</div>`).join("");
@@ -334,7 +334,7 @@ const srcRows=s=>SOURCES.filter(k=>s.bySrc[k].booked||s.bySrc[k].spend).map(k=>{
 // prevDent(name) returns that dentist's {seen,won} from their previous campaign, for the "Vs last campaign" column
 const dentRows=(s,prevDent)=>{const cols=prevDent?6:5;const r=Object.entries(s.dent).sort((a,b)=>b[1].seen-a[1].seen);return r.length?r.map(([n,x])=>{
     let tc="";if(prevDent){const p=prevDent(n);tc=`<td>${p&&p.seen&&x.seen?trend(x.won/x.seen*100,p.won/p.seen*100,true,pts).replace(" vs last campaign","")||"–":"First campaign"}</td>`}
-    return `<tr><td>${esc(n)}</td><td>${x.seen}</td><td>${x.won}</td><td>${pct(x.won,x.seen)}</td><td>${gbp(x.val)}</td>${tc}</tr>`}).join("")
+    return `<tr><td>${esc(n)}</td><td>${x.seen}</td><td>${x.won}</td><td>${pct(x.won,x.seen)}</td><td>${x.val?gbp(x.val):"–"}</td>${tc}</tr>`}).join("")
   :`<tr><td colspan="${cols}" class="empty">This fills in once attended consults are recorded against each dentist.</td></tr>`};
 // a dentist's results in the most recent earlier campaign they saw patients for
 function dentPrev(c){
