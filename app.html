@@ -200,6 +200,11 @@ footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padd
       <div class="plot" id="plot"></div>
       <details><summary>Show as a table</summary><div class="tbl" style="margin-top:8px"><table><thead><tr><th>Week ending</th><th>Consults booked</th><th>New patients</th><th>Ad spend</th></tr></thead><tbody id="growthtbl"></tbody></table></div></details>
     </div>
+    <section id="sec-rev" hidden><h3>Reviews</h3><p class="sub" id="revsub"></p>
+      <div class="kpis" id="revkpis"></div>
+      <div class="chart" style="margin-top:12px"><span class="eyebrow">New reviews per month</span><div class="legend" id="revlegend"></div><div class="plot" id="revplot"></div>
+        <details><summary>Show as a table</summary><div class="tbl" style="margin-top:8px"><table><thead id="revthead"></thead><tbody id="revtbl"></tbody></table></div></details></div>
+    </section>
     <div class="two">
       <section><h3>By source</h3><div class="tbl"><table><thead><tr><th>Source</th><th>Consults booked</th><th>Ad spend</th><th>Cost per booked consult</th></tr></thead><tbody id="psrc"></tbody></table></div></section>
       <section id="sec-prac"><h3>By practice</h3><div class="tbl"><table><thead><tr><th>Practice</th><th>Consults booked</th><th>Cost per booked consult</th><th>Conversion</th></tr></thead><tbody id="pprac"></tbody></table></div></section>
@@ -443,6 +448,44 @@ function renderPerformance(){
   $("pdent").innerHTML=dentRows(s);
   renderGoal(ps); renderTrend(ps);
   drawChart(ps,from,to,src);
+  renderReviews(ps,from,to);
+}
+// ---------- reviews (from HighLevel Reputation) ----------
+const REV=[["google","Google","--s3"],["facebook","Facebook","--s2"]];
+function renderReviews(ps,from,to){
+  const sec=$("sec-rev"); sec.hidden=!ps.some(p=>p.reviews); if(sec.hidden)return;
+  const items=ps.flatMap(p=>(p.reviews.items||[]).map(([d,s,src])=>({d,s,src})));
+  const linked=k=>ps.some(p=>(p.reviews.sources||[]).includes(k));
+  const len=Math.round((new Date(to)-new Date(from))/864e5)+1, pFrom=addDays(from,-len), pTo=addDays(from,-1);
+  const flip=h=>h.replace(" vs last campaign"," vs previous period").replace("No change vs last campaign","No change vs previous period");
+  let tiles="";const shown=[];
+  REV.forEach(([k,label])=>{
+    if(!linked(k)){if(k==="google")tiles+=`<div class="kpi wait"><span class="eyebrow">Google reviews</span><span class="v">Being connected</span><span class="n">Figures appear here once your Google profile is linked</span></div>`;return}
+    shown.push(k);
+    const all=items.filter(x=>x.src===k&&x.d<=to), now=all.filter(x=>x.d>=from).length, prev=items.filter(x=>x.src===k&&x.d>=pFrom&&x.d<=pTo).length;
+    const avg=all.length?all.reduce((a,x)=>a+x.s,0)/all.length:null;
+    tiles+=`<div class="kpi${k==="google"?" key":""}"><span class="eyebrow">${label} rating</span><span class="v">${avg?avg.toFixed(1)+" ★":"–"}</span><span class="n">From ${all.length} review${all.length===1?"":"s"}</span></div>`+
+      `<div class="kpi"><span class="eyebrow">New ${label} reviews</span><span class="v">${now}</span><span class="n">${fmtS(from)} – ${fmtS(to)}</span>${flip(trend(now,prev,true,n=>n))}</div>`;
+  });
+  $("revkpis").innerHTML=tiles;
+  $("revsub").textContent="Ratings include every review on record. New reviews follow the dates you've chosen above.";
+  // last 12 months ending with the month of `to`
+  const months=[];for(let i=11;i>=0;i--){const d=new Date(to.slice(0,7)+"-15");d.setMonth(d.getMonth()-i);months.push(d.toISOString().slice(0,7))}
+  const rows=months.map(m=>{const r={m};shown.forEach(k=>r[k]=items.filter(x=>x.src===k&&x.d.startsWith(m)).length);return r});
+  const ser=REV.filter(([k])=>shown.includes(k));
+  $("revlegend").innerHTML=ser.map(([,n,c])=>`<span><i style="background:var(${c});border-color:var(${c})"></i>${n}</span>`).join("");
+  $("revthead").innerHTML=`<tr><th>Month</th>${ser.map(([,n])=>`<th>${n}</th>`).join("")}</tr>`;
+  const mLab=m=>new Date(m+"-15").toLocaleDateString("en-GB",{month:"short",year:"2-digit"});
+  $("revtbl").innerHTML=rows.map(r=>`<tr><td>${mLab(r.m)}</td>${ser.map(([k])=>`<td>${r[k]}</td>`).join("")}</tr>`).join("");
+  const cs=getComputedStyle(document.documentElement), plot=$("revplot"), W=Math.max(plot.clientWidth,300), H=170, pad={l:28,r:8,t:10,b:24};
+  const ymax=Math.max(2,...rows.flatMap(r=>ser.map(([k])=>r[k]))), top=ymax<=4?4:Math.ceil(ymax/5)*5, step=top<=4?1:top/5;
+  const cw=(W-pad.l-pad.r)/rows.length, bw=Math.max(4,Math.min(18,(cw-6)/Math.max(ser.length,1))), Y=v=>pad.t+(H-pad.t-pad.b)*(1-v/top);
+  let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="New reviews per month for the last 12 months">`;
+  for(let v=0;v<=top;v+=step)svg+=`<line x1="${pad.l}" x2="${W-pad.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="${cs.getPropertyValue("--line")}"/><text x="${pad.l-6}" y="${Y(v)+4}" text-anchor="end">${v}</text>`;
+  rows.forEach((r,i)=>{const x0=pad.l+i*cw+(cw-bw*ser.length)/2;
+    ser.forEach(([k,n,c],j)=>{if(r[k])svg+=`<rect x="${x0+j*bw}" y="${Y(r[k])}" width="${bw-1}" height="${Y(0)-Y(r[k])}" rx="2" fill="${cs.getPropertyValue(c).trim()}"><title>${mLab(r.m)}: ${r[k]} ${n} review${r[k]===1?"":"s"}</title></rect>`});
+    if(i%(W<480?3:1)===0||i===rows.length-1)svg+=`<text x="${pad.l+i*cw+cw/2}" y="${H-6}" text-anchor="middle">${mLab(r.m).split(" ")[0]}</text>`});
+  plot.innerHTML=svg+"</svg>";
 }
 // 12-month target from onboarding (single practice only)
 function renderGoal(ps){

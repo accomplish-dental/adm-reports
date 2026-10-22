@@ -547,7 +547,189 @@
     }
    ],
    "dentists": {},
-   "periodStart": "2026-09-14"
+   "periodStart": "2026-09-14",
+   "reviews": {
+    "sources": [
+     "facebook"
+    ],
+    "items": [
+     [
+      "2016-09-24",
+      5,
+      "facebook"
+     ],
+     [
+      "2016-11-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-03-02",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-03-18",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-03-23",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-08-10",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-09-28",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-11-02",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-11-27",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-11-28",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-12-24",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-01-10",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-01-31",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-02-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-02-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-08-16",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-10-30",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-11-10",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-12-04",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-12-04",
+      5,
+      "facebook"
+     ],
+     [
+      "2019-03-19",
+      5,
+      "facebook"
+     ],
+     [
+      "2019-09-12",
+      5,
+      "facebook"
+     ],
+     [
+      "2019-09-17",
+      5,
+      "facebook"
+     ],
+     [
+      "2019-12-23",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-01-02",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-06-12",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-06-22",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-07-08",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-09-21",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-10-30",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-04-27",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-05-12",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-10-21",
+      5,
+      "facebook"
+     ],
+     [
+      "2022-02-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2026-09-24",
+      5,
+      "facebook"
+     ]
+    ]
+   }
   },
   {
    "slug": "aylesbury",
@@ -620,7 +802,34 @@
    "appointments": [],
    "leads": [],
    "dentists": {},
-   "periodStart": "2026-10-24"
+   "periodStart": "2026-10-24",
+   "reviews": {
+    "sources": [
+     "facebook"
+    ],
+    "items": [
+     [
+      "2020-08-26",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-01-21",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-11-22",
+      5,
+      "facebook"
+     ],
+     [
+      "2022-04-19",
+      1,
+      "facebook"
+     ]
+    ]
+   }
   },
   {
    "slug": "prestwood",
@@ -693,7 +902,34 @@
    "appointments": [],
    "leads": [],
    "dentists": {},
-   "periodStart": "2026-10-24"
+   "periodStart": "2026-10-24",
+   "reviews": {
+    "sources": [
+     "facebook"
+    ],
+    "items": [
+     [
+      "2018-03-28",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-11-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-10-12",
+      5,
+      "facebook"
+     ],
+     [
+      "2026-04-23",
+      5,
+      "facebook"
+     ]
+    ]
+   }
   },
   {
    "slug": "brocklehurst",
@@ -705,7 +941,19 @@
    "appointments": [],
    "leads": [],
    "dentists": {},
-   "periodStart": "2026-09-01"
+   "periodStart": "2026-09-01",
+   "reviews": {
+    "sources": [
+     "facebook"
+    ],
+    "items": [
+     [
+      "2020-11-22",
+      5,
+      "facebook"
+     ]
+    ]
+   }
   },
   {
    "slug": "kimbolton",
@@ -717,7 +965,54 @@
    "appointments": [],
    "leads": [],
    "dentists": {},
-   "periodStart": "2026-09-01"
+   "periodStart": "2026-09-01",
+   "reviews": {
+    "sources": [
+     "facebook"
+    ],
+    "items": [
+     [
+      "2019-10-25",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-02-10",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-04-23",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-05-22",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-09-04",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-10-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-08-31",
+      5,
+      "facebook"
+     ],
+     [
+      "2024-04-26",
+      5,
+      "facebook"
+     ]
+    ]
+   }
   },
   {
    "slug": "hollis",
@@ -1072,7 +1367,54 @@
    "dentists": {
     "fCueZ3BB2XMQKOC03Wal": "Dr George Bryan"
    },
-   "periodStart": "2026-09-28"
+   "periodStart": "2026-09-28",
+   "reviews": {
+    "sources": [
+     "facebook"
+    ],
+    "items": [
+     [
+      "2020-02-24",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-02-24",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-02-27",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-05-29",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-10-21",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-11-22",
+      5,
+      "facebook"
+     ],
+     [
+      "2022-02-15",
+      5,
+      "facebook"
+     ],
+     [
+      "2023-10-19",
+      5,
+      "facebook"
+     ]
+    ]
+   }
   }
  ],
  "updatedAt": "2026-10-19T20:30:00Z"

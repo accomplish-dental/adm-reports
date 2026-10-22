@@ -12,7 +12,7 @@
      "id": "VFsJ8RN6Pm9BSv69Y9fY",
      "treatment": "Implants",
      "label": "Dental implants",
-     "openDay": "1\u20132 Oct 2026",
+     "openDay": "1–2 Oct 2026",
      "start": "2026-09-14",
      "end": "2026-10-02",
      "clinician": "",
@@ -27,7 +27,7 @@
      "id": "DNZGn5LoCifQMQ9rKOKH",
      "treatment": "Composite bonding",
      "label": "Composite bonding",
-     "openDay": "Jan 2027 \u00b7 date TBC",
+     "openDay": "Jan 2027 · date TBC",
      "start": "",
      "end": "",
      "clinician": "",
@@ -43,7 +43,7 @@
      "id": "rHkyZ9EU4pygjM8dZKVT",
      "treatment": "Invisalign",
      "label": "Invisalign",
-     "openDay": "Apr 2027 \u00b7 date TBC",
+     "openDay": "Apr 2027 · date TBC",
      "start": "",
      "end": "",
      "clinician": "",
@@ -59,7 +59,7 @@
      "id": "Tkeg7zvKEL4xHdMsOa26",
      "treatment": "Implants",
      "label": "Dental implants",
-     "openDay": "Jul 2027 \u00b7 date TBC",
+     "openDay": "Jul 2027 · date TBC",
      "start": "",
      "end": "",
      "clinician": "",
@@ -547,7 +547,189 @@
     }
    ],
    "dentists": {},
-   "periodStart": "2026-09-14"
+   "periodStart": "2026-09-14",
+   "reviews": {
+    "sources": [
+     "facebook"
+    ],
+    "items": [
+     [
+      "2016-09-24",
+      5,
+      "facebook"
+     ],
+     [
+      "2016-11-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-03-02",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-03-18",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-03-23",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-08-10",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-09-28",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-11-02",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-11-27",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-11-28",
+      5,
+      "facebook"
+     ],
+     [
+      "2017-12-24",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-01-10",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-01-31",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-02-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-02-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-08-16",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-10-30",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-11-10",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-12-04",
+      5,
+      "facebook"
+     ],
+     [
+      "2018-12-04",
+      5,
+      "facebook"
+     ],
+     [
+      "2019-03-19",
+      5,
+      "facebook"
+     ],
+     [
+      "2019-09-12",
+      5,
+      "facebook"
+     ],
+     [
+      "2019-09-17",
+      5,
+      "facebook"
+     ],
+     [
+      "2019-12-23",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-01-02",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-06-12",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-06-22",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-07-08",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-09-21",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-10-30",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-04-27",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-05-12",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-10-21",
+      5,
+      "facebook"
+     ],
+     [
+      "2022-02-07",
+      5,
+      "facebook"
+     ],
+     [
+      "2026-09-24",
+      5,
+      "facebook"
+     ]
+    ]
+   }
   }
  ],
  "updatedAt": "2026-10-19T20:30:00Z"

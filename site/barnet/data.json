@@ -345,7 +345,54 @@
    "dentists": {
     "fCueZ3BB2XMQKOC03Wal": "Dr George Bryan"
    },
-   "periodStart": "2026-09-28"
+   "periodStart": "2026-09-28",
+   "reviews": {
+    "sources": [
+     "facebook"
+    ],
+    "items": [
+     [
+      "2020-02-24",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-02-24",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-02-27",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-05-29",
+      5,
+      "facebook"
+     ],
+     [
+      "2020-10-21",
+      5,
+      "facebook"
+     ],
+     [
+      "2021-11-22",
+      5,
+      "facebook"
+     ],
+     [
+      "2022-02-15",
+      5,
+      "facebook"
+     ],
+     [
+      "2023-10-19",
+      5,
+      "facebook"
+     ]
+    ]
+   }
   }
  ],
  "updatedAt": "2026-10-20T14:30:00Z"
