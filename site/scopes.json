@@ -1,16 +1,56 @@
 {
  "views": [
-  {"label": "All practices", "url": "/adm/"},
-  {"label": "Nisha & Amit's practices", "url": "/adm/?g=nisha-amit"},
-  {"label": "Aylesbury Dental Health Centre", "url": "/adm/?p=aylesbury"},
-  {"label": "Barnet Dental Practice", "url": "/adm/?p=barnet"},
-  {"label": "Brocklehurst Dental Practice", "url": "/adm/?p=brocklehurst"},
-  {"label": "Hallcross Dental Practice", "url": "/adm/?p=hallcross"},
-  {"label": "Hollis Dental", "url": "/adm/?p=hollis"},
-  {"label": "Kimbolton Dental Practice", "url": "/adm/?p=kimbolton"},
-  {"label": "Prestwood Dental Health Centre", "url": "/adm/?p=prestwood"}
+  {
+   "label": "All practices",
+   "url": "/adm/"
+  },
+  {
+   "label": "Nisha & Amit's practices",
+   "url": "/adm/?g=nisha-amit"
+  },
+  {
+   "label": "Aylesbury Dental Health Centre",
+   "url": "/adm/?p=aylesbury"
+  },
+  {
+   "label": "Barnet Dental Practice",
+   "url": "/adm/?p=barnet"
+  },
+  {
+   "label": "Brocklehurst Dental Practice",
+   "url": "/adm/?p=brocklehurst"
+  },
+  {
+   "label": "Hallcross Dental Practice",
+   "url": "/adm/?p=hallcross"
+  },
+  {
+   "label": "Hollis Dental",
+   "url": "/adm/?p=hollis"
+  },
+  {
+   "label": "Kimbolton Dental Practice",
+   "url": "/adm/?p=kimbolton"
+  },
+  {
+   "label": "Prestwood Dental Health Centre",
+   "url": "/adm/?p=prestwood"
+  },
+  {
+   "label": "Stag Lane Dental",
+   "url": "/adm/?p=stag-lane"
+  }
  ],
  "groups": {
-  "nisha-amit": {"name": "Nisha & Amit's practices", "practices": ["aylesbury", "prestwood", "brocklehurst", "kimbolton", "hollis"]}
+  "nisha-amit": {
+   "name": "Nisha & Amit's practices",
+   "practices": [
+    "aylesbury",
+    "prestwood",
+    "brocklehurst",
+    "kimbolton",
+    "hollis"
+   ]
+  }
  }
 }

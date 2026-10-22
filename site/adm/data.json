@@ -1415,7 +1415,1252 @@
      ]
     ]
    }
+  },
+  {
+   "slug": "stag-lane",
+   "name": "Stag Lane Dental",
+   "plan": [
+    {
+     "id": "120250594601420551",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "15–16 Aug 2026",
+     "start": "2026-07-30",
+     "end": "2026-08-16",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Finished",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "120251670857500551",
+     "treatment": "Implants",
+     "label": "Dental implants",
+     "openDay": "24 & 31 Oct 2026",
+     "start": "2026-09-18",
+     "end": "2026-10-31",
+     "clinician": "Dr Nihir Shah & Dr Amit Devlukia",
+     "budget": 1300,
+     "status": "Live",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    }
+   ],
+   "adSpend": {
+    "byDay": [
+     {
+      "date": "2026-07-30",
+      "channel": "Meta",
+      "spend": 35.05,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-07-31",
+      "channel": "Meta",
+      "spend": 51.08,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-01",
+      "channel": "Meta",
+      "spend": 38.02,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-02",
+      "channel": "Meta",
+      "spend": 46.39,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-03",
+      "channel": "Meta",
+      "spend": 41.6,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-04",
+      "channel": "Meta",
+      "spend": 47.22,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-05",
+      "channel": "Meta",
+      "spend": 50.12,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-06",
+      "channel": "Meta",
+      "spend": 47.74,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-07",
+      "channel": "Meta",
+      "spend": 55.51,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-08",
+      "channel": "Meta",
+      "spend": 61.42,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-09",
+      "channel": "Meta",
+      "spend": 57.93,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-10",
+      "channel": "Meta",
+      "spend": 48.75,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-11",
+      "channel": "Meta",
+      "spend": 47.18,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-12",
+      "channel": "Meta",
+      "spend": 35.1,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-13",
+      "channel": "Meta",
+      "spend": 39.63,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-08-14",
+      "channel": "Meta",
+      "spend": 37.4,
+      "campaign": "120250594601420551"
+     },
+     {
+      "date": "2026-09-18",
+      "channel": "Meta",
+      "spend": 9.91,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-19",
+      "channel": "Meta",
+      "spend": 24.18,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-20",
+      "channel": "Meta",
+      "spend": 9.54,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-21",
+      "channel": "Meta",
+      "spend": 15.1,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-22",
+      "channel": "Meta",
+      "spend": 37.3,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-23",
+      "channel": "Meta",
+      "spend": 35.46,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-24",
+      "channel": "Meta",
+      "spend": 23.9,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-25",
+      "channel": "Meta",
+      "spend": 26.39,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-26",
+      "channel": "Meta",
+      "spend": 25.46,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-27",
+      "channel": "Meta",
+      "spend": 12.73,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-28",
+      "channel": "Meta",
+      "spend": 21.32,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-29",
+      "channel": "Meta",
+      "spend": 18.61,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-09-30",
+      "channel": "Meta",
+      "spend": 30.81,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-01",
+      "channel": "Meta",
+      "spend": 34.3,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-02",
+      "channel": "Meta",
+      "spend": 25.94,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-03",
+      "channel": "Meta",
+      "spend": 30.75,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-04",
+      "channel": "Meta",
+      "spend": 22.51,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-05",
+      "channel": "Meta",
+      "spend": 33.67,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-06",
+      "channel": "Meta",
+      "spend": 42.25,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-07",
+      "channel": "Meta",
+      "spend": 25.66,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-08",
+      "channel": "Meta",
+      "spend": 35.73,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-09",
+      "channel": "Meta",
+      "spend": 41.41,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-10",
+      "channel": "Meta",
+      "spend": 38.3,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-11",
+      "channel": "Meta",
+      "spend": 63.8,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-12",
+      "channel": "Meta",
+      "spend": 59.74,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-13",
+      "channel": "Meta",
+      "spend": 52.91,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-14",
+      "channel": "Meta",
+      "spend": 44.69,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-15",
+      "channel": "Meta",
+      "spend": 34.28,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-16",
+      "channel": "Meta",
+      "spend": 25.62,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-17",
+      "channel": "Meta",
+      "spend": 28.72,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-18",
+      "channel": "Meta",
+      "spend": 32.62,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-19",
+      "channel": "Meta",
+      "spend": 30.75,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-20",
+      "channel": "Meta",
+      "spend": 20.72,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-21",
+      "channel": "Meta",
+      "spend": 25.43,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-22",
+      "channel": "Meta",
+      "spend": 5.81,
+      "campaign": "120251670857500551"
+     }
+    ]
+   },
+   "appointments": [
+    {
+     "start": "2026-08-15T09:15",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "put5hWLb6mXAZ08TEi4T",
+     "treatment": "Invisalign",
+     "booked": "2026-08-02",
+     "source": "Other",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-15T10:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "YZhlpnKYOnD192xSRT0U",
+     "treatment": "Invisalign",
+     "booked": "2026-08-03",
+     "source": "Other",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-15T10:45",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "ZIEpSmozLrUo9VgJxE0O",
+     "treatment": "Invisalign",
+     "booked": "2026-08-01",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-15T11:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "t5sekRQZLPdFl5qikhVK",
+     "treatment": "Invisalign",
+     "booked": "2026-08-13",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-15T12:45",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "7Q2J1oua78rDNK2dcJV1",
+     "treatment": "Invisalign",
+     "booked": "2026-08-05",
+     "source": "Other",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-15T13:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "zWrMp1DYp3tAddCmgwia",
+     "treatment": "Invisalign",
+     "booked": "2026-08-08",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-15T14:15",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "qyOrpQfMjOKehbOsl92h",
+     "treatment": "Invisalign",
+     "booked": "2026-08-03",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-15T15:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "ISxVIJLPPrcBIdrwpzOM",
+     "treatment": "Invisalign",
+     "booked": "2026-08-07",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-15T15:45",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "fQLDqEVDp8Zdh5JhX5fz",
+     "treatment": "Invisalign",
+     "booked": "2026-08-04",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-16T08:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "qg1uOkSlne3vBGzihfEx",
+     "treatment": "Invisalign",
+     "booked": "2026-08-06",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-16T09:15",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "kltKY8BYMMGo1u0D6Vzs",
+     "treatment": "Invisalign",
+     "booked": "2026-08-09",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-16T10:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "EHA2y2jZ36eibDMl6gny",
+     "treatment": "Invisalign",
+     "booked": "2026-08-09",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-16T11:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "Sm1k8OA4y5k8nSUPUdVP",
+     "treatment": "Invisalign",
+     "booked": "2026-08-11",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-16T12:15",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "VQPPKldLfC4rfLwkTCYA",
+     "treatment": "Invisalign",
+     "booked": "2026-08-07",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-16T13:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "JIWSgNTXvPWAwutSHG6V",
+     "treatment": "Invisalign",
+     "booked": "2026-08-12",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-08-16T13:45",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "lTf6PMjeM1kg6NJnwkVx",
+     "treatment": "Invisalign",
+     "booked": "2026-08-11",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "start": "2026-10-24T08:30",
+     "status": "confirmed",
+     "dentistId": "nihir",
+     "contactId": "VS3z-ekram",
+     "treatment": "Implants",
+     "booked": "2026-10-10",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T09:15",
+     "status": "confirmed",
+     "dentistId": "nihir",
+     "contactId": "Krs0aPQTK9GlCS1IVclo",
+     "treatment": "Implants",
+     "booked": "2026-10-14",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T09:45",
+     "status": "confirmed",
+     "dentistId": "nihir",
+     "contactId": "b9AdHBCuMX3zXk80NAiD",
+     "treatment": "Implants",
+     "booked": "2026-10-22",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T10:45",
+     "status": "confirmed",
+     "dentistId": "nihir",
+     "contactId": "egB8M1KnZex2nEjp2FDg",
+     "treatment": "Implants",
+     "booked": "2026-10-19",
+     "source": "Other",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T11:30",
+     "status": "confirmed",
+     "dentistId": "nihir",
+     "contactId": "manual-jay",
+     "treatment": "Implants",
+     "booked": "2026-10-16",
+     "source": "Other",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T08:30",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "manual-umesh",
+     "treatment": "Implants",
+     "booked": "2026-10-16",
+     "source": "Other",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T09:15",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "manual-chubi",
+     "treatment": "Implants",
+     "booked": "2026-10-16",
+     "source": "Other",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T10:00",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "A428lKH9CgCiFvyoxtby",
+     "treatment": "Implants",
+     "booked": "2026-10-12",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T10:45",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "mDrmKuUuyPECbwtzRUBi",
+     "treatment": "Implants",
+     "booked": "2026-09-21",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T11:30",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "UL4Brzy6vfvttlKL6Vnt",
+     "treatment": "Implants",
+     "booked": "2026-10-02",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T12:45",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "dkTkrvQmBkWwIlZBHsgM",
+     "treatment": "Implants",
+     "booked": "2026-09-29",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T13:30",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "rAMJXyyBVDuJEp6MBFCv",
+     "treatment": "Implants",
+     "booked": "2026-10-12",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T14:15",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "HYQpbdlaZ8xX8tS22bf7",
+     "treatment": "Implants",
+     "booked": "2026-09-22",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T15:00",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "NKai0UQhPyTSr636i7io",
+     "treatment": "Implants",
+     "booked": "2026-10-15",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T15:45",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "eK8fmrQl1gQ41GPwRS5P",
+     "treatment": "Implants",
+     "booked": "2026-10-16",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-24T16:45",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "PKEndXC1OhmjCx3PSLcq",
+     "treatment": "Implants",
+     "booked": "2026-09-29",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-31T09:30",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "manual-vishnu",
+     "treatment": "Implants",
+     "booked": "2026-10-20",
+     "source": "Other",
+     "campaign": "120251670857500551"
+    },
+    {
+     "start": "2026-10-31T12:30",
+     "status": "confirmed",
+     "dentistId": "amit",
+     "contactId": "manual-shantilal",
+     "treatment": "Implants",
+     "booked": "2026-10-19",
+     "source": "Other",
+     "campaign": "120251670857500551"
+    }
+   ],
+   "leads": [
+    {
+     "id": "r31q7fbCNxIFWOwbdCzJ",
+     "created": "2026-09-28",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "uFzRc4YMU06pWlCV9pi4",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "yAeRCf8wmPwFTZoGPxcw",
+     "created": "2026-09-26",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "fsWTBlHBhzHCGWrFZGta",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "GzeFApeHZtxmSPUxjYPd",
+     "created": "2026-09-26",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "oaPauOVqvAwyGKxo7G1e",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "NJzcp2U05Z1CWEy2sQqt",
+     "created": "2026-09-22",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "UP4SJHAGENQF5gSXqMbb",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "HSI5US6Nsf0GpHm1YREs",
+     "created": "2026-09-18",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "piv3TQCBdqo2ln1RIOt7",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "NUAufpDVKPOT2T1ZM4Fx",
+     "created": "2026-09-18",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "FxPh9alQwO8OzOZx1dlt",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "8MGkZXqxMCqoSps0yeEY",
+     "created": "2026-09-11",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "QKmo1MJ4AXOeMvd66UGs",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "cuLQrmetlwSphpC6v3SQ",
+     "created": "2026-09-09",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "5IKFs136iH3ncPFB2E7n",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "kdXNEWQ8egTorNHEyAiL",
+     "created": "2026-09-09",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "IPiHSU8hxzaM5BvFL5c1",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "qLQY2e5OQuLQFsoRsZ09",
+     "created": "2026-09-09",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "VnlgAVyxcowjugIaxzp7",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "MIPxJlK82lzoOcEc0o3W",
+     "created": "2026-08-31",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "rh4vSShp51JadsAZ31NA",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "uYO9UlX7KKKzlHufbVR5",
+     "created": "2026-08-28",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "aWG5KHYbOHdnZDCCDQcz",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "U9Srb9GP9eYr9Fl2vdPl",
+     "created": "2026-08-26",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "kJe6PQm0OE2hl549H0tP",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "zEYgSDBmUAZWpbreQ03e",
+     "created": "2026-08-25",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "ggA112qREDApSTeEhxRg",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "S67IZk7jw6LulMXkiVZj",
+     "created": "2026-08-25",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "v8OvM0tWpxlFYzoEkZY7",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "27ISd1cWkmiWxcUmK3VD",
+     "created": "2026-08-20",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "BK7JQPMQkzXb3ucsSAM3",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "9FWHEOnBJTWhUg5BwJpg",
+     "created": "2026-08-20",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "hLK9i0FVALWYoZRVIDQE",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "ooETKzl2Fn52OmEP6s07",
+     "created": "2026-08-13",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "t5sekRQZLPdFl5qikhVK",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "B5WFHDceIvl6C9SMp5pK",
+     "created": "2026-08-12",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "JIWSgNTXvPWAwutSHG6V",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "XoBq7OIbsb0evmI1qGI3",
+     "created": "2026-08-11",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "lTf6PMjeM1kg6NJnwkVx",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "h99gnYfi4qs1VWFuF7GW",
+     "created": "2026-08-11",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "Sm1k8OA4y5k8nSUPUdVP",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "wtKfZ4qEJr2I5NIK6HcM",
+     "created": "2026-08-10",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "uomRL8y1vKIVrf0OKnGZ",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "D4ZwcA6IaZHGxGMgGqa4",
+     "created": "2026-08-09",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "kltKY8BYMMGo1u0D6Vzs",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "6jfS2ew0id6ExSb51Pco",
+     "created": "2026-08-09",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "EHA2y2jZ36eibDMl6gny",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "Fd03akZ4OMMS6giSOxXQ",
+     "created": "2026-08-08",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "zWrMp1DYp3tAddCmgwia",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "Lm6Q3bMuQ3yXKGL4yAjs",
+     "created": "2026-08-07",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "VQPPKldLfC4rfLwkTCYA",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "qiplzNspTGTv0kNyZdCJ",
+     "created": "2026-08-07",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "ISxVIJLPPrcBIdrwpzOM",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "GhV3rXVtR8KHfzP90F3k",
+     "created": "2026-08-06",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "qg1uOkSlne3vBGzihfEx",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "IvtnzifGayLxWnaBIio8",
+     "created": "2026-08-05",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "7Q2J1oua78rDNK2dcJV1",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "XxZLGQxJbI4KREQ4P5xi",
+     "created": "2026-08-04",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "fQLDqEVDp8Zdh5JhX5fz",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "Mji0n7OKGujsrKfQnF1d",
+     "created": "2026-08-03",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "qyOrpQfMjOKehbOsl92h",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "7CwYKqnVnfdasNMim6Ov",
+     "created": "2026-08-03",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "YZhlpnKYOnD192xSRT0U",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "TJQIvwOlF3XDOUOAWayg",
+     "created": "2026-08-02",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "put5hWLb6mXAZ08TEi4T",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "FDbSbUrd4m0yg0Jzd2g6",
+     "created": "2026-08-01",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "ZIEpSmozLrUo9VgJxE0O",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "xDC5j0sUVZILKz9YyO1V",
+     "created": "2026-08-01",
+     "treatment": "Invisalign",
+     "status": "open",
+     "value": 0,
+     "contactId": "iwAyHQaMH6KM0KpiaP4Q",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120250594601420551"
+    },
+    {
+     "id": "ff5eSRC3wMDzmbcqMNl2",
+     "created": "2026-10-22",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "b9AdHBCuMX3zXk80NAiD",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "3sdtRCWtS3BP4yXrC10C",
+     "created": "2026-10-19",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "egB8M1KnZex2nEjp2FDg",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "UUx17Fgf617NfNzR99YC",
+     "created": "2026-10-16",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "eK8fmrQl1gQ41GPwRS5P",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "ScnvvH3GT6j8PuYOXP68",
+     "created": "2026-10-15",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "12sqL2JMrpS8ns1UpqrR",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "mWZzKW28PS4dNoJlUKRJ",
+     "created": "2026-10-15",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "NKai0UQhPyTSr636i7io",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "oyeEkG32AXI4hACh5ChT",
+     "created": "2026-10-14",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "Krs0aPQTK9GlCS1IVclo",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "WKAefFtTC2hK9rzg2tJG",
+     "created": "2026-10-12",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "A428lKH9CgCiFvyoxtby",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "Nk0er1MWpE5hvn8s2AtA",
+     "created": "2026-10-12",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "rAMJXyyBVDuJEp6MBFCv",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "3iYBzLpGbm37XDid8CWl",
+     "created": "2026-10-11",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "a25cbzSqPv5MDqwNyPTJ",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "vfgqeOBHWvZ91JNgOTNK",
+     "created": "2026-10-10",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "6XIGTNpRvvb54H9jW9SS",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "eiWeTTxvJn2JzU4MO8iW",
+     "created": "2026-10-02",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "UL4Brzy6vfvttlKL6Vnt",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "1SRpuAdV4Ln6zVTSs7Hr",
+     "created": "2026-09-29",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "PKEndXC1OhmjCx3PSLcq",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "foxRUB04ZEquxwNpIB1C",
+     "created": "2026-09-29",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "dkTkrvQmBkWwIlZBHsgM",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "IbHBxnof4CpotW0Iia2w",
+     "created": "2026-09-22",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "HYQpbdlaZ8xX8tS22bf7",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    },
+    {
+     "id": "r63QZx29nGtEUckU1UPl",
+     "created": "2026-09-22",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "mDrmKuUuyPECbwtzRUBi",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120251670857500551"
+    }
+   ],
+   "dentists": {
+    "nihir": "Dr Nihir Shah",
+    "amit": "Dr Amit Devlukia"
+   },
+   "periodStart": "2026-07-30"
   }
  ],
- "updatedAt": "2026-10-19T20:30:00Z"
+ "updatedAt": "2026-10-22T21:30:00Z"
 }
