@@ -1417,6 +1417,471 @@
    }
   },
   {
+   "slug": "melton",
+   "name": "Melton Orthodontics",
+   "plan": [
+    {
+     "id": "120250103128690232",
+     "treatment": "Teen braces",
+     "label": "Under 18's braces",
+     "openDay": "27–28 Oct 2026",
+     "start": "2026-10-08",
+     "end": "2026-10-28",
+     "clinician": "Jenny Liggins",
+     "budget": 1000,
+     "status": "Live",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    }
+   ],
+   "adSpend": {
+    "byDay": [
+     {
+      "date": "2026-10-08",
+      "channel": "Meta",
+      "spend": 22.05,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-09",
+      "channel": "Meta",
+      "spend": 29.41,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-10",
+      "channel": "Meta",
+      "spend": 24.95,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-11",
+      "channel": "Meta",
+      "spend": 36.22,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-12",
+      "channel": "Meta",
+      "spend": 34.61,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-13",
+      "channel": "Meta",
+      "spend": 25.74,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-14",
+      "channel": "Meta",
+      "spend": 24.9,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-15",
+      "channel": "Meta",
+      "spend": 30.28,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-16",
+      "channel": "Meta",
+      "spend": 28.18,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-17",
+      "channel": "Meta",
+      "spend": 30.04,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-18",
+      "channel": "Meta",
+      "spend": 25.53,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-19",
+      "channel": "Meta",
+      "spend": 29.07,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-20",
+      "channel": "Meta",
+      "spend": 31.21,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-21",
+      "channel": "Meta",
+      "spend": 25.27,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-22",
+      "channel": "Meta",
+      "spend": 29.87,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-23",
+      "channel": "Meta",
+      "spend": 10.05,
+      "campaign": "120250103128690232"
+     }
+    ]
+   },
+   "appointments": [
+    {
+     "start": "2026-10-27T11:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "8NvEbMUYF3eFrMZoBJIm",
+     "treatment": "Teen braces",
+     "booked": "2026-10-10",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-27T12:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "rn1TyIqwIUpsMoGxpMqq",
+     "treatment": "Teen braces",
+     "booked": "2026-10-11",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-27T13:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "K7A87o3F1EYWvrJ92pJN",
+     "treatment": "Teen braces",
+     "booked": "2026-10-16",
+     "source": "Other",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-27T14:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "8N79ZaPSIx0L4AsEPmfW",
+     "treatment": "Teen braces",
+     "booked": "2026-10-12",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-27T14:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "z5jpxAE8gcr9GQ5BtcsZ",
+     "treatment": "Teen braces",
+     "booked": "2026-10-09",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T08:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "Vb6ggqyWJYSOXccHmJ2P",
+     "treatment": "Teen braces",
+     "booked": "2026-10-15",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T08:45",
+     "status": "confirmed",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
+     "contactId": "4fWncrmuIE4kKRs3Rw75",
+     "treatment": "Teen braces",
+     "booked": "2026-10-19",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T09:45",
+     "status": "confirmed",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
+     "contactId": "jqjzGxYvpgUp4X67EabH",
+     "treatment": "Teen braces",
+     "booked": "2026-10-20",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T10:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "PNRwa0K6eUn3bs39o1fM",
+     "treatment": "Teen braces",
+     "booked": "2026-10-11",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T11:15",
+     "status": "confirmed",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
+     "contactId": "sv1mpRGfcUfv4PRK6peN",
+     "treatment": "Teen braces",
+     "booked": "2026-10-23",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T11:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "FDvNLXhNn6gUv7nx2Pjr",
+     "treatment": "Teen braces",
+     "booked": "2026-10-10",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T12:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "3eUNvmAdTr4RYfg1SO8V",
+     "treatment": "Teen braces",
+     "booked": "2026-10-11",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T13:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "Z44hl1rHA33sU5MxNlLb",
+     "treatment": "Teen braces",
+     "booked": "2026-10-11",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T14:30",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "s3ziiFjkO3RsQnfuIWM3",
+     "treatment": "Teen braces",
+     "booked": "2026-10-11",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T15:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "lNSVokoqDYgYvZa2CQYu",
+     "treatment": "Teen braces",
+     "booked": "2026-10-09",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T15:45",
+     "status": "confirmed",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
+     "contactId": "DzGljnYrBWEyBWa92Tgm",
+     "treatment": "Teen braces",
+     "booked": "2026-10-16",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    }
+   ],
+   "leads": [
+    {
+     "id": "IDsGNM6Z43PgL1Khtbkm",
+     "created": "2026-10-23",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "sv1mpRGfcUfv4PRK6peN",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "s6uf5nUjkyCobicsyseE",
+     "created": "2026-10-20",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "jqjzGxYvpgUp4X67EabH",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "4MIzdHkoaXky2BwtfXVn",
+     "created": "2026-10-19",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "4fWncrmuIE4kKRs3Rw75",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "RMEG4KA8VUeTfQrOn6XM",
+     "created": "2026-10-16",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "DzGljnYrBWEyBWa92Tgm",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "jKhl90qYJrL9ggrdIrjO",
+     "created": "2026-10-16",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "K7A87o3F1EYWvrJ92pJN",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "C42mrEtiyHlU5vltShHC",
+     "created": "2026-10-15",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "Vb6ggqyWJYSOXccHmJ2P",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "TXd7y83AXsKoFvvt34wi",
+     "created": "2026-10-12",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "8N79ZaPSIx0L4AsEPmfW",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "3jmh4v8hIyK3zx3qRrDM",
+     "created": "2026-10-11",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "PNRwa0K6eUn3bs39o1fM",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "AQ0scIYFYGLlqovkkILN",
+     "created": "2026-10-11",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "3eUNvmAdTr4RYfg1SO8V",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "qxfxMC8Aeqy6L5p7wzz3",
+     "created": "2026-10-11",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "Z44hl1rHA33sU5MxNlLb",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "CQ5LXpYuZFXaoFGhLbVP",
+     "created": "2026-10-11",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "rn1TyIqwIUpsMoGxpMqq",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "O8wXOE87ewZQKbtUFsHa",
+     "created": "2026-10-11",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "s3ziiFjkO3RsQnfuIWM3",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "pkndIGw6SKDdveoAiAHH",
+     "created": "2026-10-10",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "FDvNLXhNn6gUv7nx2Pjr",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "mWBQ5htNqPvrH29CyXBN",
+     "created": "2026-10-10",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "8NvEbMUYF3eFrMZoBJIm",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "5hqyvnGBeVuF8U1mjeYn",
+     "created": "2026-10-09",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "lNSVokoqDYgYvZa2CQYu",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "PospvN8JSMmDi1L0RXFy",
+     "created": "2026-10-09",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "z5jpxAE8gcr9GQ5BtcsZ",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    }
+   ],
+   "dentists": {
+    "Cj3wf2W2gLANw2DDBQCY": "Jenny Liggins"
+   },
+   "periodStart": "2026-10-08"
+  },
+  {
    "slug": "stag-lane",
    "name": "Stag Lane Dental",
    "plan": [
@@ -2947,7 +3412,7 @@
      "created": "2026-08-01",
      "treatment": "Invisalign",
      "status": "won",
-     "value": 0,
+     "value": 3000,
      "contactId": "ZIEpSmozLrUo9VgJxE0O",
      "wonDate": "2026-08-19",
      "source": "Meta",
@@ -2958,7 +3423,7 @@
      "created": "2026-08-05",
      "treatment": "Invisalign",
      "status": "won",
-     "value": 0,
+     "value": 3500,
      "contactId": "7Q2J1oua78rDNK2dcJV1",
      "wonDate": "2026-08-21",
      "source": "Other",
@@ -2969,7 +3434,7 @@
      "created": "2026-08-08",
      "treatment": "Invisalign",
      "status": "won",
-     "value": 0,
+     "value": 3000,
      "contactId": "zWrMp1DYp3tAddCmgwia",
      "wonDate": "2026-08-18",
      "source": "Meta",
@@ -2980,7 +3445,7 @@
      "created": "2026-08-03",
      "treatment": "Invisalign",
      "status": "won",
-     "value": 0,
+     "value": 3500,
      "contactId": "qyOrpQfMjOKehbOsl92h",
      "wonDate": "2026-08-21",
      "source": "Meta",
@@ -2991,7 +3456,7 @@
      "created": "2026-08-09",
      "treatment": "Invisalign",
      "status": "won",
-     "value": 0,
+     "value": 3000,
      "contactId": "kltKY8BYMMGo1u0D6Vzs",
      "wonDate": "2026-08-19",
      "source": "Meta",
@@ -3002,7 +3467,7 @@
      "created": "2026-08-09",
      "treatment": "Invisalign",
      "status": "won",
-     "value": 0,
+     "value": 3500,
      "contactId": "EHA2y2jZ36eibDMl6gny",
      "wonDate": "2026-08-26",
      "source": "Meta",
@@ -3013,7 +3478,7 @@
      "created": "2026-08-12",
      "treatment": "Invisalign",
      "status": "won",
-     "value": 0,
+     "value": 2500,
      "contactId": "JIWSgNTXvPWAwutSHG6V",
      "wonDate": "2026-08-27",
      "source": "Meta",
@@ -3024,7 +3489,7 @@
      "created": "2026-08-01",
      "treatment": "Invisalign",
      "status": "won",
-     "value": 0,
+     "value": 3000,
      "contactId": "iwAyHQaMH6KM0KpiaP4Q",
      "wonDate": "2026-08-22",
      "source": "Other",
@@ -3036,472 +3501,7 @@
     "amit": "Dr Amit Devlukia"
    },
    "periodStart": "2026-07-30"
-  },
-  {
-   "slug": "melton",
-   "name": "Melton Orthodontics",
-   "plan": [
-    {
-     "id": "120250103128690232",
-     "treatment": "Teen braces",
-     "label": "Under 18's braces",
-     "openDay": "27–28 Oct 2026",
-     "start": "2026-10-08",
-     "end": "2026-10-28",
-     "clinician": "Jenny Liggins",
-     "budget": 1000,
-     "status": "Live",
-     "type": "open-day",
-     "channels": [
-      "Meta"
-     ]
-    }
-   ],
-   "adSpend": {
-    "byDay": [
-     {
-      "date": "2026-10-08",
-      "channel": "Meta",
-      "spend": 22.05,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-09",
-      "channel": "Meta",
-      "spend": 29.41,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-10",
-      "channel": "Meta",
-      "spend": 24.95,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-11",
-      "channel": "Meta",
-      "spend": 36.22,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-12",
-      "channel": "Meta",
-      "spend": 34.61,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-13",
-      "channel": "Meta",
-      "spend": 25.74,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-14",
-      "channel": "Meta",
-      "spend": 24.9,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-15",
-      "channel": "Meta",
-      "spend": 30.28,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-16",
-      "channel": "Meta",
-      "spend": 28.18,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-17",
-      "channel": "Meta",
-      "spend": 30.04,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-18",
-      "channel": "Meta",
-      "spend": 25.53,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-19",
-      "channel": "Meta",
-      "spend": 29.07,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-20",
-      "channel": "Meta",
-      "spend": 31.21,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-21",
-      "channel": "Meta",
-      "spend": 25.27,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-22",
-      "channel": "Meta",
-      "spend": 29.87,
-      "campaign": "120250103128690232"
-     },
-     {
-      "date": "2026-10-23",
-      "channel": "Meta",
-      "spend": 10.05,
-      "campaign": "120250103128690232"
-     }
-    ]
-   },
-   "appointments": [
-    {
-     "start": "2026-10-27T11:30",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "8NvEbMUYF3eFrMZoBJIm",
-     "treatment": "Teen braces",
-     "booked": "2026-10-10",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-27T12:00",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "rn1TyIqwIUpsMoGxpMqq",
-     "treatment": "Teen braces",
-     "booked": "2026-10-11",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-27T13:00",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "K7A87o3F1EYWvrJ92pJN",
-     "treatment": "Teen braces",
-     "booked": "2026-10-16",
-     "source": "Other",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-27T14:00",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "8N79ZaPSIx0L4AsEPmfW",
-     "treatment": "Teen braces",
-     "booked": "2026-10-12",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-27T14:30",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "z5jpxAE8gcr9GQ5BtcsZ",
-     "treatment": "Teen braces",
-     "booked": "2026-10-09",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T08:30",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "Vb6ggqyWJYSOXccHmJ2P",
-     "treatment": "Teen braces",
-     "booked": "2026-10-15",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T08:45",
-     "status": "confirmed",
-     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
-     "contactId": "4fWncrmuIE4kKRs3Rw75",
-     "treatment": "Teen braces",
-     "booked": "2026-10-19",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T09:45",
-     "status": "confirmed",
-     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
-     "contactId": "jqjzGxYvpgUp4X67EabH",
-     "treatment": "Teen braces",
-     "booked": "2026-10-20",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T10:30",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "PNRwa0K6eUn3bs39o1fM",
-     "treatment": "Teen braces",
-     "booked": "2026-10-11",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T11:15",
-     "status": "confirmed",
-     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
-     "contactId": "sv1mpRGfcUfv4PRK6peN",
-     "treatment": "Teen braces",
-     "booked": "2026-10-23",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T11:30",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "FDvNLXhNn6gUv7nx2Pjr",
-     "treatment": "Teen braces",
-     "booked": "2026-10-10",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T12:00",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "3eUNvmAdTr4RYfg1SO8V",
-     "treatment": "Teen braces",
-     "booked": "2026-10-11",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T13:00",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "Z44hl1rHA33sU5MxNlLb",
-     "treatment": "Teen braces",
-     "booked": "2026-10-11",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T14:30",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "s3ziiFjkO3RsQnfuIWM3",
-     "treatment": "Teen braces",
-     "booked": "2026-10-11",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T15:00",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "lNSVokoqDYgYvZa2CQYu",
-     "treatment": "Teen braces",
-     "booked": "2026-10-09",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "start": "2026-10-28T15:45",
-     "status": "confirmed",
-     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
-     "contactId": "DzGljnYrBWEyBWa92Tgm",
-     "treatment": "Teen braces",
-     "booked": "2026-10-16",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    }
-   ],
-   "leads": [
-    {
-     "id": "IDsGNM6Z43PgL1Khtbkm",
-     "created": "2026-10-23",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "sv1mpRGfcUfv4PRK6peN",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "s6uf5nUjkyCobicsyseE",
-     "created": "2026-10-20",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "jqjzGxYvpgUp4X67EabH",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "4MIzdHkoaXky2BwtfXVn",
-     "created": "2026-10-19",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "4fWncrmuIE4kKRs3Rw75",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "RMEG4KA8VUeTfQrOn6XM",
-     "created": "2026-10-16",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "DzGljnYrBWEyBWa92Tgm",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "jKhl90qYJrL9ggrdIrjO",
-     "created": "2026-10-16",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "K7A87o3F1EYWvrJ92pJN",
-     "wonDate": "",
-     "source": "Other",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "C42mrEtiyHlU5vltShHC",
-     "created": "2026-10-15",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "Vb6ggqyWJYSOXccHmJ2P",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "TXd7y83AXsKoFvvt34wi",
-     "created": "2026-10-12",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "8N79ZaPSIx0L4AsEPmfW",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "3jmh4v8hIyK3zx3qRrDM",
-     "created": "2026-10-11",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "PNRwa0K6eUn3bs39o1fM",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "AQ0scIYFYGLlqovkkILN",
-     "created": "2026-10-11",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "3eUNvmAdTr4RYfg1SO8V",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "qxfxMC8Aeqy6L5p7wzz3",
-     "created": "2026-10-11",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "Z44hl1rHA33sU5MxNlLb",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "CQ5LXpYuZFXaoFGhLbVP",
-     "created": "2026-10-11",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "rn1TyIqwIUpsMoGxpMqq",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "O8wXOE87ewZQKbtUFsHa",
-     "created": "2026-10-11",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "s3ziiFjkO3RsQnfuIWM3",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "pkndIGw6SKDdveoAiAHH",
-     "created": "2026-10-10",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "FDvNLXhNn6gUv7nx2Pjr",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "mWBQ5htNqPvrH29CyXBN",
-     "created": "2026-10-10",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "8NvEbMUYF3eFrMZoBJIm",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "5hqyvnGBeVuF8U1mjeYn",
-     "created": "2026-10-09",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "lNSVokoqDYgYvZa2CQYu",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    },
-    {
-     "id": "PospvN8JSMmDi1L0RXFy",
-     "created": "2026-10-09",
-     "treatment": "Teen braces",
-     "status": "open",
-     "value": 0,
-     "contactId": "z5jpxAE8gcr9GQ5BtcsZ",
-     "wonDate": "",
-     "source": "Meta",
-     "campaign": "120250103128690232"
-    }
-   ],
-   "dentists": {
-    "Cj3wf2W2gLANw2DDBQCY": "Jenny Liggins"
-   },
-   "periodStart": "2026-10-08"
   }
  ],
- "updatedAt": "2026-10-23T10:40:00Z"
+ "updatedAt": "2026-10-22T21:30:00Z"
 }
