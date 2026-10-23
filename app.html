@@ -320,8 +320,8 @@ function kpis(s,opts={}){
   const t=opts.target||{}, pv=opts.prev;
   const rows=[
     ["Consults booked",s.booked,opts.bookedNote||"","",targetLine(s.booked,t.consults,true)+(pv?trend(s.booked,pv.booked,true,n=>n):"")],
-    ["Cost per booked consult",s.booked?gbp(s.spend/s.booked):"–","Ad spend ÷ consults booked","key",pv?trend(cpc(s),cpc(pv),false,gbp):""],
-    ["Ad spend",gbp(s.spend),"","",""],
+    ["Cost per booked consult",s.booked&&s.spend?gbp(s.spend/s.booked):"–",s.spend?"Ad spend ÷ consults booked":"Ad spend not added yet","key",pv?trend(cpc(s),cpc(pv),false,gbp):""],
+    ["Ad spend",s.spend?gbp(s.spend):"–",s.spend?"":"Not added yet","",""],
     ["Consults attended",s.outcomesIn?s.attended:null,s.outcomesIn?pct(s.attended,s.attended+s.noshow)+" turned up":"","",""],
     ["New patients",s.ready?s.won:null,s.ready&&s.won?gbp(s.spend/s.won)+" per patient":"","",targetLine(s.won,t.ahead,s.ready)+(pv&&s.ready&&pv.ready?trend(s.won,pv.won,true,n=>n):"")],
     ["Consult conversion",s.outcomesIn?pct(s.won,s.attended):null,"Attended consults who went ahead","key",pv?trend(conv(s),conv(pv),true,pts):""],
