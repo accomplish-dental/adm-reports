@@ -3046,7 +3046,7 @@
      "treatment": "Teen braces",
      "label": "Under 18's braces",
      "openDay": "27–28 Oct 2026",
-     "start": "2026-10-05",
+     "start": "2026-10-08",
      "end": "2026-10-28",
      "clinician": "Jenny Liggins",
      "budget": 1000,
@@ -3058,7 +3058,104 @@
     }
    ],
    "adSpend": {
-    "byDay": []
+    "byDay": [
+     {
+      "date": "2026-10-08",
+      "channel": "Meta",
+      "spend": 22.05,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-09",
+      "channel": "Meta",
+      "spend": 29.41,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-10",
+      "channel": "Meta",
+      "spend": 24.95,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-11",
+      "channel": "Meta",
+      "spend": 36.22,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-12",
+      "channel": "Meta",
+      "spend": 34.61,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-13",
+      "channel": "Meta",
+      "spend": 25.74,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-14",
+      "channel": "Meta",
+      "spend": 24.9,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-15",
+      "channel": "Meta",
+      "spend": 30.28,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-16",
+      "channel": "Meta",
+      "spend": 28.18,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-17",
+      "channel": "Meta",
+      "spend": 30.04,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-18",
+      "channel": "Meta",
+      "spend": 25.53,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-19",
+      "channel": "Meta",
+      "spend": 29.07,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-20",
+      "channel": "Meta",
+      "spend": 31.21,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-21",
+      "channel": "Meta",
+      "spend": 25.27,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-22",
+      "channel": "Meta",
+      "spend": 29.87,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-23",
+      "channel": "Meta",
+      "spend": 10.05,
+      "campaign": "120250103128690232"
+     }
+    ]
    },
    "appointments": [
     {
@@ -3403,8 +3500,8 @@
    "dentists": {
     "Cj3wf2W2gLANw2DDBQCY": "Jenny Liggins"
    },
-   "periodStart": "2026-10-05"
+   "periodStart": "2026-10-08"
   }
  ],
- "updatedAt": "2026-10-23T10:30:00Z"
+ "updatedAt": "2026-10-23T10:40:00Z"
 }
