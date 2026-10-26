@@ -37,6 +37,67 @@
      "channels": [
       "Meta"
      ]
+    },
+    {
+     "id": "sl-newpatient-ongoing",
+     "treatment": "New patients",
+     "label": "New patient offer",
+     "openDay": "",
+     "start": "2026-11-02",
+     "end": "",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "ongoing",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "sl-invisalign-ongoing",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "",
+     "start": "2026-11-02",
+     "end": "",
+     "clinician": "Dr Amit Devlukia",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "ongoing",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "sl-implants-google-ongoing",
+     "treatment": "Implants",
+     "label": "Dental implants (Google)",
+     "openDay": "",
+     "start": "2026-11-02",
+     "end": "",
+     "clinician": "Dr Amit Devlukia",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "ongoing",
+     "channels": [
+      "Google"
+     ]
+    },
+    {
+     "id": "sl-composite-mar27",
+     "treatment": "Composite bonding",
+     "label": "Composite bonding",
+     "openDay": "Mar 2027 · date TBC",
+     "start": "",
+     "end": "",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Planned",
+     "month": "2027-03",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
     }
    ],
    "adSpend": {
