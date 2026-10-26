@@ -84,13 +84,29 @@
      ]
     },
     {
-     "id": "sl-composite-mar27",
+     "id": "sl-composite-feb27",
      "treatment": "Composite bonding",
      "label": "Composite bonding",
-     "openDay": "Mar 2027 · date TBC",
+     "openDay": "Jan/Feb 2027 · date TBC",
      "start": "",
      "end": "",
      "clinician": "",
+     "budget": 1000,
+     "status": "Planned",
+     "month": "2027-02",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "sl-invisalign-od-mar27",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "Mar 2027 · date TBC",
+     "start": "",
+     "end": "",
+     "clinician": "Dr Amit Devlukia",
      "budget": 1000,
      "status": "Planned",
      "month": "2027-03",
