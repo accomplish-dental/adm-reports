@@ -1882,6 +1882,437 @@
    "periodStart": "2026-10-08"
   },
   {
+   "slug": "igdp",
+   "name": "Islington Green Dental Practice",
+   "plan": [
+    {
+     "id": "120250441553320049",
+     "treatment": "Implants",
+     "label": "Implants",
+     "openDay": "24–25 Oct 2026",
+     "start": "2026-10-02",
+     "end": "2026-10-25",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Finished",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    }
+   ],
+   "adSpend": {
+    "byDay": [
+     {
+      "date": "2026-10-02",
+      "channel": "Meta",
+      "spend": 30.56,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-03",
+      "channel": "Meta",
+      "spend": 45.73,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-04",
+      "channel": "Meta",
+      "spend": 75.83,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-05",
+      "channel": "Meta",
+      "spend": 38.96,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-06",
+      "channel": "Meta",
+      "spend": 53.54,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-07",
+      "channel": "Meta",
+      "spend": 45.28,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-08",
+      "channel": "Meta",
+      "spend": 48.89,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-09",
+      "channel": "Meta",
+      "spend": 44.02,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-10",
+      "channel": "Meta",
+      "spend": 43.46,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-11",
+      "channel": "Meta",
+      "spend": 63.73,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-12",
+      "channel": "Meta",
+      "spend": 40.96,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-13",
+      "channel": "Meta",
+      "spend": 50.67,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-14",
+      "channel": "Meta",
+      "spend": 56.26,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-15",
+      "channel": "Meta",
+      "spend": 49.17,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-16",
+      "channel": "Meta",
+      "spend": 40.08,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-17",
+      "channel": "Meta",
+      "spend": 49.11,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-18",
+      "channel": "Meta",
+      "spend": 55.05,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-19",
+      "channel": "Meta",
+      "spend": 43.44,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-20",
+      "channel": "Meta",
+      "spend": 49.22,
+      "campaign": "120250441553320049"
+     },
+     {
+      "date": "2026-10-21",
+      "channel": "Meta",
+      "spend": 48.76,
+      "campaign": "120250441553320049"
+     }
+    ]
+   },
+   "appointments": [
+    {
+     "start": "2026-10-24T08:00",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "IY6Ibjru0uJ8zPfiFRtM",
+     "treatment": "Implants",
+     "booked": "2026-10-05",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-24T08:45",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "ufgu3R1RgneluZERZtky",
+     "treatment": "Implants",
+     "booked": "2026-10-03",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-24T09:30",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "ls2uBN3LkymO6OMvaTCD",
+     "treatment": "Implants",
+     "booked": "2026-10-03",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-24T11:45",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "La6hCuGfllVspsOlrwvC",
+     "treatment": "Implants",
+     "booked": "2026-10-07",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-24T12:30",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "n1Rp2bEMmz0SkTfVLABA",
+     "treatment": "Implants",
+     "booked": "2026-10-03",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-24T13:15",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "UfxzElraiyJhSU0fXZkj",
+     "treatment": "Implants",
+     "booked": "2026-10-10",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-24T14:00",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "mb1QD80px9WxvPRv3zYo",
+     "treatment": "Implants",
+     "booked": "2026-10-10",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-24T15:30",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "QuwfAYM2kNLr7aKkoSmp",
+     "treatment": "Implants",
+     "booked": "2026-10-18",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-24T16:15",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "oRL8u2qdtAuUdouPGLJA",
+     "treatment": "Implants",
+     "booked": "2026-10-11",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-25T08:45",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "ywKDrmfeahUEoLmdpg1k",
+     "treatment": "Implants",
+     "booked": "2026-10-05",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-25T10:15",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "RamoYkDYY0NdWX8XgHGz",
+     "treatment": "Implants",
+     "booked": "2026-10-17",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-25T11:00",
+     "status": "noshow",
+     "dentistId": "",
+     "contactId": "cBzQq1FYdnSZ6lEw2Mml",
+     "treatment": "Implants",
+     "booked": "2026-10-17",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    },
+    {
+     "start": "2026-10-25T11:45",
+     "status": "showed",
+     "dentistId": "",
+     "contactId": "kAGg6r9GhC2R8AiZ0Nm7",
+     "treatment": "Implants",
+     "booked": "2026-10-15",
+     "source": "Meta",
+     "campaign": "120250441553320049"
+    }
+   ],
+   "leads": [
+    {
+     "id": "eQbo86DY1ghHGkVzwFuF",
+     "created": "2026-10-18",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "QuwfAYM2kNLr7aKkoSmp",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "j1jEH2Or71hPemAJz7nL",
+     "created": "2026-10-17",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "RamoYkDYY0NdWX8XgHGz",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "JAx4IZWL3ToBsaMOML0A",
+     "created": "2026-10-17",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "cBzQq1FYdnSZ6lEw2Mml",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "BQpK2c6vhdokfBrlYJde",
+     "created": "2026-10-15",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "kAGg6r9GhC2R8AiZ0Nm7",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "t8MJGCyO1pSL0pdmrfvC",
+     "created": "2026-10-11",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "oRL8u2qdtAuUdouPGLJA",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "9lgmXDwACmvl4nHOaKBM",
+     "created": "2026-10-10",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "mb1QD80px9WxvPRv3zYo",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "MRCVx0Ue1fIlQIRUUnaR",
+     "created": "2026-10-10",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "UfxzElraiyJhSU0fXZkj",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "5vLvEh5ZHAkT35FcaoVy",
+     "created": "2026-10-07",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "La6hCuGfllVspsOlrwvC",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "vyjx3hRrTIfDWNqnLXye",
+     "created": "2026-10-05",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "ywKDrmfeahUEoLmdpg1k",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "LzWKnLZ7SdTVqWWsbW6R",
+     "created": "2026-10-05",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "IY6Ibjru0uJ8zPfiFRtM",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "CbzgiKX7H5hpFbMlRT7L",
+     "created": "2026-10-03",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "ufgu3R1RgneluZERZtky",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "rIvFvuTe5HP1huodDIDd",
+     "created": "2026-10-03",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "n1Rp2bEMmz0SkTfVLABA",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "1okXK3mawCTXqGppYOHt",
+     "created": "2026-10-03",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "zYQBHeUnsoJBMEP5gj6Q",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "i7lmMPcoLxJN120JzmvR",
+     "created": "2026-10-03",
+     "treatment": "Implants",
+     "status": "lost",
+     "value": 0,
+     "contactId": "ls2uBN3LkymO6OMvaTCD",
+     "wonDate": "",
+     "source": "Meta"
+    },
+    {
+     "id": "K2nWf1ySTENLAGthcX6h",
+     "created": "2026-10-02",
+     "treatment": "Implants",
+     "status": "open",
+     "value": 0,
+     "contactId": "QOU1r8CRKj6WrrK3iEZA",
+     "wonDate": "",
+     "source": "Meta"
+    }
+   ],
+   "dentists": {},
+   "periodStart": "2026-10-02"
+  },
+  {
    "slug": "stag-lane",
    "name": "Stag Lane Dental",
    "plan": [
@@ -3261,11 +3692,12 @@
      "created": "2026-10-22",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 250,
      "contactId": "b9AdHBCuMX3zXk80NAiD",
-     "wonDate": "",
+     "wonDate": "2026-10-26",
      "source": "Meta",
-     "campaign": "120251670857500551"
+     "campaign": "120251670857500551",
+     "revenueOnly": true
     },
     {
      "id": "3sdtRCWtS3BP4yXrC10C",
@@ -3526,437 +3958,6 @@
     "amit": "Dr Amit Devlukia"
    },
    "periodStart": "2026-07-30"
-  },
-  {
-   "slug": "igdp",
-   "name": "Islington Green Dental Practice",
-   "plan": [
-    {
-     "id": "120250441553320049",
-     "treatment": "Implants",
-     "label": "Implants",
-     "openDay": "24–25 Oct 2026",
-     "start": "2026-10-02",
-     "end": "2026-10-25",
-     "clinician": "",
-     "budget": 1000,
-     "status": "Finished",
-     "type": "open-day",
-     "channels": [
-      "Meta"
-     ]
-    }
-   ],
-   "adSpend": {
-    "byDay": [
-     {
-      "date": "2026-10-02",
-      "channel": "Meta",
-      "spend": 30.56,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-03",
-      "channel": "Meta",
-      "spend": 45.73,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-04",
-      "channel": "Meta",
-      "spend": 75.83,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-05",
-      "channel": "Meta",
-      "spend": 38.96,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-06",
-      "channel": "Meta",
-      "spend": 53.54,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-07",
-      "channel": "Meta",
-      "spend": 45.28,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-08",
-      "channel": "Meta",
-      "spend": 48.89,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-09",
-      "channel": "Meta",
-      "spend": 44.02,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-10",
-      "channel": "Meta",
-      "spend": 43.46,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-11",
-      "channel": "Meta",
-      "spend": 63.73,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-12",
-      "channel": "Meta",
-      "spend": 40.96,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-13",
-      "channel": "Meta",
-      "spend": 50.67,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-14",
-      "channel": "Meta",
-      "spend": 56.26,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-15",
-      "channel": "Meta",
-      "spend": 49.17,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-16",
-      "channel": "Meta",
-      "spend": 40.08,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-17",
-      "channel": "Meta",
-      "spend": 49.11,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-18",
-      "channel": "Meta",
-      "spend": 55.05,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-19",
-      "channel": "Meta",
-      "spend": 43.44,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-20",
-      "channel": "Meta",
-      "spend": 49.22,
-      "campaign": "120250441553320049"
-     },
-     {
-      "date": "2026-10-21",
-      "channel": "Meta",
-      "spend": 48.76,
-      "campaign": "120250441553320049"
-     }
-    ]
-   },
-   "appointments": [
-    {
-     "start": "2026-10-24T08:00",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "IY6Ibjru0uJ8zPfiFRtM",
-     "treatment": "Implants",
-     "booked": "2026-10-05",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-24T08:45",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "ufgu3R1RgneluZERZtky",
-     "treatment": "Implants",
-     "booked": "2026-10-03",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-24T09:30",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "ls2uBN3LkymO6OMvaTCD",
-     "treatment": "Implants",
-     "booked": "2026-10-03",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-24T11:45",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "La6hCuGfllVspsOlrwvC",
-     "treatment": "Implants",
-     "booked": "2026-10-07",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-24T12:30",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "n1Rp2bEMmz0SkTfVLABA",
-     "treatment": "Implants",
-     "booked": "2026-10-03",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-24T13:15",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "UfxzElraiyJhSU0fXZkj",
-     "treatment": "Implants",
-     "booked": "2026-10-10",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-24T14:00",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "mb1QD80px9WxvPRv3zYo",
-     "treatment": "Implants",
-     "booked": "2026-10-10",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-24T15:30",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "QuwfAYM2kNLr7aKkoSmp",
-     "treatment": "Implants",
-     "booked": "2026-10-18",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-24T16:15",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "oRL8u2qdtAuUdouPGLJA",
-     "treatment": "Implants",
-     "booked": "2026-10-11",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-25T08:45",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "ywKDrmfeahUEoLmdpg1k",
-     "treatment": "Implants",
-     "booked": "2026-10-05",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-25T10:15",
-     "status": "confirmed",
-     "dentistId": "",
-     "contactId": "RamoYkDYY0NdWX8XgHGz",
-     "treatment": "Implants",
-     "booked": "2026-10-17",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-25T11:00",
-     "status": "noshow",
-     "dentistId": "",
-     "contactId": "cBzQq1FYdnSZ6lEw2Mml",
-     "treatment": "Implants",
-     "booked": "2026-10-17",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    },
-    {
-     "start": "2026-10-25T11:45",
-     "status": "showed",
-     "dentistId": "",
-     "contactId": "kAGg6r9GhC2R8AiZ0Nm7",
-     "treatment": "Implants",
-     "booked": "2026-10-15",
-     "source": "Meta",
-     "campaign": "120250441553320049"
-    }
-   ],
-   "leads": [
-    {
-     "id": "eQbo86DY1ghHGkVzwFuF",
-     "created": "2026-10-18",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "QuwfAYM2kNLr7aKkoSmp",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "j1jEH2Or71hPemAJz7nL",
-     "created": "2026-10-17",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "RamoYkDYY0NdWX8XgHGz",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "JAx4IZWL3ToBsaMOML0A",
-     "created": "2026-10-17",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "cBzQq1FYdnSZ6lEw2Mml",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "BQpK2c6vhdokfBrlYJde",
-     "created": "2026-10-15",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "kAGg6r9GhC2R8AiZ0Nm7",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "t8MJGCyO1pSL0pdmrfvC",
-     "created": "2026-10-11",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "oRL8u2qdtAuUdouPGLJA",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "9lgmXDwACmvl4nHOaKBM",
-     "created": "2026-10-10",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "mb1QD80px9WxvPRv3zYo",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "MRCVx0Ue1fIlQIRUUnaR",
-     "created": "2026-10-10",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "UfxzElraiyJhSU0fXZkj",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "5vLvEh5ZHAkT35FcaoVy",
-     "created": "2026-10-07",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "La6hCuGfllVspsOlrwvC",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "vyjx3hRrTIfDWNqnLXye",
-     "created": "2026-10-05",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "ywKDrmfeahUEoLmdpg1k",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "LzWKnLZ7SdTVqWWsbW6R",
-     "created": "2026-10-05",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "IY6Ibjru0uJ8zPfiFRtM",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "CbzgiKX7H5hpFbMlRT7L",
-     "created": "2026-10-03",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "ufgu3R1RgneluZERZtky",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "rIvFvuTe5HP1huodDIDd",
-     "created": "2026-10-03",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "n1Rp2bEMmz0SkTfVLABA",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "1okXK3mawCTXqGppYOHt",
-     "created": "2026-10-03",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "zYQBHeUnsoJBMEP5gj6Q",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "i7lmMPcoLxJN120JzmvR",
-     "created": "2026-10-03",
-     "treatment": "Implants",
-     "status": "lost",
-     "value": 0,
-     "contactId": "ls2uBN3LkymO6OMvaTCD",
-     "wonDate": "",
-     "source": "Meta"
-    },
-    {
-     "id": "K2nWf1ySTENLAGthcX6h",
-     "created": "2026-10-02",
-     "treatment": "Implants",
-     "status": "open",
-     "value": 0,
-     "contactId": "QOU1r8CRKj6WrrK3iEZA",
-     "wonDate": "",
-     "source": "Meta"
-    }
-   ],
-   "dentists": {},
-   "periodStart": "2026-10-02"
   }
  ],
  "updatedAt": "2026-10-26T11:20:00Z"

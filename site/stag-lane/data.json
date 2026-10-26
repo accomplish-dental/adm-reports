@@ -1384,11 +1384,12 @@
      "created": "2026-10-22",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 250,
      "contactId": "b9AdHBCuMX3zXk80NAiD",
-     "wonDate": "",
+     "wonDate": "2026-10-26",
      "source": "Meta",
-     "campaign": "120251670857500551"
+     "campaign": "120251670857500551",
+     "revenueOnly": true
     },
     {
      "id": "3sdtRCWtS3BP4yXrC10C",

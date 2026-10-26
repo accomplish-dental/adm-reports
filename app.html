@@ -283,9 +283,12 @@ function stats(o){
     const showedBy={};p.appointments.forEach(a=>{if(a.status==="showed")showedBy[a.contactId]=p.dentists[a.dentistId]||"Not assigned to a dentist"});
     const srcBy={};p.appointments.forEach(a=>srcBy[a.contactId]=srcOf(a.source));
     p.leads.forEach(l=>{
-      if(!inCamp(l)||l.status!=="won")return; if(src&&srcBy[l.contactId]!==src)return;
+      // revenueOnly: treatment value the practice has confirmed for a patient who isn't (yet) going ahead with the campaign treatment
+      if(!inCamp(l)||(l.status!=="won"&&!l.revenueOnly))return; if(src&&srcBy[l.contactId]!==src)return;
       const w=(l.wonDate||"").slice(0,10); if(!w||w<from||w>to)return;
-      won++;revenue+=+l.value||0;const n=showedBy[l.contactId];if(n){(dent[n]??={seen:0,won:0,val:0}).won++;dent[n].val+=+l.value||0}
+      const n=showedBy[l.contactId], v=+l.value||0;
+      if(l.status==="won"){won++;if(n)(dent[n]??={seen:0,won:0,val:0}).won++}
+      revenue+=v;if(n){(dent[n]??={seen:0,won:0,val:0}).val+=v}
     });
     p.adSpend.byDay.forEach(r=>{
       if(o.campaign&&r.campaign!==o.campaign)return; const ch=srcOf(r.channel); if(src&&ch!==src)return;
