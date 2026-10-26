@@ -1416,29 +1416,31 @@
      "created": "2026-10-19",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 30,
      "contactId": "egB8M1KnZex2nEjp2FDg",
-     "wonDate": "",
+     "wonDate": "2026-10-24",
      "source": "Other",
-     "campaign": "120251670857500551"
+     "campaign": "120251670857500551",
+     "revenueOnly": true
     },
     {
      "id": "UUx17Fgf617NfNzR99YC",
      "created": "2026-10-16",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 210,
      "contactId": "eK8fmrQl1gQ41GPwRS5P",
-     "wonDate": "",
+     "wonDate": "2026-10-24",
      "source": "Meta",
-     "campaign": "120251670857500551"
+     "campaign": "120251670857500551",
+     "revenueOnly": true
     },
     {
      "id": "ScnvvH3GT6j8PuYOXP68",
      "created": "2026-10-15",
      "treatment": "Implants",
      "status": "won",
-     "value": 0,
+     "value": 350,
      "contactId": "12sqL2JMrpS8ns1UpqrR",
      "wonDate": "2026-10-26",
      "source": "Meta",
@@ -1449,22 +1451,24 @@
      "created": "2026-10-15",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 45,
      "contactId": "NKai0UQhPyTSr636i7io",
-     "wonDate": "",
+     "wonDate": "2026-10-24",
      "source": "Meta",
-     "campaign": "120251670857500551"
+     "campaign": "120251670857500551",
+     "revenueOnly": true
     },
     {
      "id": "oyeEkG32AXI4hACh5ChT",
      "created": "2026-10-14",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 50,
      "contactId": "Krs0aPQTK9GlCS1IVclo",
-     "wonDate": "",
+     "wonDate": "2026-10-24",
      "source": "Meta",
-     "campaign": "120251670857500551"
+     "campaign": "120251670857500551",
+     "revenueOnly": true
     },
     {
      "id": "WKAefFtTC2hK9rzg2tJG",
@@ -1526,40 +1530,43 @@
      "created": "2026-09-29",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 60,
      "contactId": "PKEndXC1OhmjCx3PSLcq",
-     "wonDate": "",
+     "wonDate": "2026-10-24",
      "source": "Meta",
-     "campaign": "120251670857500551"
+     "campaign": "120251670857500551",
+     "revenueOnly": true
     },
     {
      "id": "foxRUB04ZEquxwNpIB1C",
      "created": "2026-09-29",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 42.5,
      "contactId": "dkTkrvQmBkWwIlZBHsgM",
-     "wonDate": "",
+     "wonDate": "2026-10-24",
      "source": "Meta",
-     "campaign": "120251670857500551"
+     "campaign": "120251670857500551",
+     "revenueOnly": true
     },
     {
      "id": "IbHBxnof4CpotW0Iia2w",
      "created": "2026-09-22",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 45,
      "contactId": "HYQpbdlaZ8xX8tS22bf7",
-     "wonDate": "",
+     "wonDate": "2026-10-24",
      "source": "Meta",
-     "campaign": "120251670857500551"
+     "campaign": "120251670857500551",
+     "revenueOnly": true
     },
     {
      "id": "r63QZx29nGtEUckU1UPl",
      "created": "2026-09-22",
      "treatment": "Implants",
      "status": "won",
-     "value": 0,
+     "value": 225,
      "contactId": "mDrmKuUuyPECbwtzRUBi",
      "wonDate": "2026-10-26",
      "source": "Meta",
