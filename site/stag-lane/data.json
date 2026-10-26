@@ -602,7 +602,31 @@
      {
       "date": "2026-10-22",
       "channel": "Meta",
-      "spend": 5.81,
+      "spend": 5.83,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-23",
+      "channel": "Meta",
+      "spend": 26.42,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-24",
+      "channel": "Meta",
+      "spend": 42.42,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-25",
+      "channel": "Meta",
+      "spend": 17.55,
+      "campaign": "120251670857500551"
+     },
+     {
+      "date": "2026-10-26",
+      "channel": "Meta",
+      "spend": 23.37,
       "campaign": "120251670857500551"
      }
     ]
@@ -800,9 +824,9 @@
     },
     {
      "start": "2026-10-24T08:30",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "nihir",
-     "contactId": "VS3z-ekram",
+     "contactId": "12sqL2JMrpS8ns1UpqrR",
      "treatment": "Implants",
      "booked": "2026-10-10",
      "source": "Meta",
@@ -810,7 +834,7 @@
     },
     {
      "start": "2026-10-24T09:15",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "nihir",
      "contactId": "Krs0aPQTK9GlCS1IVclo",
      "treatment": "Implants",
@@ -820,7 +844,7 @@
     },
     {
      "start": "2026-10-24T09:45",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "nihir",
      "contactId": "b9AdHBCuMX3zXk80NAiD",
      "treatment": "Implants",
@@ -830,7 +854,7 @@
     },
     {
      "start": "2026-10-24T10:45",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "nihir",
      "contactId": "egB8M1KnZex2nEjp2FDg",
      "treatment": "Implants",
@@ -840,37 +864,27 @@
     },
     {
      "start": "2026-10-24T11:30",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "nihir",
-     "contactId": "manual-jay",
+     "contactId": "OKKQVPIw5IERG85dGRES",
      "treatment": "Implants",
      "booked": "2026-10-16",
-     "source": "Other",
+     "source": "Meta",
      "campaign": "120251670857500551"
     },
     {
      "start": "2026-10-24T08:30",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "amit",
-     "contactId": "manual-umesh",
+     "contactId": "sWNPxo1yNw1GMEAbrcKG",
      "treatment": "Implants",
      "booked": "2026-10-16",
-     "source": "Other",
-     "campaign": "120251670857500551"
-    },
-    {
-     "start": "2026-10-24T09:15",
-     "status": "confirmed",
-     "dentistId": "amit",
-     "contactId": "manual-chubi",
-     "treatment": "Implants",
-     "booked": "2026-10-16",
-     "source": "Other",
+     "source": "Meta",
      "campaign": "120251670857500551"
     },
     {
      "start": "2026-10-24T10:00",
-     "status": "confirmed",
+     "status": "noshow",
      "dentistId": "amit",
      "contactId": "A428lKH9CgCiFvyoxtby",
      "treatment": "Implants",
@@ -880,7 +894,7 @@
     },
     {
      "start": "2026-10-24T10:45",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "amit",
      "contactId": "mDrmKuUuyPECbwtzRUBi",
      "treatment": "Implants",
@@ -890,7 +904,7 @@
     },
     {
      "start": "2026-10-24T11:30",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "amit",
      "contactId": "UL4Brzy6vfvttlKL6Vnt",
      "treatment": "Implants",
@@ -900,7 +914,7 @@
     },
     {
      "start": "2026-10-24T12:45",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "amit",
      "contactId": "dkTkrvQmBkWwIlZBHsgM",
      "treatment": "Implants",
@@ -910,7 +924,7 @@
     },
     {
      "start": "2026-10-24T13:30",
-     "status": "confirmed",
+     "status": "cancelled",
      "dentistId": "amit",
      "contactId": "rAMJXyyBVDuJEp6MBFCv",
      "treatment": "Implants",
@@ -920,7 +934,7 @@
     },
     {
      "start": "2026-10-24T14:15",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "amit",
      "contactId": "HYQpbdlaZ8xX8tS22bf7",
      "treatment": "Implants",
@@ -930,7 +944,7 @@
     },
     {
      "start": "2026-10-24T15:00",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "amit",
      "contactId": "NKai0UQhPyTSr636i7io",
      "treatment": "Implants",
@@ -940,7 +954,7 @@
     },
     {
      "start": "2026-10-24T15:45",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "amit",
      "contactId": "eK8fmrQl1gQ41GPwRS5P",
      "treatment": "Implants",
@@ -950,7 +964,7 @@
     },
     {
      "start": "2026-10-24T16:45",
-     "status": "confirmed",
+     "status": "showed",
      "dentistId": "amit",
      "contactId": "PKEndXC1OhmjCx3PSLcq",
      "treatment": "Implants",
@@ -962,20 +976,20 @@
      "start": "2026-10-31T09:30",
      "status": "confirmed",
      "dentistId": "amit",
-     "contactId": "manual-vishnu",
+     "contactId": "MIUalWb9mQOsM0RnVPQu",
      "treatment": "Implants",
      "booked": "2026-10-20",
-     "source": "Other",
+     "source": "Meta",
      "campaign": "120251670857500551"
     },
     {
      "start": "2026-10-31T12:30",
      "status": "confirmed",
      "dentistId": "amit",
-     "contactId": "manual-shantilal",
+     "contactId": "xO8k37GXyrslpEC8ILjA",
      "treatment": "Implants",
      "booked": "2026-10-19",
-     "source": "Other",
+     "source": "Meta",
      "campaign": "120251670857500551"
     }
    ],
@@ -1402,10 +1416,10 @@
      "id": "ScnvvH3GT6j8PuYOXP68",
      "created": "2026-10-15",
      "treatment": "Implants",
-     "status": "open",
+     "status": "won",
      "value": 0,
      "contactId": "12sqL2JMrpS8ns1UpqrR",
-     "wonDate": "",
+     "wonDate": "2026-10-26",
      "source": "Meta",
      "campaign": "120251670857500551"
     },
@@ -1523,10 +1537,10 @@
      "id": "r63QZx29nGtEUckU1UPl",
      "created": "2026-09-22",
      "treatment": "Implants",
-     "status": "open",
+     "status": "won",
      "value": 0,
      "contactId": "mDrmKuUuyPECbwtzRUBi",
-     "wonDate": "",
+     "wonDate": "2026-10-26",
      "source": "Meta",
      "campaign": "120251670857500551"
     },
@@ -1617,6 +1631,17 @@
      "wonDate": "2026-08-22",
      "source": "Other",
      "campaign": "120250594601420551"
+    },
+    {
+     "id": "mAy0763kU91lfZjL4V4s",
+     "created": "2026-10-16",
+     "treatment": "Implants",
+     "status": "won",
+     "value": 2350,
+     "contactId": "sWNPxo1yNw1GMEAbrcKG",
+     "wonDate": "2026-10-26",
+     "source": "Meta",
+     "campaign": "120251670857500551"
     }
    ],
    "dentists": {
@@ -1626,5 +1651,5 @@
    "periodStart": "2026-07-30"
   }
  ],
- "updatedAt": "2026-10-22T21:30:00Z"
+ "updatedAt": "2026-10-26T11:20:00Z"
 }
