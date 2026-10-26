@@ -2365,13 +2365,13 @@
      "id": "sl-invisalign-ongoing",
      "treatment": "Invisalign",
      "label": "Invisalign",
-     "openDay": "",
+     "openDay": "2 Nov 2026 – late Jan 2027",
      "start": "2026-11-02",
-     "end": "",
+     "end": "2027-01-24",
      "clinician": "Dr Amit Devlukia",
      "budget": 1000,
      "status": "Planned",
-     "type": "ongoing",
+     "type": "campaign",
      "channels": [
       "Meta"
      ]
@@ -2389,6 +2389,21 @@
      "type": "ongoing",
      "channels": [
       "Google"
+     ]
+    },
+    {
+     "id": "sl-implants-meta-ongoing",
+     "treatment": "Implants",
+     "label": "Dental implants (Meta)",
+     "openDay": "",
+     "start": "2027-01-25",
+     "end": "",
+     "clinician": "Dr Amit Devlukia",
+     "budget": 1000,
+     "status": "Planned",
+     "type": "ongoing",
+     "channels": [
+      "Meta"
      ]
     },
     {
