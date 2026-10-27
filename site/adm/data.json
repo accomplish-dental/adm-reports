@@ -1525,13 +1525,37 @@
      {
       "date": "2026-10-22",
       "channel": "Meta",
-      "spend": 29.87,
+      "spend": 29.89,
       "campaign": "120250103128690232"
      },
      {
       "date": "2026-10-23",
       "channel": "Meta",
-      "spend": 10.05,
+      "spend": 33.54,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-24",
+      "channel": "Meta",
+      "spend": 35.43,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-25",
+      "channel": "Meta",
+      "spend": 28.26,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-26",
+      "channel": "Meta",
+      "spend": 44.53,
+      "campaign": "120250103128690232"
+     },
+     {
+      "date": "2026-10-27",
+      "channel": "Meta",
+      "spend": 16.27,
       "campaign": "120250103128690232"
      }
     ]
@@ -1540,7 +1564,7 @@
     {
      "start": "2026-10-27T11:30",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "8NvEbMUYF3eFrMZoBJIm",
      "treatment": "Teen braces",
      "booked": "2026-10-10",
@@ -1550,7 +1574,7 @@
     {
      "start": "2026-10-27T12:00",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "rn1TyIqwIUpsMoGxpMqq",
      "treatment": "Teen braces",
      "booked": "2026-10-11",
@@ -1560,7 +1584,7 @@
     {
      "start": "2026-10-27T13:00",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "K7A87o3F1EYWvrJ92pJN",
      "treatment": "Teen braces",
      "booked": "2026-10-16",
@@ -1570,7 +1594,7 @@
     {
      "start": "2026-10-27T14:00",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "8N79ZaPSIx0L4AsEPmfW",
      "treatment": "Teen braces",
      "booked": "2026-10-12",
@@ -1580,7 +1604,7 @@
     {
      "start": "2026-10-27T14:30",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "z5jpxAE8gcr9GQ5BtcsZ",
      "treatment": "Teen braces",
      "booked": "2026-10-09",
@@ -1590,7 +1614,7 @@
     {
      "start": "2026-10-28T08:30",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "Vb6ggqyWJYSOXccHmJ2P",
      "treatment": "Teen braces",
      "booked": "2026-10-15",
@@ -1618,12 +1642,32 @@
      "campaign": "120250103128690232"
     },
     {
+     "start": "2026-10-28T10:15",
+     "status": "confirmed",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
+     "contactId": "IGbw4DQIDO6LQe6HNv6r",
+     "treatment": "Teen braces",
+     "booked": "2026-10-26",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
      "start": "2026-10-28T10:30",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "PNRwa0K6eUn3bs39o1fM",
      "treatment": "Teen braces",
      "booked": "2026-10-11",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T10:45",
+     "status": "confirmed",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
+     "contactId": "AGfxgeffYX4XUaJ6MmEd",
+     "treatment": "Teen braces",
+     "booked": "2026-10-26",
      "source": "Meta",
      "campaign": "120250103128690232"
     },
@@ -1640,7 +1684,7 @@
     {
      "start": "2026-10-28T11:30",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "FDvNLXhNn6gUv7nx2Pjr",
      "treatment": "Teen braces",
      "booked": "2026-10-10",
@@ -1650,7 +1694,7 @@
     {
      "start": "2026-10-28T12:00",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "3eUNvmAdTr4RYfg1SO8V",
      "treatment": "Teen braces",
      "booked": "2026-10-11",
@@ -1660,7 +1704,7 @@
     {
      "start": "2026-10-28T13:00",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "Z44hl1rHA33sU5MxNlLb",
      "treatment": "Teen braces",
      "booked": "2026-10-11",
@@ -1670,7 +1714,7 @@
     {
      "start": "2026-10-28T14:30",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "s3ziiFjkO3RsQnfuIWM3",
      "treatment": "Teen braces",
      "booked": "2026-10-11",
@@ -1680,10 +1724,20 @@
     {
      "start": "2026-10-28T15:00",
      "status": "confirmed",
-     "dentistId": "",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
      "contactId": "lNSVokoqDYgYvZa2CQYu",
      "treatment": "Teen braces",
      "booked": "2026-10-09",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "start": "2026-10-28T15:15",
+     "status": "confirmed",
+     "dentistId": "Cj3wf2W2gLANw2DDBQCY",
+     "contactId": "N4wL5NyfCmYzJdym8xMP",
+     "treatment": "Teen braces",
+     "booked": "2026-10-24",
      "source": "Meta",
      "campaign": "120250103128690232"
     },
@@ -1871,6 +1925,39 @@
      "status": "open",
      "value": 0,
      "contactId": "z5jpxAE8gcr9GQ5BtcsZ",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "p2ajPFi5NCgNgGtzAlhh",
+     "created": "2026-10-26",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "IGbw4DQIDO6LQe6HNv6r",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "s3Zivd6EEr4DT8jhtpCD",
+     "created": "2026-10-26",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "AGfxgeffYX4XUaJ6MmEd",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250103128690232"
+    },
+    {
+     "id": "NpVlP3hcasvCOTOaW4DL",
+     "created": "2026-10-24",
+     "treatment": "Teen braces",
+     "status": "open",
+     "value": 0,
+     "contactId": "N4wL5NyfCmYzJdym8xMP",
      "wonDate": "",
      "source": "Meta",
      "campaign": "120250103128690232"
@@ -4079,5 +4166,5 @@
    "periodStart": "2026-07-30"
   }
  ],
- "updatedAt": "2026-10-26T21:10:00Z"
+ "updatedAt": "2026-10-27T10:00:00Z"
 }
