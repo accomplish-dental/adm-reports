@@ -109,15 +109,15 @@
    "name": "Prestwood Dental Health Centre",
    "plan": [
     {
-     "id": "VGybzR4asvs9H6ndAQ9H",
+     "id": "120250360794670098",
      "treatment": "Composite bonding",
      "label": "Composite bonding",
      "openDay": "14 Nov 2026",
-     "start": "2026-10-24",
+     "start": "2026-10-23",
      "end": "2026-11-14",
-     "clinician": "Raj (RB)",
+     "clinician": "Dr Raj Bakrania",
      "budget": 1000,
-     "status": "Planned",
+     "status": "Live",
      "type": "open-day",
      "channels": [
       "Meta"
@@ -170,12 +170,68 @@
     }
    ],
    "adSpend": {
-    "byDay": []
+    "byDay": [
+     {
+      "date": "2026-10-23",
+      "channel": "Meta",
+      "spend": 21.44,
+      "campaign": "120250360794670098"
+     },
+     {
+      "date": "2026-10-24",
+      "channel": "Meta",
+      "spend": 41.19,
+      "campaign": "120250360794670098"
+     },
+     {
+      "date": "2026-10-25",
+      "channel": "Meta",
+      "spend": 32.36,
+      "campaign": "120250360794670098"
+     },
+     {
+      "date": "2026-10-26",
+      "channel": "Meta",
+      "spend": 47.38,
+      "campaign": "120250360794670098"
+     },
+     {
+      "date": "2026-10-27",
+      "channel": "Meta",
+      "spend": 47.18,
+      "campaign": "120250360794670098"
+     }
+    ]
    },
-   "appointments": [],
-   "leads": [],
-   "dentists": {},
-   "periodStart": "2026-10-24",
+   "appointments": [
+    {
+     "start": "2026-11-14T14:00",
+     "status": "confirmed",
+     "dentistId": "BOLxxEcJTO8XLzXZJwiR",
+     "contactId": "bZ7H44PKHEeo7YIUA6bL",
+     "treatment": "Composite bonding",
+     "booked": "2026-10-25",
+     "source": "Meta",
+     "campaign": "120250360794670098"
+    }
+   ],
+   "leads": [
+    {
+     "id": "9UVQaGBL0E3lxo4VZA9E",
+     "created": "2026-10-25",
+     "treatment": "Composite bonding",
+     "status": "open",
+     "value": 0,
+     "contactId": "bZ7H44PKHEeo7YIUA6bL",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120250360794670098"
+    }
+   ],
+   "dentists": {
+    "BOLxxEcJTO8XLzXZJwiR": "Dr Raj Bakrania"
+   },
+   "periodStart": "2026-10-23",
    "reviews": {
     "sources": [
      "facebook"
@@ -300,5 +356,5 @@
    "periodStart": "2026-09-01"
   }
  ],
- "updatedAt": "2026-10-19T20:30:00Z"
+ "updatedAt": "2026-10-28T16:30:00Z"
 }
