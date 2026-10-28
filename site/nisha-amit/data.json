@@ -9,6 +9,21 @@
    "name": "Aylesbury Dental Health Centre",
    "plan": [
     {
+     "id": "120249696869960480",
+     "treatment": "New patients",
+     "label": "New patient offer",
+     "openDay": "",
+     "start": "2026-10-02",
+     "end": "",
+     "clinician": "",
+     "budget": 300,
+     "status": "Live",
+     "type": "ongoing",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
      "id": "ZtfCB6EJmTxAaMUqdRJH",
      "treatment": "Invisalign",
      "label": "Invisalign",
@@ -70,12 +85,612 @@
     }
    ],
    "adSpend": {
-    "byDay": []
+    "byDay": [
+     {
+      "date": "2026-10-02",
+      "channel": "Meta",
+      "spend": 2.97,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-03",
+      "channel": "Meta",
+      "spend": 3.25,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-04",
+      "channel": "Meta",
+      "spend": 4.06,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-05",
+      "channel": "Meta",
+      "spend": 3.76,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-06",
+      "channel": "Meta",
+      "spend": 10.4,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-07",
+      "channel": "Meta",
+      "spend": 8.04,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-08",
+      "channel": "Meta",
+      "spend": 14.86,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-09",
+      "channel": "Meta",
+      "spend": 10.08,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-10",
+      "channel": "Meta",
+      "spend": 6.52,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-11",
+      "channel": "Meta",
+      "spend": 11.84,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-12",
+      "channel": "Meta",
+      "spend": 11.16,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-13",
+      "channel": "Meta",
+      "spend": 10.93,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-14",
+      "channel": "Meta",
+      "spend": 9.82,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-15",
+      "channel": "Meta",
+      "spend": 7.73,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-16",
+      "channel": "Meta",
+      "spend": 9.02,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-17",
+      "channel": "Meta",
+      "spend": 9.49,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-18",
+      "channel": "Meta",
+      "spend": 11.47,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-19",
+      "channel": "Meta",
+      "spend": 10.65,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-20",
+      "channel": "Meta",
+      "spend": 10.02,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-21",
+      "channel": "Meta",
+      "spend": 7.56,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-22",
+      "channel": "Meta",
+      "spend": 10.3,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-23",
+      "channel": "Meta",
+      "spend": 9.98,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-24",
+      "channel": "Meta",
+      "spend": 9.96,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-25",
+      "channel": "Meta",
+      "spend": 9.81,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-26",
+      "channel": "Meta",
+      "spend": 11.11,
+      "campaign": "120249696869960480"
+     },
+     {
+      "date": "2026-10-27",
+      "channel": "Meta",
+      "spend": 10.32,
+      "campaign": "120249696869960480"
+     }
+    ]
    },
-   "appointments": [],
-   "leads": [],
+   "appointments": [
+    {
+     "start": "2026-10-22T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "PPHjmSZmSMunOeUqPJvF",
+     "treatment": "New patients",
+     "booked": "2026-10-22",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "start": "2026-10-28T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "ivIj7Q7LQ5TMEk8plqPC",
+     "treatment": "New patients",
+     "booked": "2026-10-28",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "start": "2026-10-22T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "943ZZrLwDCTU3LcRAATa",
+     "treatment": "New patients",
+     "booked": "2026-10-22",
+     "source": "Other",
+     "campaign": "120249696869960480"
+    },
+    {
+     "start": "2026-10-12T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "jeeH0XY0COcUkabMYq2X",
+     "treatment": "New patients",
+     "booked": "2026-10-12",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "start": "2026-10-12T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "zCusUer5kJNRqf92tz5v",
+     "treatment": "New patients",
+     "booked": "2026-10-12",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "start": "2026-10-14T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "EvY7ZCIItohfnYYPEUHR",
+     "treatment": "New patients",
+     "booked": "2026-10-14",
+     "source": "Other",
+     "campaign": "120249696869960480"
+    },
+    {
+     "start": "2026-10-22T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "J19izLBfD8h3n6pteoHq",
+     "treatment": "New patients",
+     "booked": "2026-10-22",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "start": "2026-10-12T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "cbT9lIgcQC4Eoyb3bNn0",
+     "treatment": "New patients",
+     "booked": "2026-10-12",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "start": "2026-10-07T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "XmRv3nmjEc5jpa7bRpIY",
+     "treatment": "New patients",
+     "booked": "2026-10-07",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "start": "2026-10-08T09:00",
+     "status": "confirmed",
+     "dentistId": "",
+     "contactId": "1bagihmfTWn9LAjLlNgZ",
+     "treatment": "New patients",
+     "booked": "2026-10-08",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    }
+   ],
+   "leads": [
+    {
+     "id": "s7No4Dfko332bjBXCzvX",
+     "created": "2026-10-27",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "pgH4L92eQAh2DnJhuK6b",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "0RukBTO9a2sUIzrPOVez",
+     "created": "2026-10-25",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "PL0238Jm98ZUpwJO1em1",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "UctxJu2DWQJArFyQnjAa",
+     "created": "2026-10-25",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "SvQL7sCw650wqQv5x666",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "XFnhNpcHiyzesf5g5Ukh",
+     "created": "2026-10-24",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "XKYGF5o85H6jusH8MQbM",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "A2iLJmxE0avd3NrNVaEX",
+     "created": "2026-10-24",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "hNRt3mJfjdYKmqpFgUXt",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "dpEMfYaxfEmSI4h6Ele5",
+     "created": "2026-10-24",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "IyXi72W29137gT8bzg2b",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "WhewMonTrjvFrdDcWgFP",
+     "created": "2026-10-22",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "zwFp4uyn7WOklhJkbP5T",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "fDEc6IK6rDv7DN4vR8Mf",
+     "created": "2026-10-21",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "WDveP1ASyC95b1eLwsWh",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "G8KDndluppX3qsvZsw6o",
+     "created": "2026-10-18",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "knhSQJfF5o4BEETxmKC7",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "TphPLbZ8LQf7ffw2WQJ6",
+     "created": "2026-10-16",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "wFduIwLtW1z1sL3itSLN",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "bK0qQh6F4TsTTz6TyD7X",
+     "created": "2026-10-16",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "TpGMAAZQQx9Y1GmCEtQt",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "0kCdB6LZZArVMsUoH77F",
+     "created": "2026-10-15",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "Eb0MrgOnwJX3VUgjbzu5",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "Odu4sqA5DILykpm4wmYR",
+     "created": "2026-10-14",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "O9UrKD6MyU9VOlyyLux3",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "d7UUVafH9mY7d7iKLFfp",
+     "created": "2026-10-13",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "PPHjmSZmSMunOeUqPJvF",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "604eDVjXyBBzhCLAamzS",
+     "created": "2026-10-12",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "ivIj7Q7LQ5TMEk8plqPC",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "LNvmMFNJ1KOUxz8H26sf",
+     "created": "2026-10-12",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "943ZZrLwDCTU3LcRAATa",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "DwlboGUHkZiJEZnGqRRe",
+     "created": "2026-10-12",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "CekhChSEOdAvW4yZCSBl",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "zkN3Aoh2Keif3Y97po5y",
+     "created": "2026-10-12",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "78QO91y3BNCT4T7W7HSS",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "7xiqLoSRJGUS0QjSL4gw",
+     "created": "2026-10-12",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "jeeH0XY0COcUkabMYq2X",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "qUGwhpR6e75VBhY9EFxz",
+     "created": "2026-10-11",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "zCusUer5kJNRqf92tz5v",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "2On15CZ8kitimpP5Jzr1",
+     "created": "2026-10-11",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "GxW8F3wKhALkdUeUT7HQ",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "vqAVb0Rk5uTZIlrwcnFS",
+     "created": "2026-10-10",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "EvY7ZCIItohfnYYPEUHR",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "Cmh5rkZKlTX0QSkvFUk7",
+     "created": "2026-10-10",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "BZPla7bP4LAKbzyc1Y2D",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "vkT4GRulgxvU8iXNMCcQ",
+     "created": "2026-10-08",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "SNxYKaWHZTml33Y3blor",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "BuKDsW9nGLPDMwpIUnbR",
+     "created": "2026-10-08",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "J19izLBfD8h3n6pteoHq",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "KSnOXMecidWMbWV9cdqJ",
+     "created": "2026-10-08",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "cbT9lIgcQC4Eoyb3bNn0",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "i2o0kVQSYwhJanqTybP6",
+     "created": "2026-10-08",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "ZlizPoIuQ9fmXPv0XTQC",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "zgYs4RapLmwcRCP5t59a",
+     "created": "2026-10-07",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "Yur8goVmMmu6u9qfq0Hu",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "FmUFYcx5rFhmIkj70CcX",
+     "created": "2026-10-07",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "6i3iw9cuGLxluXbpW9XC",
+     "wonDate": "",
+     "source": "Other",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "AkNZLtN6rIuWl8HrTxRh",
+     "created": "2026-10-06",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "XmRv3nmjEc5jpa7bRpIY",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    },
+    {
+     "id": "GRmA3qlZudRlh4Wzj0LC",
+     "created": "2026-10-06",
+     "treatment": "New patients",
+     "status": "open",
+     "value": 0,
+     "contactId": "1bagihmfTWn9LAjLlNgZ",
+     "wonDate": "",
+     "source": "Meta",
+     "campaign": "120249696869960480"
+    }
+   ],
    "dentists": {},
-   "periodStart": "2026-10-24",
+   "periodStart": "2026-10-02",
    "reviews": {
     "sources": [
      "facebook"
@@ -356,5 +971,5 @@
    "periodStart": "2026-09-01"
   }
  ],
- "updatedAt": "2026-10-28T16:30:00Z"
+ "updatedAt": "2026-10-28T16:45:00Z"
 }
