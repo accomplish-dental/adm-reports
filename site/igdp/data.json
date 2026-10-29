@@ -21,6 +21,86 @@
      "type": "open-day",
      "channels": [
       "Meta"
+     ],
+     "note": "Results from the practice tracker (29 Oct): 11 of 12 booked patients attended. Two booked other treatment; one is reviewing a full-mouth rehab plan of about £15,000. Follow-up calls are under way."
+    },
+    {
+     "id": "3GjMEBF1rs83YsgANmwi",
+     "treatment": "Composite bonding",
+     "label": "Composite bonding",
+     "openDay": "Black Friday event · Sat 28 Nov 2026",
+     "start": "2026-11-07",
+     "end": "2026-11-28",
+     "clinician": "Dr Sawan Kotecha",
+     "budget": 1000,
+     "status": "Being built",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "U7MOXAwmv9QPbcXK33uH",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "Love Your Smile · early Feb 2027, date TBC",
+     "start": "",
+     "end": "",
+     "clinician": "Dr Sawan Kotecha",
+     "budget": 1000,
+     "status": "Planned",
+     "month": "2027-02",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "EhhP114w73zO2WHbe1Ty",
+     "treatment": "Implants",
+     "label": "Implants",
+     "openDay": "Late Mar / early Apr 2027, date TBC",
+     "start": "",
+     "end": "",
+     "clinician": "",
+     "budget": 1000,
+     "status": "Planned",
+     "month": "2027-04",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "26SKYxULygXShRd5MG8L",
+     "treatment": "Composite bonding",
+     "label": "Composite bonding",
+     "openDay": "Summer Smile · early Jun 2027, date TBC",
+     "start": "",
+     "end": "",
+     "clinician": "Dr Sawan Kotecha and Chris",
+     "budget": 1000,
+     "status": "Planned",
+     "month": "2027-06",
+     "type": "open-day",
+     "channels": [
+      "Meta"
+     ]
+    },
+    {
+     "id": "TPP9QynJWMobJeiBX34i",
+     "treatment": "Invisalign",
+     "label": "Invisalign",
+     "openDay": "Smile Straightening · early Sep 2027, date TBC",
+     "start": "",
+     "end": "",
+     "clinician": "Dr Sawan Kotecha",
+     "budget": 1000,
+     "status": "Planned",
+     "month": "2027-09",
+     "type": "open-day",
+     "channels": [
+      "Meta"
      ]
     }
    ],
@@ -326,7 +406,7 @@
      "created": "2026-10-11",
      "treatment": "Implants",
      "status": "open",
-     "value": 0,
+     "value": 15000,
      "contactId": "oRL8u2qdtAuUdouPGLJA",
      "wonDate": "",
      "source": "Meta"
@@ -436,5 +516,5 @@
    "periodStart": "2026-10-02"
   }
  ],
- "updatedAt": "2026-10-26T18:30:00Z"
+ "updatedAt": "2026-10-29T19:10:00Z"
 }
